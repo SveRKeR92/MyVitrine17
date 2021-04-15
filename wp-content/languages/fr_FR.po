@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-10 09:45:55+0000\n"
+"PO-Revision-Date: 2021-04-06 09:54:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -168,12 +168,12 @@ msgid "It looks like the response did not come from this site."
 msgstr "Il semblerait que la réponse ne provienne pas de ce site."
 
 #. translators: 1: Parameter, 2: List of valid values.
-#: wp-includes/rest-api.php:1965
+#: wp-includes/rest-api.php:1971
 msgid "%1$s is not one of %2$l."
 msgstr "%1$s ne fait pas partie de %2$l."
 
 #. translators: 1: Parameter, 2: Valid values.
-#: wp-includes/rest-api.php:1961
+#: wp-includes/rest-api.php:1967
 msgid "%1$s is not %2$s."
 msgstr "%1$s n’est pas %2$s."
 
@@ -563,17 +563,19 @@ msgid "Used as:"
 msgstr "Utilisé comme :"
 
 #. translators: 1: Parameter, 2: Multiplier.
-#: wp-includes/rest-api.php:2414
+#: wp-includes/rest-api.php:2420
 msgid "%1$s must be a multiple of %2$s."
 msgstr "%1$s doit être un multiple de %2$s."
 
-#: wp-includes/rest-api.php:2305
+#. translators: 1: Parameter, 2: Number.
+#: wp-includes/rest-api.php:2311
 msgid "%1$s must contain at most %2$s property."
 msgid_plural "%1$s must contain at most %2$s properties."
 msgstr[0] "%1$s doit contenir au maximum %2$s propriété."
 msgstr[1] "%1$s doit contenir au maximum %2$s propriétés."
 
-#: wp-includes/rest-api.php:2289
+#. translators: 1: Parameter, 2: Number.
+#: wp-includes/rest-api.php:2295
 msgid "%1$s must contain at least %2$s property."
 msgid_plural "%1$s must contain at least %2$s properties."
 msgstr[0] "%1$s doit contenir au moins %2$s propriété."
@@ -1213,60 +1215,64 @@ msgid "File URL:"
 msgstr "URL du fichier :"
 
 #. translators: %s: The name of a JSON field expecting a valid UUID.
-#: wp-includes/rest-api.php:2151
+#: wp-includes/rest-api.php:2157
 msgid "%s is not a valid UUID."
 msgstr "%s n’est pas un UUID valide."
 
-#: wp-includes/rest-api.php:2127
+#: wp-includes/rest-api.php:2133
 msgid "Invalid hex color."
 msgstr "Couleur hexadécimale non valide."
 
 #. translators: 1: Parameter, 2: Pattern.
-#: wp-includes/rest-api.php:2575
+#: wp-includes/rest-api.php:2581
 msgid "%1$s does not match pattern %2$s."
 msgstr "%1$s ne correspond pas à la composition %2$s."
 
-#: wp-includes/rest-api.php:2560
+#. translators: 1: Parameter, 2: Number of characters.
+#: wp-includes/rest-api.php:2566
 msgid "%1$s must be at most %2$s character long."
 msgid_plural "%1$s must be at most %2$s characters long."
 msgstr[0] "%1$s doit faire au maximum %2$s caractère."
 msgstr[1] "%1$s doit faire au maximum %2$s caractères."
 
-#: wp-includes/rest-api.php:2544
+#. translators: 1: Parameter, 2: Number of characters.
+#: wp-includes/rest-api.php:2550
 msgid "%1$s must be at least %2$s character long."
 msgid_plural "%1$s must be at least %2$s characters long."
 msgstr[0] "%1$s doit faire au minimum %2$s caractère."
 msgstr[1] "%1$s doit faire au minimum %2$s caractères."
 
 #. translators: 1: Property of an object, 2: Parameter.
-#: wp-includes/rest-api.php:2232 wp-includes/rest-api.php:2242
+#: wp-includes/rest-api.php:2238 wp-includes/rest-api.php:2248
 msgid "%1$s is a required property of %2$s."
 msgstr "%1$s est une propriété obligatoire de %2$s."
 
 #. translators: %s: Parameter.
-#: wp-includes/rest-api.php:2384 wp-includes/rest-api.php:2686
+#: wp-includes/rest-api.php:2390 wp-includes/rest-api.php:2692
 msgid "%s has duplicate items."
 msgstr "%s contient des éléments dupliqués."
 
-#: wp-includes/rest-api.php:2371
+#. translators: 1: Parameter, 2: Number.
+#: wp-includes/rest-api.php:2377
 msgid "%1$s must contain at most %2$s item."
 msgid_plural "%1$s must contain at most %2$s items."
 msgstr[0] "%1$s doit contenir au maximum %2$s élément."
 msgstr[1] "%1$s doit contenir au maximum %2$s éléments."
 
-#: wp-includes/rest-api.php:2355
+#. translators: 1: Parameter, 2: Number.
+#: wp-includes/rest-api.php:2361
 msgid "%1$s must contain at least %2$s item."
 msgid_plural "%1$s must contain at least %2$s items."
 msgstr[0] "%1$s doit contenir au moins %2$s élément."
 msgstr[1] "%1$s doit contenir au moins %2$s éléments."
 
 #. translators: 1: Parameter, 2: The list of allowed types.
-#: wp-includes/rest-api.php:2076 wp-includes/rest-api.php:2670
+#: wp-includes/rest-api.php:2082 wp-includes/rest-api.php:2676
 msgid "The \"type\" schema keyword for %1$s can only be one of the built-in types: %2$l."
 msgstr "Le mot-clé « type » du schéma pour %1$s peut uniquement être l’un des types natifs : %2$l."
 
 #. translators: %s: Parameter.
-#: wp-includes/rest-api.php:2054 wp-includes/rest-api.php:2653
+#: wp-includes/rest-api.php:2060 wp-includes/rest-api.php:2659
 msgid "The \"type\" schema keyword for %s is required."
 msgstr "Le mot-clé « type » du schéma est obligatoire pour %s."
 
@@ -2238,6 +2244,7 @@ msgstr "Extension actuelle : %1$s (version %2$s)"
 msgid "Current theme: %1$s (version %2$s)"
 msgstr "Thème actuel : %1$s (version %2$s)"
 
+#. translators: %s: Current WordPress version number.
 #. translators: %s: Your current version of WordPress.
 #: wp-includes/class-wp-recovery-mode-email-service.php:336
 #: wp-admin/includes/class-wp-site-health.php:266
@@ -2401,9 +2408,9 @@ msgid "Sorry, you are not allowed to delete revisions of this post."
 msgstr "Désolé, vous n’avez pas l’autorisation de supprimer les révisions de cet article."
 
 #. translators: %s: Custom field key.
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:320
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:334
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:384
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:324
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:338
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:388
 msgid "Could not update the meta value of %s in database."
 msgstr "La mise à jour de la valeur de la méta de %s dans la base de données n’est pas possible."
 
@@ -3187,7 +3194,7 @@ msgstr "Élément ajouté."
 #: wp-admin/includes/class-wp-site-health.php:1523
 #: wp-admin/includes/class-wp-site-health.php:1605
 #: wp-admin/includes/class-wp-site-health.php:1624
-#: wp-admin/includes/class-wp-site-health.php:2258
+#: wp-admin/includes/class-wp-site-health.php:2228
 #: wp-admin/includes/dashboard.php:1243 wp-admin/includes/dashboard.php:1255
 #: wp-admin/includes/dashboard.php:1268 wp-admin/includes/dashboard.php:1796
 msgid "(opens in a new tab)"
@@ -3836,7 +3843,7 @@ msgid "Installed"
 msgstr "Installé"
 
 #. translators: %s: Property of an object.
-#: wp-includes/rest-api.php:2271
+#: wp-includes/rest-api.php:2277
 msgid "%1$s is not a valid property of Object."
 msgstr "%1$s n’est pas une propriété valide de l’objet."
 
@@ -5113,22 +5120,22 @@ msgid "Displays an audio player."
 msgstr "Affiche un lecteur audio."
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:2449
+#: wp-includes/rest-api.php:2455
 msgid "%1$s must be less than or equal to %2$d"
 msgstr "%1$s doit être inférieur ou égal à %2$d"
 
 #. translators: 1: Parameter, 2: Maximum number.
-#: wp-includes/rest-api.php:2441
+#: wp-includes/rest-api.php:2447
 msgid "%1$s must be less than %2$d"
 msgstr "%1$s doit être inférieur à %2$d"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:2431
+#: wp-includes/rest-api.php:2437
 msgid "%1$s must be greater than or equal to %2$d"
 msgstr "%1$s doit être supérieur ou égal à %2$d"
 
 #. translators: 1: Parameter, 2: Minimum number.
-#: wp-includes/rest-api.php:2423
+#: wp-includes/rest-api.php:2429
 msgid "%1$s must be greater than %2$d"
 msgstr "%1$s doit être supérieur à %2$d"
 
@@ -5566,7 +5573,7 @@ msgid "Invalid slug."
 msgstr "Identifiant non valide."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:717
-#: wp-includes/rest-api.php:2139 wp-includes/user.php:3965
+#: wp-includes/rest-api.php:2145 wp-includes/user.php:3965
 #: wp-admin/network/site-new.php:96
 msgid "Invalid email address."
 msgstr "Adresse e-mail non valide."
@@ -5584,7 +5591,7 @@ msgstr "Fonction de rappel JSONP non valide."
 msgid "Invalid page template."
 msgstr "Modèle de page non valide."
 
-#: wp-includes/script-loader.php:1210 wp-includes/rest-api.php:2133
+#: wp-includes/script-loader.php:1210 wp-includes/rest-api.php:2139
 #: wp-includes/post.php:3917 wp-admin/includes/post.php:188
 msgid "Invalid date."
 msgstr "Date non valide."
@@ -5743,8 +5750,8 @@ msgstr "À propos de ce site"
 
 #. translators: %s: Custom field key.
 #: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:227
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:269
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:364
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:273
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:368
 msgid "Sorry, you are not allowed to edit the %s custom field."
 msgstr "Désolé, vous n’avez pas l’autorisation de modifier le champ personnalisé %s."
 
@@ -6033,33 +6040,37 @@ msgstr "Accueil"
 msgid "Item selected."
 msgstr "Élément sélectionné."
 
-#: wp-includes/rest-api.php:2506
+#. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
+#: wp-includes/rest-api.php:2512
 msgid "%1$s must be between %2$d (inclusive) and %3$d (inclusive)"
 msgstr "%1$s doit être compris entre %2$d (inclus) et %3$d (inclus)"
 
-#: wp-includes/rest-api.php:2476
+#. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
+#: wp-includes/rest-api.php:2482
 msgid "%1$s must be between %2$d (exclusive) and %3$d (inclusive)"
 msgstr "%1$s doit être compris entre %2$d (exclu) et %3$d (inclus)"
 
-#: wp-includes/rest-api.php:2491
+#. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
+#: wp-includes/rest-api.php:2497
 msgid "%1$s must be between %2$d (inclusive) and %3$d (exclusive)"
 msgstr "%1$s doit être compris entre %2$d (inclus) et %3$d (exclu)"
 
-#: wp-includes/rest-api.php:2461
+#. translators: 1: Parameter, 2: Minimum number, 3: Maximum number.
+#: wp-includes/rest-api.php:2467
 msgid "%1$s must be between %2$d (exclusive) and %3$d (exclusive)"
 msgstr "%1$s doit être compris entre %2$d (exclu) et %3$d (exclu)"
 
 #. translators: %s: IP address.
-#: wp-includes/rest-api.php:2145
+#: wp-includes/rest-api.php:2151
 msgid "%s is not a valid IP address."
 msgstr "%s n’est pas une adresse IP valide."
 
 #. translators: 1: Parameter, 2: List of types.
 #. translators: 1: Parameter, 2: Type name.
-#: wp-includes/rest-api.php:2064 wp-includes/rest-api.php:2174
-#: wp-includes/rest-api.php:2196 wp-includes/rest-api.php:2219
-#: wp-includes/rest-api.php:2334 wp-includes/rest-api.php:2405
-#: wp-includes/rest-api.php:2534 wp-includes/rest-api.php:2602
+#: wp-includes/rest-api.php:2070 wp-includes/rest-api.php:2180
+#: wp-includes/rest-api.php:2202 wp-includes/rest-api.php:2225
+#: wp-includes/rest-api.php:2340 wp-includes/rest-api.php:2411
+#: wp-includes/rest-api.php:2540 wp-includes/rest-api.php:2608
 msgid "%1$s is not of type %2$s."
 msgstr "Le paramètre %1$s n’est pas de type %2$s."
 
@@ -6068,11 +6079,11 @@ msgstr "Le paramètre %1$s n’est pas de type %2$s."
 msgid "%1$s is not one of %2$s."
 msgstr "Le paramètre %1$s devrait avoir l’une de ces valeurs : %2$s."
 
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:501
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:505
 msgid "Meta fields."
 msgstr "Champs métas."
 
-#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:238
+#: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:242
 msgid "Could not delete meta value from database."
 msgstr "La suppression de la valeur de la méta en base de données n’est pas possible."
 
@@ -7343,6 +7354,7 @@ msgstr "Désolé, vous n’avez pas l’autorisation de supprimer cette page."
 msgid "Sorry, you are not allowed to delete this post."
 msgstr "Désolé, vous n’avez pas l’autorisation de supprimer cet article."
 
+#. translators: %s: Site title.
 #: wp-login.php:292
 msgctxt "site"
 msgid "&larr; Go to %s"
