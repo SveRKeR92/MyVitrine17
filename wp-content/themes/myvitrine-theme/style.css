@@ -1138,4 +1138,24 @@ a {
   margin: 30px 0 0 0;
 }
 
+.post-9 h2 {
+  margin-bottom: 70px;
+}
+.post-9 .wp-block-image figcaption {
+  text-align: center;
+}
+.post-9 .wp-block-button__link {
+  font-size: 24px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 782px) {
+  .post-9 .wp-block-column:not(:first-child) {
+    margin-left: 5em;
+  }
+  .post-9 .wp-block-group {
+    padding: 70px 150px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
