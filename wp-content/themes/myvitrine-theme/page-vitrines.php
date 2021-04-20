@@ -12,22 +12,58 @@
  * @package MyVitrine_Theme
  */
 
+//get_header();
 ?>
 
 	<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<section class="header-vitrines">
+			<div class="titles">
+				<h1>My Vitrine</h1>
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum.</h3>
+			</div>
 
-			get_template_part( 'template-parts/content', 'page' );
+			<div class="head-search">
+				<h3>Que recherchez vous ?</h3>
+				<form action="#">
+					<div>
+						<label for="ambassadeur">Nom de l'ambassadrice:</label>
+						<input type="text" id="ambassadeur" placeholder="Entrez le nom...">
+					</div>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+					<div>
+						<label for="categories">Catégorie produit:</label>
+						<select name="categories" id="categories">
+							<option value="">Catégorie de produits</option>
+							<option value="face">Soins visages</option>
+							<option value="hair">Soins cheveux</option>
+							<option value="body">Soins corps</option>
+							<option value="hygiène">Hygiène</option>
+							<option value="make-up">Maquillage</option>
+							<option value="food">Complément alimentaire</option>
+							<option value="ecology">Zéro déchet</option>
+							<option value="jewels">Bijoux</option>
+							<option value="yoga">Yoga</option>
+							<option value="home">Bien-être maison</option>
+							<option value="deco">Décoration</option>
+							<option value="other">Autre produit</option>
+						</select>
+					</div>
 
-		endwhile; // End of the loop.
-		?>
+					<div>
+						<label for="city">Ville:</label>
+						<input type="text" id="city" placeholder="Entrez une ville">
+					</div>
+
+					<div>
+						<label for="age">Age:</label>
+						<input type="text" id="age" placeholder="Entrez un âge">
+					</div>
+
+					<button type="submit">Valider</button>
+				</form>
+			</div>
+	</section>
 
 	</main><!-- #main -->
