@@ -13,14 +13,14 @@
  * @package MyVitrine_Theme
  */
 
-// get_header();
+get_header();
 ?>
 
 <main id="primary" class="site-main">
 
       <div class="head-home">
             <div class="w-35">
-                  <h1 class="brown">My Vitrine</h1>
+                  <h1 class="brown f-64">My Vitrine</h1>
                   <p class="lightgreen f-24">Des sélections de produits faites par des gens comme toi, pour toi…</p>
                   <p class="f-18">Cosmétiques - Soins - Maquillage - Accessoires zéro déchet - Bijoux - Yoga - Accessoires déco</p>
                   <div class="button-container">
