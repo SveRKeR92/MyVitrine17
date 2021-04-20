@@ -1158,4 +1158,16 @@ a {
   }
 }
 
+.post-41 .wp-block-group__inner-container {
+  padding: 70px 20px;
+}
+.post-41 .wp-block-group__inner-container h1 {
+  margin-bottom: 65px;
+}
+@media (min-width: 782px) {
+  .post-41 .wp-block-group__inner-container {
+    padding: 70px 10%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

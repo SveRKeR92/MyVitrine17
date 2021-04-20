@@ -1,0 +1,17 @@
+.post-41{
+      .wp-block-group__inner-container{
+            padding: 70px 20px;
+
+            h1{
+                  margin-bottom: 65px;
+            }
+      }
+
+
+
+      @media (min-width: 782px){
+            .wp-block-group__inner-container{
+                  padding: 70px 10%;
+            }
+      }
+}
