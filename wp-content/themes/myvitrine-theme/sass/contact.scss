@@ -5,9 +5,75 @@
     font-family: $poppins;
 }
 
-.wpcf7-form {
+.contact-header {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
+
+    .wpcf7-form {
+        width: 500px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 20px;
+
+        input {
+            background-color: #EDEDED;
+            padding: 5px 20px;
+        }
+
+        textarea {
+            background-color: #EDEDED;
+            height: 100px;
+        }
+
+        .wpcf7-submit {
+            background-color: #A8BFB5;
+            color: #fff;
+            padding: 10px 30px;
+            border-radius: 10px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+    }
+}
+
+.social-medias {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .mail {
+        margin-top: 100px;
+        width: 35%;
+        background: linear-gradient(to right, #F2D0BD, #F2EADF);
+        padding: 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+
+        h2 {
+            color: #A65A49;
+            font-weight: 400;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: #A65A49;
+            margin-top: 30px;
+        }
+    }
+
+    .medias {
+        @extend .mail;
+        background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
+    }
 }

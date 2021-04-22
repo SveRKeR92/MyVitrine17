@@ -17,7 +17,8 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<?php
+		<section class="contact-header">
+        <?php
 		while ( have_posts() ) :
 			the_post();
 
@@ -30,6 +31,27 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+        </section>
+
+        <section class="social-medias">
+
+            <div class="mail">
+                <h2>Par mail</h2>
+                <img src="<?php echo get_bloginfo('template_url') ?>/images/mail.png" alt="mail">
+                <a href="#">team@myvitrine.fr</a>
+            </div>
+
+            <div class="medias">
+                <h2>Sur nos réseaux</h2>
+                <div>
+                    <img src="<?php echo get_bloginfo('template_url') ?>/images/insta.png" alt="Instagram">
+                    <img src="<?php echo get_bloginfo('template_url') ?>/images/facebook.png" alt="Facebook">
+                    <img src="<?php echo get_bloginfo('template_url') ?>/images/linkedin.png" alt="LinkedIn">
+                </div>
+                <h2>MyVitrine</h2>
+            </div>
+
+        </section>
 
 	</main><!-- #main -->
 
