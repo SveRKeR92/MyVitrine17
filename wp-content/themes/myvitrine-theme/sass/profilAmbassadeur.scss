@@ -1,45 +1,91 @@
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-h1 {
-    color: #A8BFB5;
-    font-size: 48px;
-    width: 100%;
-}
-
-.page-id-92 {
-    .entry-content {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        .carteProfilAmbassadeur {
-            background: linear-gradient(#F2D2BF, #F2EADE);
-            width: 70%;
-            h2 {
-                color: #A65A49;
-                font-size: 24px;
-                font-weight: 600
-            }
-            h3 {
-                font-weight: 500;
-                font-size: 24;
-            }
-            .groupeTag .wp-block-group__inner-container {
-                display: flex;
-                justify-content: space-between;
-                width: 280px;
-                .tag1 {
-                    width: 118px;
-                    height: 32px;
-                    background: #F0DBE1;
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    h1 {
+        color: #A8BFB5;
+        font-size: 48px;
+        width: 100%;
+    }
+    
+    .page-id-92 {
+        .entry-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .carteProfilAmbassadeur {
+                background: linear-gradient(#F2D2BF, #F2EADE);
+                width: 1200px;
+                border-radius: 19px;
+                margin: 0;
+                img {
+                    border-radius: 100%;
                 }
-                .tag2 {
-                    width: 118px;
-                    height: 32px;
-                    background: #EBF0DB;
+                h2 {
+                    color: #A65A49;
+                    font-size: 24px;
+                    font-weight: 600;
+                    width: 100%;
+                }
+                h3 {
+                    font-weight: 500;
+                    font-size: 24;
+                }
+                h4 {
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #6C6C6C;
+                }
+                .wp-block-column {
+                    margin: 0;
+                }
+                .groupeTag .wp-block-group__inner-container {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 90%;
+                    .tag1 {
+                        width: 118px;
+                        height: 32px;
+                        background: #F0DBE1;
+                        border-radius: 4px;
+                        .wp-block-group__inner-container {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    .tag2 {
+                        width: 118px;
+                        height: 32px;
+                        background: #EBF0DB;
+                        border-radius: 4px;
+                        .wp-block-group__inner-container {
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+                .column3 {
+                    display: flex;
+                    justify-content: left;
+                    flex-wrap: wrap;
+                    .produitsReco {
+                        width: 90%;
+                        border-radius: 9px;
+                        min-height: 58px;
+                        background: #F2EADF;
+                        margin: 0;
+                        margin-bottom: 40px;
+                        margin-top: 20px;
+                    }
+                    p {
+                        margin-bottom: 50px;
+                        width: 90%;
+                    }
                 }
             }
         }
     }
-}

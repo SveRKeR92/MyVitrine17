@@ -15,31 +15,77 @@ h1 {
 }
 .page-id-92 .entry-content .carteProfilAmbassadeur {
   background: linear-gradient(#F2D2BF, #F2EADE);
-  width: 70%;
+  width: 1200px;
+  border-radius: 19px;
+  margin: 0;
+}
+.page-id-92 .entry-content .carteProfilAmbassadeur img {
+  border-radius: 100%;
 }
 .page-id-92 .entry-content .carteProfilAmbassadeur h2 {
   color: #A65A49;
   font-size: 24px;
   font-weight: 600;
+  width: 100%;
 }
 .page-id-92 .entry-content .carteProfilAmbassadeur h3 {
   font-weight: 500;
   font-size: 24;
 }
+.page-id-92 .entry-content .carteProfilAmbassadeur h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6C6C6C;
+}
+.page-id-92 .entry-content .carteProfilAmbassadeur .wp-block-column {
+  margin: 0;
+}
 .page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container {
   display: flex;
   justify-content: space-between;
-  width: 280px;
+  width: 90%;
 }
 .page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag1 {
   width: 118px;
   height: 32px;
   background: #F0DBE1;
+  border-radius: 4px;
+}
+.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag1 .wp-block-group__inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag2 {
   width: 118px;
   height: 32px;
   background: #EBF0DB;
+  border-radius: 4px;
+}
+.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag2 .wp-block-group__inner-container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.page-id-92 .entry-content .carteProfilAmbassadeur .column3 {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.page-id-92 .entry-content .carteProfilAmbassadeur .column3 .produitsReco {
+  width: 90%;
+  border-radius: 9px;
+  min-height: 58px;
+  background: #F2EADF;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.page-id-92 .entry-content .carteProfilAmbassadeur .column3 p {
+  margin-bottom: 50px;
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */
