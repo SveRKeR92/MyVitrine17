@@ -1,0 +1,45 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #A8BFB5;
+    font-size: 48px;
+    width: 100%;
+}
+
+.page-id-92 {
+    .entry-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .carteProfilAmbassadeur {
+            background: linear-gradient(#F2D2BF, #F2EADE);
+            width: 70%;
+            h2 {
+                color: #A65A49;
+                font-size: 24px;
+                font-weight: 600
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 24;
+            }
+            .groupeTag .wp-block-group__inner-container {
+                display: flex;
+                justify-content: space-between;
+                width: 280px;
+                .tag1 {
+                    width: 118px;
+                    height: 32px;
+                    background: #F0DBE1;
+                }
+                .tag2 {
+                    width: 118px;
+                    height: 32px;
+                    background: #EBF0DB;
+                }
+            }
+        }
+    }
+}
