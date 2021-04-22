@@ -141,6 +141,7 @@ add_action( 'widgets_init', 'myvitrine_theme_widgets_init' );
  */
 function myvitrine_theme_scripts() {
 	wp_enqueue_style( 'myvitrine-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	wp_style_add_data( 'myvitrine-theme-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'myvitrine-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
@@ -178,3 +179,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+require get_template_directory() . '/inc/custom-functions.php';

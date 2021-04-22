@@ -1,0 +1,17 @@
+@import "abstracts/variables/custom_variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $poppins;
+}
+
+.header-vitrines {
+    background-image: url("http://localhost/MyVitrine17/wp-content/uploads/2021/04/header-bg-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ body {
+     background-color: white;
+ }
