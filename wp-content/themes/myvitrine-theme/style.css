@@ -1276,77 +1276,107 @@ h1 {
   width: 100%;
 }
 
-.page-id-92 .entry-content {
+.profil-ambassadeur .entry-content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur {
   background: linear-gradient(#F2D2BF, #F2EADE);
   width: 1200px;
   border-radius: 19px;
+  min-height: 320px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur figure {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .produitsReco {
+  height: 60px;
+  width: 80%;
+  background: #F2EADF;
+  border-radius: 9px;
+  margin: 30px 0px 30px;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column1 figure {
   margin: 0;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur img {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column1 img {
   border-radius: 100%;
   max-width: 100%;
   height: auto;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur h2 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column3 .wp-block-group__inner-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column3 .wp-block-group__inner-container .produitsReco {
+  height: auto;
+  width: 80%;
+  background: #F2EADF;
+  border-radius: 9px;
+  margin: 30px 0px 30px;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur p {
+  width: 90%;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur h2 {
   color: #A65A49;
   font-size: 24px;
   font-weight: 600;
   width: 100%;
+  margin: 20px 0 30px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur h3 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur h3 {
   font-weight: 500;
   font-size: 24;
+  margin: 20px 0 20px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag {
   width: 250px;
   height: 35px;
+  margin: 20px 0 20px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 100%;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .wp-block-group__inner-container {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .wp-block-group__inner-container {
   justify-content: center;
   align-items: center;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container h4 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container h4 {
   margin: 0;
   font-size: 18px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag1 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag1 {
   width: 118px;
   height: 32px;
   background: #F0DBE1;
   border-radius: 4px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag2 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag2 {
   width: 118px;
   height: 32px;
   background: #EBF0DB;
   border-radius: 4px;
 }
-.page-id-92 .noProfil {
+.profil-ambassadeur .noProfil {
   background: linear-gradient(#F2D2BF, #F2EADE);
   border-radius: 19px;
-  width: 70%;
+  width: 1200px;
   height: 252px;
 }
-.page-id-92 .noProfil .wp-block-group__inner-container {
+.profil-ambassadeur .noProfil .wp-block-group__inner-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.page-id-92 .noProfil .wp-block-group__inner-container h2 {
+.profil-ambassadeur .noProfil .wp-block-group__inner-container h2 {
   font-size: 36px;
   color: #A65A49;
   text-align: center;
@@ -1356,67 +1386,130 @@ h1 {
   .carteProfilAmbassadeur {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .column3 {
     width: 100% !important;
   }
 }
+@media screen and (max-width: 650px) {
+  * {
+    text-align: center;
+  }
+
+  .groupeTag {
+    width: 100% !important;
+  }
+  .groupeTag .wp-block-group__inner-container {
+    justify-content: space-around !important;
+  }
+
+  .column3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.um-page-login {
   margin: 0;
 }
-
-.wp-block-columns {
+.um-page-login .wp-block-columns {
   height: 80vh;
 }
-
-.wp-block-column {
+.um-page-login .wp-block-column {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
-
-.login-register-right {
+.um-page-login .login-register-right {
   background: linear-gradient(#F2D2BF, #F2EADE);
 }
-.login-register-right h2 {
+.um-page-login .login-register-right h2 {
   color: black;
   font-size: 24px;
   font-weight: 500;
   width: 100%;
 }
-.login-register-right .wp-block-button__width-25 {
+.um-page-login .login-register-right .wp-block-button__width-25 {
   width: 210px !important;
 }
-
-.login-register-left h1 {
+.um-page-login .login-register-left h1 {
   color: #A8BFB5;
   font-size: 48px;
   width: 100%;
 }
-.login-register-left .um-row input {
+.um-page-login .login-register-left .um-row input {
   background: #EDEDED !important;
   color: #6C6C6C !important;
 }
-
-.login .um-center .um-button {
+.um-page-login .login .um-center .um-button {
   background: #A8BFB5 !important;
   border-radius: 19px !important;
   min-width: 210px !important;
 }
-
-.register .um-center .um-button {
+.um-page-login .register .um-center .um-button {
   background: #A65A49 !important;
   border-radius: 19px !important;
   min-width: 210px !important;
 }
+.um-page-login .wp-block-button a {
+  background: #A65A49;
+  border-radius: 19px !important;
+  width: 210px !important;
+  padding-left: 0;
+  padding-right: 0;
+}
 
-.wp-block-button a {
+.um-page-register {
+  margin: 0;
+}
+.um-page-register .wp-block-columns {
+  height: 80vh;
+}
+.um-page-register .wp-block-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.um-page-register .login-register-right {
+  background: linear-gradient(#F2D2BF, #F2EADE);
+}
+.um-page-register .login-register-right h2 {
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+  width: 100%;
+}
+.um-page-register .login-register-right .wp-block-button__width-25 {
+  width: 210px !important;
+}
+.um-page-register .login-register-left h1 {
+  color: #A8BFB5;
+  font-size: 48px;
+  width: 100%;
+}
+.um-page-register .login-register-left .um-row input {
+  background: #EDEDED !important;
+  color: #6C6C6C !important;
+}
+.um-page-register .login .um-center .um-button {
+  background: #A8BFB5 !important;
+  border-radius: 19px !important;
+  min-width: 210px !important;
+}
+.um-page-register .register .um-center .um-button {
+  background: #A65A49 !important;
+  border-radius: 19px !important;
+  min-width: 210px !important;
+}
+.um-page-register .wp-block-button a {
   background: #A65A49;
   border-radius: 19px !important;
   width: 210px !important;
@@ -1434,6 +1527,9 @@ h1 {
   width: 100%;
 }
 
+.mes-favoris h2 {
+  margin-bottom: 20px;
+}
 .mes-favoris h3 {
   width: 100%;
   font-weight: bold;
