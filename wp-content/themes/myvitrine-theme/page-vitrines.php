@@ -12,7 +12,7 @@
  * @package MyVitrine_Theme
  */
 
-//get_header();
+get_header();
 ?>
 
 	<main id="primary" class="site-main">
@@ -27,39 +27,86 @@
 			<div class="head-search">
 				<h3>Que recherchez vous ?</h3>
 				<form action="#">
-					<div>
-						<label for="ambassadeur">Nom de l'ambassadrice:</label>
-						<input type="text" id="ambassadeur" placeholder="Entrez le nom...">
+					<div class="form-main">
+
+						<div>
+							<h2>Ambassadrice</h2>
+						</div>
+
+						<div>
+							<label for="ambassadeur">Nom de l'ambassadrice:</label>
+							<input type="text" id="ambassadeur" placeholder="Entrez le nom...">
+						</div>
+
+						<!-- <div>
+							<label for="categories">Catégorie produit:</label>
+							<select name="categories" id="categories">
+								<option value="">Catégorie de produits</option>
+								<option value="face">Soins visages</option>
+								<option value="hair">Soins cheveux</option>
+								<option value="body">Soins corps</option>
+								<option value="hygiène">Hygiène</option>
+								<option value="make-up">Maquillage</option>
+								<option value="food">Complément alimentaire</option>
+								<option value="ecology">Zéro déchet</option>
+								<option value="jewels">Bijoux</option>
+								<option value="yoga">Yoga</option>
+								<option value="home">Bien-être maison</option>
+								<option value="deco">Décoration</option>
+								<option value="other">Autre produit</option>
+							</select>
+						</div> -->
+
+						<div>
+							<label for="city">Ville:</label>
+							<input type="text" id="city" placeholder="Entrez une ville">
+						</div>
+
+						<div>
+							<label for="age">Age:</label>
+							<input type="text" id="age" placeholder="Entrez un âge">
+						</div>
 					</div>
 
-					<div>
-						<label for="categories">Catégorie produit:</label>
-						<select name="categories" id="categories">
-							<option value="">Catégorie de produits</option>
-							<option value="face">Soins visages</option>
-							<option value="hair">Soins cheveux</option>
-							<option value="body">Soins corps</option>
-							<option value="hygiène">Hygiène</option>
-							<option value="make-up">Maquillage</option>
-							<option value="food">Complément alimentaire</option>
-							<option value="ecology">Zéro déchet</option>
-							<option value="jewels">Bijoux</option>
-							<option value="yoga">Yoga</option>
-							<option value="home">Bien-être maison</option>
-							<option value="deco">Décoration</option>
-							<option value="other">Autre produit</option>
-						</select>
-					</div>
+					<div class="form-main">
 
-					<div>
-						<label for="city">Ville:</label>
-						<input type="text" id="city" placeholder="Entrez une ville">
-					</div>
+						<div>
+							<h2>Produit</h2>
+						</div>
 
-					<div>
-						<label for="age">Age:</label>
-						<input type="text" id="age" placeholder="Entrez un âge">
-					</div>
+						<div>
+							<label for="categories">Catégorie produit:</label>
+							<select name="categories" id="categories">
+								<option value="">Catégorie de produits</option>
+								<option value="health">Cosmétiques et soins</option>
+								<option value="accessoires">Accessoires</option>
+							</select>
+						</div>
+
+						<div>
+							<label for="soins">Type de soins</label>
+							<select name="soins" id="soins">
+								<option value="" selected>Choisir le type de soins</option>
+								<option value="face">Visage</option>
+								<option value="body">Corps</option>
+								<option value="hair">Cheveux</option>
+								<option value="hygiene">Hygiène</option>
+								<option value="make-up">Maquillage</option>
+								<option value="food">Complément alimentaire</option>
+							</select>
+						</div>
+
+						<div>
+							<label for="accessoire">Type d'accessoires</label>
+							<select name="accessoire" id="accessoire">
+								<option value="" selected>Choisir le type d'accessoires</option>
+								<option value="teint">Teint</option>
+								<option value="eyes">Yeux</option>
+								<option value="Lips">Lèvres</option>
+								<option value="nails">Ongles</option>
+								<option value="make-up-accessoires">Accessoires maquillage</option>
+							</select>
+						</div>
 
 					<button type="submit">Valider</button>
 				</form>
@@ -67,3 +114,5 @@
 	</section>
 
 	</main><!-- #main -->
+
+	<?php get_footer();
