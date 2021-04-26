@@ -27,11 +27,14 @@ h1 {
     }
     .entry-content {
         background: linear-gradient(#F2D2BF, #F2EADE);
+        padding-top: 20px;
     }
     .wp-block-column {
         display: flex;
         justify-content: center;
         margin-left: 0;
+        min-width: 280px;
+        margin-bottom: 30px;
     }
     .favProduct {
         width: 70%;
@@ -40,6 +43,7 @@ h1 {
         justify-content: center;
         background: white;
         border-radius: 19px;
+        min-width: 250px;
         .wp-block-group__inner-container {
             display: flex;
             justify-content: center;
@@ -71,6 +75,7 @@ h1 {
         justify-content: center;
         background: white;
         border-radius: 19px;
+        min-width: 250px;
         .wp-block-group__inner-container {
             display: flex;
             justify-content: center;
@@ -82,8 +87,14 @@ h1 {
                 display: flex;
                 justify-content: center;
                 flex-wrap: nowrap;
+                position: relative;
                 figure {
                     margin: 0;
+                    position: absolute;
+                    margin-bottom: 1 50px;
+                    img {
+                        border-radius: 100%;
+                    }
                 }
                 h3 {
                     width: 45px;
@@ -107,7 +118,7 @@ h1 {
             margin-bottom: 30px;
         }
         .categoryVitrine {
-            width: 250px;
+            width: 220px;
             height: 50px;
             background: #A65A49;
             display: flex;
