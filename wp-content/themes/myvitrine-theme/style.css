@@ -1434,33 +1434,33 @@ h1 {
   width: 100%;
 }
 
-.page-id-59 h3 {
+.mes-favoris h3 {
   width: 100%;
   font-weight: bold;
   font-size: 18px;
 }
-.page-id-59 h4 {
+.mes-favoris h4 {
   width: 100%;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
 }
-.page-id-59 p {
+.mes-favoris p {
   width: 80%;
   font-size: 14px;
 }
-.page-id-59 .entry-content {
+.mes-favoris .entry-content {
   background: linear-gradient(#F2D2BF, #F2EADE);
   padding-top: 20px;
 }
-.page-id-59 .wp-block-column {
+.mes-favoris .wp-block-column {
   display: flex;
   justify-content: center;
   margin-left: 0;
   min-width: 280px;
   margin-bottom: 30px;
 }
-.page-id-59 .favProduct {
+.mes-favoris .favProduct {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -1469,15 +1469,15 @@ h1 {
   border-radius: 19px;
   min-width: 250px;
 }
-.page-id-59 .favProduct .wp-block-group__inner-container {
+.mes-favoris .favProduct .wp-block-group__inner-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.page-id-59 .favProduct img {
+.mes-favoris .favProduct img {
   width: 100%;
 }
-.page-id-59 .favProduct .categoryProduct {
+.mes-favoris .favProduct .categoryProduct {
   width: 160px;
   height: 26px;
   background: #A65A49;
@@ -1488,11 +1488,11 @@ h1 {
   align-items: center;
   margin-bottom: 30px;
 }
-.page-id-59 .favProduct .categoryProduct h4 {
+.mes-favoris .favProduct .categoryProduct h4 {
   font-weight: 200;
   font-size: 14px;
 }
-.page-id-59 .favVitrine {
+.mes-favoris .favVitrine {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -1501,48 +1501,48 @@ h1 {
   border-radius: 19px;
   min-width: 250px;
 }
-.page-id-59 .favVitrine .wp-block-group__inner-container {
+.mes-favoris .favVitrine .wp-block-group__inner-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.page-id-59 .favVitrine .headerFavVitrine {
+.mes-favoris .favVitrine .headerFavVitrine {
   width: 100%;
 }
-.page-id-59 .favVitrine .headerFavVitrine .wp-block-group__inner-container {
+.mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
   position: relative;
 }
-.page-id-59 .favVitrine .headerFavVitrine .wp-block-group__inner-container figure {
+.mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container figure {
   margin: 0;
   position: absolute;
   margin-bottom: 1 50px;
 }
-.page-id-59 .favVitrine .headerFavVitrine .wp-block-group__inner-container figure img {
+.mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container figure img {
   border-radius: 100%;
 }
-.page-id-59 .favVitrine .headerFavVitrine .wp-block-group__inner-container h3 {
+.mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container h3 {
   width: 45px;
 }
-.page-id-59 .favVitrine h3 {
+.mes-favoris .favVitrine h3 {
   width: 100%;
   font-weight: bold;
   font-size: 18px;
 }
-.page-id-59 .favVitrine h4 {
+.mes-favoris .favVitrine h4 {
   width: 100%;
   margin: 0;
   font-weight: 500;
   font-size: 18px;
 }
-.page-id-59 .favVitrine p {
+.mes-favoris .favVitrine p {
   width: 90%;
   font-size: 14px;
   margin-bottom: 30px;
 }
-.page-id-59 .favVitrine .categoryVitrine {
+.mes-favoris .favVitrine .categoryVitrine {
   width: 220px;
   height: 50px;
   background: #A65A49;
@@ -1554,7 +1554,7 @@ h1 {
   margin-bottom: 10px !important;
   margin-bottom: 30px;
 }
-.page-id-59 .favVitrine .categoryVitrine h4 {
+.mes-favoris .favVitrine .categoryVitrine h4 {
   font-weight: 300;
 }
 
