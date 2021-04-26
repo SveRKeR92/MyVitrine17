@@ -924,6 +924,15 @@ textarea {
   color: #733B36;
 }
 
+.fa-star {
+  color: #733B36;
+  padding: 10px;
+}
+
+.fa-instagram {
+  padding-top: 5px;
+}
+
 .lightgreen {
   color: #A8BFB5;
 }
@@ -1619,8 +1628,9 @@ footer #networksFoot {
   justify-content: center;
   padding: 46px 0;
 }
-footer #networksFoot a {
+footer #networksFoot img {
   padding: 0 7px;
+  width: 3%;
 }
 
 /* ---------------RESPONSIVE FOOTER-------------- */
