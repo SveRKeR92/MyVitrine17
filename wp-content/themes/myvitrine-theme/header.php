@@ -19,8 +19,9 @@
 
 	<?php wp_head(); ?>
 </head>
+<?php  $pageName = get_post_field('post_name', get_post()); ?>
+<body <?php body_class($pageName); ?>>
 
-<body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'myvitrine-theme' ); ?></a>
