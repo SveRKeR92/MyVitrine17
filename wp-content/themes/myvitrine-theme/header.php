@@ -46,6 +46,25 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
+		<section id="headerMyVitrine">
+        <section class="allHead">
+            <div class="logoHead"><a href="#"><img src="<?php echo get_bloginfo('template_url') ?>/images/NEW_LOGO_6.png" alt=""></a>
+</div>
+            <div class="rightFoot">
+                <div class="linksHead">
+                    <a href="">Le concept</a>
+                    <a href="">Les vitrines</a>
+                    <a href="">Exploration</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="buttonsHead">
+                    <button>Inscription</button>
+                    <button>Connexion</button>
+                </div>
+            </div>
+
+        </section>
+		</section>
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'myvitrine-theme' ); ?></button>
 			<?php
 			wp_nav_menu(

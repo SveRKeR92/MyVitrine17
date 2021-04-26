@@ -1558,4 +1558,106 @@ h1 {
   font-weight: 300;
 }
 
+#headerMyVitrine .allHead .linksHead {
+  padding-left: 62px;
+}
+#headerMyVitrine .allHead .linksHead a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  padding-left: 41px;
+}
+#headerMyVitrine .allHead .buttonsHead {
+  justify-content: flex-end;
+}
+#headerMyVitrine .allHead .buttonsHead :nth-child(2) {
+  background-color: #a8bfb5;
+}
+#headerMyVitrine .allHead .buttonsHead :first-child {
+  background-color: #a65a49;
+}
+#headerMyVitrine .allHead .buttonsHead button {
+  border: none;
+  color: #ffffff;
+  padding: 11px 33px;
+  border-radius: 3px;
+  font-size: 18px;
+  margin: 0 12px;
+}
+#headerMyVitrine img {
+  width: 63px;
+}
+
+footer {
+  background-color: #A8BFB5;
+}
+footer #titleFoot {
+  text-align: center;
+  padding: 46px 0 30px 0;
+}
+footer #titleFoot a {
+  color: #733B36;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 48px;
+}
+footer #AllLinksFoot {
+  display: flex;
+  justify-content: center;
+}
+footer #AllLinksFoot #linksFoot {
+  display: flex;
+}
+footer #AllLinksFoot #linksFoot a {
+  text-decoration: none;
+  color: #FFFCFC;
+  padding: 0 50px;
+}
+footer #networksFoot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 46px 0;
+}
+footer #networksFoot a {
+  padding: 0 7px;
+}
+
+/* ---------------RESPONSIVE FOOTER-------------- */
+@media (max-width: 900px) {
+  #linksFoot a {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 750px) {
+  #contentFoot {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 0 5%;
+  }
+  #contentFoot #AllLinksFoot {
+    padding: 0;
+  }
+  #contentFoot #AllLinksFoot :nth-child(2) {
+    align-items: center;
+  }
+  #contentFoot #AllLinksFoot #linksFoot {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  #contentFoot #AllLinksFoot #linksFoot a {
+    padding: 26px 0;
+  }
+  #contentFoot #networksFoot {
+    flex-direction: column;
+    padding: 0;
+  }
+  #contentFoot #networksFoot a {
+    padding: 20px 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
