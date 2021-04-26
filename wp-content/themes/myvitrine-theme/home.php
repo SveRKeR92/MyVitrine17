@@ -62,6 +62,8 @@ get_header();
                         <img src="<?php echo get_bloginfo('template_url') ?>/images/Home2.png" alt="Créer">
                   </div>
                   <div class="w-55 text-container">
+                      <h2 class="brown f-64">Deviens
+                          ambassadrice !</h2>
                         <p class="lightgreen f-24">Crée ta propre Vitrine et deviens ambassadeur de tes marques préferées</p>
                         <p class="f-18">Mets à profit tes expériences et ton expertise au service des autres !</p>
                         <div class="button-container">
@@ -77,11 +79,11 @@ get_header();
             <div class="vignets-container">
                   <div class="vignet">
                         <div class="infos">
-                              <p>Age</p>
+                              <p><i class="far fa-star"></i></p>
                               <div>
                                     <img src="<?php echo get_bloginfo('template_url') ?>/images/profile.png" alt="Image de Profil">
                               </div>
-                              <p>Ville</p>
+                              <p><i class="fab fa-instagram"></i></p>
                         </div>
                         <p class="name">Prénom Nom</p>
                         <span>Catégories principales</span>
@@ -90,11 +92,11 @@ get_header();
 
                   <div class="vignet">
                         <div class="infos">
-                              <p>Age</p>
+                            <p><i class="far fa-star"></i></p>
                               <div>
                                     <img src="<?php echo get_bloginfo('template_url') ?>/images/profile.png" alt="Image de Profil">
                               </div>
-                              <p>Ville</p>
+                            <p><i class="fab fa-instagram"></i></p>
                         </div>
                         <p class="name">Prénom Nom</p>
                         <span>Catégories principales</span>
@@ -103,11 +105,11 @@ get_header();
 
                   <div class="vignet">
                         <div class="infos">
-                              <p>Age</p>
+                            <p><i class="far fa-star"></i></p>
                               <div>
                                     <img src="<?php echo get_bloginfo('template_url') ?>/images/profile.png" alt="Image de Profil">
                               </div>
-                              <p>Ville</p>
+                            <p><i class="fab fa-instagram"></i></p>
                         </div>
                         <p class="name">Prénom Nom</p>
                         <span>Catégories principales</span>
@@ -116,11 +118,11 @@ get_header();
 
                   <div class="vignet">
                         <div class="infos">
-                              <p>Age</p>
+                            <p><i class="far fa-star"></i></p>
                               <div>
                                     <img src="<?php echo get_bloginfo('template_url') ?>/images/profile.png" alt="Image de Profil">
                               </div>
-                              <p>Ville</p>
+                            <p><i class="fab fa-instagram"></i></p>
                         </div>
                         <p class="name">Prénom Nom</p>
                         <span>Catégories principales</span>
@@ -129,11 +131,11 @@ get_header();
 
                   <div class="vignet">
                         <div class="infos">
-                              <p>Age</p>
+                            <p><i class="far fa-star"></i></p>
                               <div>
                                     <img src="<?php echo get_bloginfo('template_url') ?>/images/profile.png" alt="Image de Profil">
                               </div>
-                              <p>Ville</p>
+                              <p><i class="fab fa-instagram"></i></p>
                         </div>
                         <p class="name">Prénom Nom</p>
                         <span>Catégories principales</span>
@@ -142,11 +144,11 @@ get_header();
 
                   <div class="vignet">
                         <div class="infos">
-                              <p>Age</p>
+                            <p><i class="far fa-star"></i></p>
                               <div>
                                     <img src="<?php echo get_bloginfo('template_url') ?>/images/profile.png" alt="Image de Profil">
                               </div>
-                              <p>Ville</p>
+                            <p><i class="fab fa-instagram"></i></p>
                         </div>
                         <p class="name">Prénom Nom</p>
                         <span>Catégories principales</span>
@@ -155,14 +157,10 @@ get_header();
             </div>
       </section>
 
-      <footer class="lightgreen-bcg">
-            <h2 class="f-64 brown" style="text-align: center;">
-                  FOOTER
-            </h2>
-      </footer>
+
 
 </main><!-- #main -->
 
 <?php
 // get_sidebar();
-// get_footer();
+get_footer();
