@@ -12,6 +12,10 @@
     align-items: center;
     background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
 
+    .entry-title {
+        margin-left: 10%;
+    }
+
     .wpcf7-form {
         width: 500px;
         height: 600px;
