@@ -25,10 +25,10 @@
                     }
                     .buttonsHead {
                         justify-content: flex-end;
-                         :nth-child(2) {
+                        .connexion {
                             background-color: #a8bfb5;
                         }
-                         :first-child {
+                        .inscription {
                             background-color: #a65a49;
                         }
                         button {
@@ -38,6 +38,11 @@
                             border-radius: 3px;
                             font-size: 18px;
                             margin: 0 12px;
+                            a {
+                                color: #ffffff;
+                                font-size: 18px;
+                                background: none;
+                            }
                         }
                     }
                     .closeMenu {

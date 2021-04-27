@@ -1600,6 +1600,7 @@ h1 {
   font-size: 24px;
   font-weight: 500;
   width: 100%;
+  margin-bottom: 30px;
 }
 .um-page-login .login-register-right .wp-block-button__width-25 {
   width: 210px !important;
@@ -1631,50 +1632,51 @@ h1 {
   padding-right: 0;
 }
 
-.page-id-57 {
+.um-page-register {
   margin: 0;
 }
-.page-id-57 .wp-block-columns {
+.um-page-register .wp-block-columns {
   height: 80vh;
 }
-.page-id-57 .wp-block-column {
+.um-page-register .wp-block-column {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
-.page-id-57 .login-register-right {
+.um-page-register .login-register-right {
   background: linear-gradient(#F2D2BF, #F2EADE);
 }
-.page-id-57 .login-register-right h2 {
+.um-page-register .login-register-right h2 {
   color: black;
   font-size: 24px;
   font-weight: 500;
   width: 100%;
+  margin-bottom: 30px;
 }
-.page-id-57 .login-register-right .wp-block-button__width-25 {
+.um-page-register .login-register-right .wp-block-button__width-25 {
   width: 210px !important;
 }
-.page-id-57 .login-register-left h1 {
+.um-page-register .login-register-left h1 {
   color: #A8BFB5;
   font-size: 48px;
   width: 100%;
 }
-.page-id-57 .login-register-left .um-row input {
+.um-page-register .login-register-left .um-row input {
   background: #EDEDED !important;
   color: #6C6C6C !important;
 }
-.page-id-57 .login .um-center .um-button {
+.um-page-register .login .um-center .um-button {
   background: #A8BFB5 !important;
   border-radius: 19px !important;
   min-width: 210px !important;
 }
-.page-id-57 .register .um-center .um-button {
+.um-page-register .register .um-center .um-button {
   background: #A65A49 !important;
   border-radius: 19px !important;
   min-width: 210px !important;
 }
-.page-id-57 .wp-block-button a {
+.um-page-register .wp-block-button a {
   background: #A65A49;
   border-radius: 19px !important;
   width: 210px !important;
@@ -1850,10 +1852,10 @@ h1 {
 #headerMyVitrine .allHead .rightFoot .buttonsHead {
   justify-content: flex-end;
 }
-#headerMyVitrine .allHead .rightFoot .buttonsHead :nth-child(2) {
+#headerMyVitrine .allHead .rightFoot .buttonsHead .connexion {
   background-color: #a8bfb5;
 }
-#headerMyVitrine .allHead .rightFoot .buttonsHead :first-child {
+#headerMyVitrine .allHead .rightFoot .buttonsHead .inscription {
   background-color: #a65a49;
 }
 #headerMyVitrine .allHead .rightFoot .buttonsHead button {
@@ -1863,6 +1865,11 @@ h1 {
   border-radius: 3px;
   font-size: 18px;
   margin: 0 12px;
+}
+#headerMyVitrine .allHead .rightFoot .buttonsHead button a {
+  color: #ffffff;
+  font-size: 18px;
+  background: none;
 }
 #headerMyVitrine .allHead .rightFoot .closeMenu {
   display: none;
@@ -1958,6 +1965,15 @@ h1 {
     width: 63px;
   }
 }
+body {
+  margin-bottom: 0 !important;
+  height: 100%;
+}
+
+.entry-footer {
+  display: none;
+}
+
 footer {
   background-color: #A8BFB5;
 }
