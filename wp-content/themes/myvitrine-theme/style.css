@@ -2050,6 +2050,8 @@ footer #networksFoot img {
   text-align: center;
   vertical-align: middle;
   padding-top: 5%;
+  background-image: url("images/Group 68.jpg");
+  height: 70vh;
 }
 #all404 h1 {
   color: #a8bfb5;
@@ -2068,6 +2070,18 @@ footer #networksFoot img {
   background-color: #A65A49;
   padding: 25px 30px;
   border-radius: 13px;
+}
+
+@media (max-width: 900px) {
+  #all404 {
+    height: 80vh;
+  }
+}
+@media (max-width: 400px) {
+  #all404 {
+    height: 150vh;
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
