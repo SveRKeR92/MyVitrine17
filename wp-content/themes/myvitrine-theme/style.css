@@ -1208,14 +1208,14 @@ a {
   width: 85%;
   margin: 0 auto;
 }
-<<<<<<< HEAD
 .um-page-login .login-register-right h2 {
   color: black;
   font-size: 24px;
   font-weight: 500;
   width: 100%;
   margin-bottom: 30px;
-=======
+}
+
 [tendances] .vignets-container .vignet {
   width: 300px;
   margin: 0 34px 100px;
@@ -1223,7 +1223,6 @@ a {
   background-color: white;
   padding: 20px;
   box-shadow: 0 9px 18px rgba(132, 132, 132, 0.25);
->>>>>>> Homepage_remake
 }
 [tendances] .vignets-container .vignet .infos {
   position: relative;
@@ -1263,17 +1262,12 @@ a {
   margin: 30px 0 0 0;
 }
 
-<<<<<<< HEAD
-.um-page-register {
-=======
 * {
->>>>>>> Homepage_remake
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-<<<<<<< HEAD
 .um-page-register .wp-block-columns {
   height: 80vh;
 }
@@ -1321,7 +1315,7 @@ a {
   width: 210px !important;
   padding-left: 0;
   padding-right: 0;
-=======
+}
 
 .faq-title {
   color: #A65A49;
@@ -1377,7 +1371,6 @@ a {
 .questions .inti .question h2 {
   font-weight: 400;
   font-size: 25px;
->>>>>>> Homepage_remake
 }
 
 * {
@@ -1517,12 +1510,10 @@ h1 {
   font-weight: 300;
 }
 
-<<<<<<< HEAD
 .menu-toggle {
   display: none;
 }
 
-=======
 footer {
   background-color: #A8BFB5;
 }
@@ -1595,7 +1586,6 @@ footer #networksFoot img {
     padding: 20px 0;
   }
 }
->>>>>>> Homepage_remake
 #headerMyVitrine {
   margin: 0;
   padding: 0;
@@ -1740,7 +1730,6 @@ footer #networksFoot img {
     width: 63px;
   }
 }
-<<<<<<< HEAD
 body {
   margin-bottom: 0 !important;
   height: 100%;
@@ -1752,10 +1741,10 @@ body {
 
 footer {
   background-color: #A8BFB5;
-=======
+}
+
 .post-41 .wp-block-group__inner-container {
   padding: 70px 20px;
->>>>>>> Homepage_remake
 }
 .post-41 .wp-block-group__inner-container h1 {
   margin-bottom: 65px;
@@ -2036,7 +2025,6 @@ h1 {
     justify-content: center;
   }
 }
-<<<<<<< HEAD
 #all404 {
   text-align: center;
   vertical-align: middle;
@@ -2073,7 +2061,6 @@ h1 {
     height: 150vh;
     padding: 10px;
   }
-=======
 * {
   margin: 0;
   padding: 0;
@@ -2155,7 +2142,6 @@ h1 {
 }
 .header-vitrines .head-search form .form-main div label {
   color: #fff;
->>>>>>> Homepage_remake
 }
 
 /*# sourceMappingURL=style.css.map */
