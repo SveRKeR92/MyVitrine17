@@ -38,25 +38,6 @@ get_header();
 							<input type="text" id="ambassadeur" placeholder="Entrez le nom...">
 						</div>
 
-						<!-- <div>
-							<label for="categories">Catégorie produit:</label>
-							<select name="categories" id="categories">
-								<option value="">Catégorie de produits</option>
-								<option value="face">Soins visages</option>
-								<option value="hair">Soins cheveux</option>
-								<option value="body">Soins corps</option>
-								<option value="hygiène">Hygiène</option>
-								<option value="make-up">Maquillage</option>
-								<option value="food">Complément alimentaire</option>
-								<option value="ecology">Zéro déchet</option>
-								<option value="jewels">Bijoux</option>
-								<option value="yoga">Yoga</option>
-								<option value="home">Bien-être maison</option>
-								<option value="deco">Décoration</option>
-								<option value="other">Autre produit</option>
-							</select>
-						</div> -->
-
 						<div>
 							<label for="city">Ville:</label>
 							<input type="text" id="city" placeholder="Entrez une ville">
@@ -124,12 +105,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			get_template_part( 'template-parts/content', 'vitrines' );
 
 		endwhile; // End of the loop.
 		?>
