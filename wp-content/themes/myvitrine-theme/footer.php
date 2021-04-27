@@ -16,14 +16,14 @@
         <section id="contentFoot">
             <section id="AllLinksFoot">
                 <section id="linksFoot">
-                    <a href="">CONTACT</a>
-                    <a href="">FAQ</a>
-                    <a href="">LES VITRINES</a>
+                    <a href="contact">CONTACT</a>
+                    <a href="faq">FAQ</a>
+                    <a href="vitrines">LES VITRINES</a>
                 </section>
                 <section id="linksFoot">
-                    <a href="">LE CONCEPT</a>
-                    <a href="">CGU</a>
-                    <a href="">PROFIL</a>
+                    <a href="concept">LE CONCEPT</a>
+                    <a href="mentions-legales">CGU</a>
+                    <a href="account">PROFIL</a>
                 </section>
             </section>
             <section id="networksFoot">
