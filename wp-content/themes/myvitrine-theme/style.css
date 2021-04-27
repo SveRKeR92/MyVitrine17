@@ -1489,9 +1489,6 @@ footer #networksFoot img {
 #headerMyVitrine .allHead .rightFoot .buttonsHead :nth-child(2) {
   background-color: #a8bfb5;
 }
-#headerMyVitrine .allHead .rightFoot .buttonsHead :first-child {
-  background-color: #a65a49;
-}
 #headerMyVitrine .allHead .rightFoot .buttonsHead button {
   border: none;
   color: #ffffff;

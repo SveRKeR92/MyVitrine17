@@ -1,7 +1,7 @@
                                  .menu-toggle {
                                      display: none;
                                  }
-                                 
+
                                  #headerMyVitrine {
                                      margin: 0;
                                      padding: 0;
@@ -63,7 +63,7 @@
                                          }
                                      }
                                  }
-                                 
+
                                  @media(max-width: 1240px) {
                                      #headerMyVitrine {
                                          .allHead {
@@ -186,9 +186,6 @@
                          :nth-child(2) {
                             background-color: #a8bfb5;
                         }
-                         :first-child {
-                            background-color: #a65a49;
-                        }
                         button {
                             border: none;
                             color: #ffffff;
@@ -212,7 +209,7 @@
                 }
             }
         }
-        
+
         @media(max-width: 1240px) {
             #headerMyVitrine {
                 .allHead {
