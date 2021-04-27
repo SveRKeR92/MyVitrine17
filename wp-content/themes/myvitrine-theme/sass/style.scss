@@ -112,15 +112,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------- */
 
 @import "utilities/alignments";
-@import "custom";
 @import "concept";
-@import "legalmentions";
-@import "faq";
-@import "vitrines";
 @import "contact";
-@import "profilAmbassadeur";
-@import "loginRegister";
+@import "custom";
+@import "faq";
 @import "favVitrines";
+@import "footer";
 @import "header";
+@import "legalmentions";
+@import "loginRegister";
+@import "profilAmbassadeur";
+@import "vitrines";
 @import "footer";
 @import "404";
