@@ -51,6 +51,7 @@
         <section class="allHead">
             <div class="logoHead"><a href="#"><img src="<?php echo get_bloginfo('template_url') ?>/images/NEW_LOGO_6.png" alt=""></a>
 </div>
+<div class="openMenu"><i class="fa fa-bars"></i></div>
             <div class="rightFoot">
                 <div class="linksHead">
                     <a href="">Le concept</a>
@@ -58,6 +59,7 @@
                     <a href="">Exploration</a>
                     <a href="">Contact</a>
                 </div>
+				<div class="closeMenu"><i class="fas fa-times"></i></div>
                 <div class="buttonsHead">
                     <button>Inscription</button>
                     <button>Connexion</button>
@@ -76,5 +78,29 @@
 				)
 			);
 			?>
+
+			
 		</nav><!-- #site-navigation -->
+		
 	</header><!-- #masthead -->
+
+	
+<script type="text/javascript">
+const rightFoot = document.querySelector('.rightFoot');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+
+console.log("bonjour");
+
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+
+function show() {
+    rightFoot.style.display = 'flex';
+    rightFoot.style.top = '0';
+}
+
+function close() {
+    rightFoot.style.top = '-100%';
+}</script>
