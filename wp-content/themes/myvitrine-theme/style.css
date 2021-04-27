@@ -1375,6 +1375,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 .social-medias .mail, .social-medias .medias {
   margin-top: 100px;
@@ -1399,6 +1400,16 @@ a {
 }
 .social-medias .medias {
   background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.social-networks img {
+  width: 15%;
+  padding: 0px 10px;
 }
 
 * {
