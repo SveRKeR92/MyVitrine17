@@ -1432,6 +1432,7 @@ h1 {
   width: 1200px;
   border-radius: 19px;
   min-height: 320px;
+  margin-bottom: 50px;
 }
 .profil-ambassadeur .entry-content .carteProfilAmbassadeur .produitsReco {
   height: 60px;
@@ -1439,6 +1440,20 @@ h1 {
   background: #F2EADF;
   border-radius: 9px;
   margin: 30px 0px 30px;
+  display: flex;
+  align-items: center;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .produitsReco .wp-block-group__inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .produitsReco .wp-block-group__inner-container h2 {
+  margin: 0 !important;
+  width: 100%;
+  text-align: center;
 }
 .profil-ambassadeur .entry-content .carteProfilAmbassadeur .column1 {
   display: flex;
@@ -1510,19 +1525,23 @@ h1 {
   background: #EBF0DB;
   border-radius: 4px;
 }
-.profil-ambassadeur .noProfil {
+
+.noProduct {
+  min-height: 250px;
   background: linear-gradient(#F2D2BF, #F2EADE);
   border-radius: 19px;
   width: 1200px;
-  height: 252px;
+  margin-bottom: 60px;
 }
-.profil-ambassadeur .noProfil .wp-block-group__inner-container {
+.noProduct .wp-block-group__inner-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  padding: 10px;
 }
-.profil-ambassadeur .noProfil .wp-block-group__inner-container h2 {
+.noProduct .wp-block-group__inner-container h2 {
   font-size: 36px;
   color: #A65A49;
   text-align: center;
@@ -1612,50 +1631,50 @@ h1 {
   padding-right: 0;
 }
 
-.um-page-register {
+.page-id-57 {
   margin: 0;
 }
-.um-page-register .wp-block-columns {
+.page-id-57 .wp-block-columns {
   height: 80vh;
 }
-.um-page-register .wp-block-column {
+.page-id-57 .wp-block-column {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
-.um-page-register .login-register-right {
+.page-id-57 .login-register-right {
   background: linear-gradient(#F2D2BF, #F2EADE);
 }
-.um-page-register .login-register-right h2 {
+.page-id-57 .login-register-right h2 {
   color: black;
   font-size: 24px;
   font-weight: 500;
   width: 100%;
 }
-.um-page-register .login-register-right .wp-block-button__width-25 {
+.page-id-57 .login-register-right .wp-block-button__width-25 {
   width: 210px !important;
 }
-.um-page-register .login-register-left h1 {
+.page-id-57 .login-register-left h1 {
   color: #A8BFB5;
   font-size: 48px;
   width: 100%;
 }
-.um-page-register .login-register-left .um-row input {
+.page-id-57 .login-register-left .um-row input {
   background: #EDEDED !important;
   color: #6C6C6C !important;
 }
-.um-page-register .login .um-center .um-button {
+.page-id-57 .login .um-center .um-button {
   background: #A8BFB5 !important;
   border-radius: 19px !important;
   min-width: 210px !important;
 }
-.um-page-register .register .um-center .um-button {
+.page-id-57 .register .um-center .um-button {
   background: #A65A49 !important;
   border-radius: 19px !important;
   min-width: 210px !important;
 }
-.um-page-register .wp-block-button a {
+.page-id-57 .wp-block-button a {
   background: #A65A49;
   border-radius: 19px !important;
   width: 210px !important;
@@ -1800,25 +1819,44 @@ h1 {
   font-weight: 300;
 }
 
-#headerMyVitrine .allHead .linksHead {
-  padding-left: 62px;
+#headerMyVitrine {
+  margin: 0;
+  padding: 0;
 }
-#headerMyVitrine .allHead .linksHead a {
+#headerMyVitrine .allHead {
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+  font-family: Poppins;
+  box-shadow: 0px 3px 6px #dadada;
+}
+#headerMyVitrine .allHead .rightFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#headerMyVitrine .allHead .rightFoot .linksHead {
+  padding-left: 62px;
+  display: flex;
+  align-items: center;
+}
+#headerMyVitrine .allHead .rightFoot .linksHead a {
   font-size: 18px;
   text-decoration: none;
   color: black;
   padding-left: 41px;
 }
-#headerMyVitrine .allHead .buttonsHead {
+#headerMyVitrine .allHead .rightFoot .buttonsHead {
   justify-content: flex-end;
 }
-#headerMyVitrine .allHead .buttonsHead :nth-child(2) {
+#headerMyVitrine .allHead .rightFoot .buttonsHead :nth-child(2) {
   background-color: #a8bfb5;
 }
-#headerMyVitrine .allHead .buttonsHead :first-child {
+#headerMyVitrine .allHead .rightFoot .buttonsHead :first-child {
   background-color: #a65a49;
 }
-#headerMyVitrine .allHead .buttonsHead button {
+#headerMyVitrine .allHead .rightFoot .buttonsHead button {
   border: none;
   color: #ffffff;
   padding: 11px 33px;
@@ -1826,10 +1864,100 @@ h1 {
   font-size: 18px;
   margin: 0 12px;
 }
-#headerMyVitrine img {
+#headerMyVitrine .allHead .rightFoot .closeMenu {
+  display: none;
+  cursor: pointer;
+}
+#headerMyVitrine .allHead img {
   width: 63px;
 }
+#headerMyVitrine .allHead .openMenu {
+  display: none;
+  cursor: pointer;
+}
 
+@media (max-width: 1240px) {
+  #headerMyVitrine .allHead {
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  #headerMyVitrine .allHead img {
+    width: 80px;
+  }
+  #headerMyVitrine .allHead .openMenu {
+    display: block;
+  }
+  #headerMyVitrine .allHead .openMenu i {
+    font-size: 60px;
+  }
+  #headerMyVitrine .allHead button {
+    margin: 12px 0;
+    font-size: 3.5vh;
+    font-weight: 100;
+    border-radius: 8px;
+  }
+  #headerMyVitrine .allHead .rightFoot {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #A65A49;
+    transition: top 1s ease;
+    display: none;
+  }
+  #headerMyVitrine .allHead .rightFoot .linksHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  #headerMyVitrine .allHead .rightFoot .linksHead a {
+    padding: 0;
+    color: #ffffff;
+    font-size: 4.5vh;
+    font-weight: 200;
+    padding: 14px 0;
+  }
+  #headerMyVitrine .allHead .rightFoot .buttonsHead {
+    display: flex;
+    flex-direction: column;
+  }
+  #headerMyVitrine .allHead .rightFoot .buttonsHead :first-child {
+    background-color: #A8BFB5;
+    margin-top: 20px;
+  }
+  #headerMyVitrine .allHead .rightFoot .buttonsHead :nth-child(2) {
+    margin-top: 20px;
+  }
+  #headerMyVitrine .allHead .rightFoot .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+    color: #ffffff;
+  }
+}
+@media (max-width: 1240px) and (max-width: 900px) {
+  #headerMyVitrine .allHead .openMenu i {
+    font-size: 40px;
+  }
+  #headerMyVitrine .allHead .closeMenu i {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  #headerMyVitrine .allHead img {
+    width: 63px;
+  }
+}
 footer {
   background-color: #A8BFB5;
 }
