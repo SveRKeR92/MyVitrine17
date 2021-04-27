@@ -1409,7 +1409,7 @@ a {
 }
 .social-networks img {
   width: 15%;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
 * {
@@ -1831,6 +1831,7 @@ h1 {
   box-shadow: 0px 3px 6px #dadada;
 }
 #headerMyVitrine .allHead .rightFoot {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
