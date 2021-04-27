@@ -54,10 +54,17 @@
 <div class="openMenu"><i class="fa fa-bars"></i></div>
             <div class="rightFoot">
                 <div class="linksHead">
+<<<<<<< HEAD
+                    <a href="">Le concept</a>
+                    <a href="">Les vitrines</a>
+                    <a href="">FAQ</a>
+                    <a href="">Contact</a>
+=======
                     <a href="concept">Le concept</a>
                     <a href="vitrines">Les vitrines</a>
                     <a href="">Exploration</a>
                     <a href="contact">Contact</a>
+>>>>>>> master
                 </div>
 				<div class="closeMenu"><i class="fas fa-times"></i></div>
                 <div class="buttonsHead">
@@ -79,12 +86,12 @@
 			// );
 			?>
 
-			
+
 		</nav><!-- #site-navigation -->
-		
+
 	</header><!-- #masthead -->
 
-	
+
 <script type="text/javascript">
 const rightFoot = document.querySelector('.rightFoot');
 const closeMenu = document.querySelector('.closeMenu');
