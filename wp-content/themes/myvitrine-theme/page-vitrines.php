@@ -119,6 +119,21 @@ get_header();
 
 	<section class="all-vitrines">
 		<h1 class="all-vitrines-title">Toutes les vitrines</h1>
+
+		<?php
+		while ( have_posts() ) :
+			the_post();
+
+			get_template_part( 'template-parts/content', 'page' );
+
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+
+		endwhile; // End of the loop.
+		?>
+		
 	</section>
 
 	</main><!-- #main -->
