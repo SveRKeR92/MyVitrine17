@@ -15,6 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
@@ -27,7 +28,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'myvitrine-theme' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<!-- <div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -44,23 +45,27 @@
 				?>
 				<p class="site-description"><?php echo $myvitrine_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
+		</div>.site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
 		<section id="headerMyVitrine">
         <section class="allHead">
-            <div class="logoHead"><a href="#"><img src="<?php echo get_bloginfo('template_url') ?>/images/NEW_LOGO_6.png" alt=""></a>
+            <div class="logoHead"><a href="../home.php"><img src="<?php echo get_bloginfo('template_url') ?>/images/NEW_LOGO_6.png" alt=""></a>
 </div>
+<div class="openMenu"><i class="fa fa-bars"></i></div>
             <div class="rightFoot">
                 <div class="linksHead">
-                    <a href="">Le concept</a>
-                    <a href="">Les vitrines</a>
-                    <a href="">Exploration</a>
-                    <a href="">Contact</a>
+
+                    <a href="concept">Le concept</a>
+                    <a href="vitrines">Les vitrines</a>
+                    <a href="faq">FAQ</a>
+                    <a href="contact">Contact</a>
+
                 </div>
+				<div class="closeMenu"><i class="fas fa-times"></i></div>
                 <div class="buttonsHead">
-                    <button>Inscription</button>
-                    <button>Connexion</button>
+                    <button class = "inscription"> <a href="inscription">Inscription</a></button>
+                    <button class = "connexion"><a href="login">Connexion</a></button>
                 </div>
             </div>
 
@@ -68,12 +73,37 @@
 		</section>
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'myvitrine-theme' ); ?></button>
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
+			// wp_nav_menu(
+			// 	array(
+			// 		'theme_location' => 'menu-1',
+			// 		'menu_id'        => 'primary-menu',
+			// 		'menu_class' => 'navClass',
+			// 	)
+			// );
 			?>
+
+
 		</nav><!-- #site-navigation -->
+
 	</header><!-- #masthead -->
+
+
+<script type="text/javascript">
+const rightFoot = document.querySelector('.rightFoot');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+
+console.log("bonjour");
+
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+
+function show() {
+    rightFoot.style.display = 'flex';
+    rightFoot.style.top = '0';
+}
+
+function close() {
+    rightFoot.style.top = '-100%';
+}</script>
