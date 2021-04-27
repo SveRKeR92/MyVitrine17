@@ -56,7 +56,7 @@
                 <div class="linksHead">
                     <a href="">Le concept</a>
                     <a href="">Les vitrines</a>
-                    <a href="">Exploration</a>
+                    <a href="">FAQ</a>
                     <a href="">Contact</a>
                 </div>
 				<div class="closeMenu"><i class="fas fa-times"></i></div>
@@ -79,12 +79,12 @@
 			// );
 			?>
 
-			
+
 		</nav><!-- #site-navigation -->
-		
+
 	</header><!-- #masthead -->
 
-	
+
 <script type="text/javascript">
 const rightFoot = document.querySelector('.rightFoot');
 const closeMenu = document.querySelector('.closeMenu');
