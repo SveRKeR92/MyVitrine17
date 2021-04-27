@@ -49,20 +49,27 @@
 		<nav id="site-navigation" class="main-navigation">
 		<section id="headerMyVitrine">
         <section class="allHead">
-            <div class="logoHead"><a href="#"><img src="<?php echo get_bloginfo('template_url') ?>/images/NEW_LOGO_6.png" alt=""></a>
+            <div class="logoHead"><a href="MyVitrine17"><img src="<?php echo get_bloginfo('template_url') ?>/images/NEW_LOGO_6.png" alt=""></a>
 </div>
 <div class="openMenu"><i class="fa fa-bars"></i></div>
             <div class="rightFoot">
                 <div class="linksHead">
+<<<<<<< HEAD
                     <a href="">Le concept</a>
                     <a href="">Les vitrines</a>
                     <a href="">FAQ</a>
                     <a href="">Contact</a>
+=======
+                    <a href="concept">Le concept</a>
+                    <a href="vitrines">Les vitrines</a>
+                    <a href="">Exploration</a>
+                    <a href="contact">Contact</a>
+>>>>>>> master
                 </div>
 				<div class="closeMenu"><i class="fas fa-times"></i></div>
                 <div class="buttonsHead">
-                    <button>Inscription</button>
-                    <button>Connexion</button>
+                    <button class = "inscription"> <a href="inscription">Inscription</a></button>
+                    <button class = "connexion"><a href="login">Connexion</a></button>
                 </div>
             </div>
 
