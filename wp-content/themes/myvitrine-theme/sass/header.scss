@@ -1,0 +1,33 @@
+#headerMyVitrine {
+    .allHead {
+        .linksHead {
+            padding-left: 62px;
+            a {
+                font-size: 18px;
+                text-decoration: none;
+                color: black;
+                padding-left: 41px;
+            }
+        }
+        .buttonsHead {
+            justify-content: flex-end;
+             :nth-child(2) {
+                background-color: #a8bfb5;
+            }
+             :first-child {
+                background-color: #a65a49;
+            }
+            button {
+                border: none;
+                color: #ffffff;
+                padding: 11px 33px;
+                border-radius: 3px;
+                font-size: 18px;
+                margin: 0 12px;
+            }
+        }
+    }
+    img {
+        width: 63px;
+    }
+}

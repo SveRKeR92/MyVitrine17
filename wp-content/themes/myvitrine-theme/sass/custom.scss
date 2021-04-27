@@ -8,7 +8,13 @@
 .brown{
       color: #733B36;
 }
-
+.fa-star{
+      color: #733B36;
+      padding: 10px;
+}
+.fa-instagram{
+      padding-top: 5px;
+}
 .lightgreen{
       color: #A8BFB5;
 }
@@ -73,7 +79,7 @@ a{
       font-weight: 300;
 }
 
-.head-home{  
+.head-home{
       display: flex;
       flex-wrap: wrap;
       width: 90%;
@@ -170,7 +176,7 @@ a{
 
                   .button{
                      padding: 13px 20px;
-                     font-weight: 600;   
+                     font-weight: 600;
                   }
             }
       }
@@ -217,10 +223,10 @@ a{
                               }
                         }
                   }
-                  
+
                   p{
                         font-size: 18px;
-                        font-weight: 600;   
+                        font-weight: 600;
                   }
 
                   .name{
@@ -230,10 +236,10 @@ a{
 
                   span{
                      padding: 10px 25px;
-                     background-color: #733B36;  
+                     background-color: #733B36;
                      color: white;
                      font-size: 18px;
-                     font-weight: 400; 
+                     font-weight: 400;
                      border-radius: 12px;
                      box-shadow: 0 4px 8px rgba($color: #000000, $alpha: 0.25);
                   }
@@ -245,4 +251,4 @@ a{
                   }
             }
       }
-}  
+}

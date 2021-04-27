@@ -19,8 +19,9 @@
 
 	<?php wp_head(); ?>
 </head>
+<?php  $pageName = get_post_field('post_name', get_post()); ?>
+<body <?php body_class($pageName); ?>>
 
-<body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'myvitrine-theme' ); ?></a>
@@ -46,12 +47,32 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
+		<section id="headerMyVitrine">
+        <section class="allHead">
+            <div class="logoHead"><a href="#"><img src="<?php echo get_bloginfo('template_url') ?>/images/NEW_LOGO_6.png" alt=""></a>
+</div>
+            <div class="rightFoot">
+                <div class="linksHead">
+                    <a href="">Le concept</a>
+                    <a href="">Les vitrines</a>
+                    <a href="">Exploration</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="buttonsHead">
+                    <button>Inscription</button>
+                    <button>Connexion</button>
+                </div>
+            </div>
+
+        </section>
+		</section>
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'myvitrine-theme' ); ?></button>
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
+					'menu_class' => 'navClass',
 				)
 			);
 			?>
