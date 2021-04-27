@@ -1341,6 +1341,9 @@ a {
   align-items: center;
   background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
 }
+.contact-header .entry-title {
+  margin-left: 10%;
+}
 .contact-header .wpcf7-form {
   width: 500px;
   height: 600px;
@@ -1406,7 +1409,7 @@ a {
 }
 .social-networks img {
   width: 15%;
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
 * {
