@@ -15,6 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
@@ -54,17 +55,12 @@
 <div class="openMenu"><i class="fa fa-bars"></i></div>
             <div class="rightFoot">
                 <div class="linksHead">
-<<<<<<< HEAD
-                    <a href="">Le concept</a>
-                    <a href="">Les vitrines</a>
-                    <a href="">FAQ</a>
-                    <a href="">Contact</a>
-=======
+
                     <a href="concept">Le concept</a>
                     <a href="vitrines">Les vitrines</a>
-                    <a href="">Exploration</a>
+                    <a href="faq">FAQ</a>
                     <a href="contact">Contact</a>
->>>>>>> master
+
                 </div>
 				<div class="closeMenu"><i class="fas fa-times"></i></div>
                 <div class="buttonsHead">
