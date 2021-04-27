@@ -96,3 +96,30 @@
         }
     }
 }
+
+.vitrines-advised {
+    width: 100%;
+    display: flex;
+    padding: 100px 0;
+
+    .advised {
+        color: #000;
+        text-transform: uppercase;
+        justify-self: center;
+        margin-left: 24%;
+    }
+}
+
+.all-vitrines {
+    width: 100%;
+    background: $reverseGradient;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .all-vitrines-title {
+        color: $green;
+        text-transform: uppercase;
+    }
+}

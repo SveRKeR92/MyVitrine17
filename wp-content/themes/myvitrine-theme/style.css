@@ -1318,6 +1318,31 @@ a {
   color: #fff;
 }
 
+.vitrines-advised {
+  width: 100%;
+  display: flex;
+  padding: 100px 0;
+}
+.vitrines-advised .advised {
+  color: #000;
+  text-transform: uppercase;
+  justify-self: center;
+  margin-left: 24%;
+}
+
+.all-vitrines {
+  width: 100%;
+  background: linear-gradient(to left, #F2EADF, #F2D0BD);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.all-vitrines .all-vitrines-title {
+  color: #A8BFB5;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;

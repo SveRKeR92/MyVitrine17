@@ -113,6 +113,14 @@ get_header();
 			</div>
 	</section>
 
+	<section class="vitrines-advised">
+		<h1 class="advised">Les vitrines recommandées</h1>
+	</section>
+
+	<section class="all-vitrines">
+		<h1 class="all-vitrines-title">Toutes les vitrines</h1>
+	</section>
+
 	</main><!-- #main -->
 
 	<?php get_footer();
