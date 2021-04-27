@@ -2046,5 +2046,28 @@ footer #networksFoot img {
     padding: 20px 0;
   }
 }
+#all404 {
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5%;
+}
+#all404 h1 {
+  color: #a8bfb5;
+  font-size: 68px;
+}
+#all404 h2 {
+  color: #a8bfb5;
+  font-size: 32px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#all404 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  background-color: #A65A49;
+  padding: 25px 30px;
+  border-radius: 13px;
+}
 
 /*# sourceMappingURL=style.css.map */
