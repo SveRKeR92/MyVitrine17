@@ -50,11 +50,12 @@
 		<nav id="site-navigation" class="main-navigation">
 		<section id="headerMyVitrine">
         <section class="allHead">
-            <div class="logoHead"><a href="../../home.php"><img src="<?php echo get_bloginfo('template_url') ?>/images/NEW_LOGO_6.png" alt=""></a>
+            <div class="logoHead"><a href="../home.php"><img src="<?php echo get_bloginfo('template_url') ?>/images/NEW_LOGO_6.png" alt=""></a>
 </div>
 <div class="openMenu"><i class="fa fa-bars"></i></div>
             <div class="rightFoot">
                 <div class="linksHead">
+
                     <a href="concept">Le concept</a>
                     <a href="vitrines">Les vitrines</a>
                     <a href="faq">FAQ</a>
