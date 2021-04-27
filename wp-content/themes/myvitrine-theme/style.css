@@ -1259,11 +1259,68 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.wpcf7-form {
+.contact-header {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
+}
+.contact-header .wpcf7-form {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.contact-header .wpcf7-form input {
+  background-color: #EDEDED;
+  padding: 5px 20px;
+}
+.contact-header .wpcf7-form textarea {
+  background-color: #EDEDED;
+  height: 100px;
+}
+.contact-header .wpcf7-form .wpcf7-submit {
+  background-color: #A8BFB5;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.social-medias {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.social-medias .mail, .social-medias .medias {
+  margin-top: 100px;
+  width: 35%;
+  background: linear-gradient(to right, #F2D0BD, #F2EADF);
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+.social-medias .mail h2, .social-medias .medias h2 {
+  color: #A65A49;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.social-medias .mail a, .social-medias .medias a {
+  text-decoration: underline;
+  color: #A65A49;
+  margin-top: 30px;
+}
+.social-medias .medias {
+  background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
 }
 
 * {
@@ -1558,25 +1615,43 @@ h1 {
   font-weight: 300;
 }
 
-#headerMyVitrine .allHead .linksHead {
-  padding-left: 62px;
+#headerMyVitrine {
+  margin: 0;
+  padding: 0;
 }
-#headerMyVitrine .allHead .linksHead a {
+#headerMyVitrine .allHead {
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+  font-family: Poppins;
+  box-shadow: 0px 3px 6px #dadada;
+}
+#headerMyVitrine .allHead .rightFoot {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#headerMyVitrine .allHead .rightFoot .linksHead {
+  padding-left: 62px;
+  display: flex;
+  align-items: center;
+}
+#headerMyVitrine .allHead .rightFoot .linksHead a {
   font-size: 18px;
   text-decoration: none;
   color: black;
   padding-left: 41px;
 }
-#headerMyVitrine .allHead .buttonsHead {
+#headerMyVitrine .allHead .rightFoot .buttonsHead {
   justify-content: flex-end;
 }
-#headerMyVitrine .allHead .buttonsHead :nth-child(2) {
+#headerMyVitrine .allHead .rightFoot .buttonsHead :nth-child(2) {
   background-color: #a8bfb5;
 }
-#headerMyVitrine .allHead .buttonsHead :first-child {
+#headerMyVitrine .allHead .rightFoot .buttonsHead :first-child {
   background-color: #a65a49;
 }
-#headerMyVitrine .allHead .buttonsHead button {
+#headerMyVitrine .allHead .rightFoot .buttonsHead button {
   border: none;
   color: #ffffff;
   padding: 11px 33px;
@@ -1584,10 +1659,100 @@ h1 {
   font-size: 18px;
   margin: 0 12px;
 }
-#headerMyVitrine img {
+#headerMyVitrine .allHead .rightFoot .closeMenu {
+  display: none;
+  cursor: pointer;
+}
+#headerMyVitrine .allHead img {
   width: 63px;
 }
+#headerMyVitrine .allHead .openMenu {
+  display: none;
+  cursor: pointer;
+}
 
+@media (max-width: 1240px) {
+  #headerMyVitrine .allHead {
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  #headerMyVitrine .allHead img {
+    width: 80px;
+  }
+  #headerMyVitrine .allHead .openMenu {
+    display: block;
+  }
+  #headerMyVitrine .allHead .openMenu i {
+    font-size: 60px;
+  }
+  #headerMyVitrine .allHead button {
+    margin: 12px 0;
+    font-size: 3.5vh;
+    font-weight: 100;
+    border-radius: 8px;
+  }
+  #headerMyVitrine .allHead .rightFoot {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #A65A49;
+    transition: top 1s ease;
+    display: none;
+  }
+  #headerMyVitrine .allHead .rightFoot .linksHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  #headerMyVitrine .allHead .rightFoot .linksHead a {
+    padding: 0;
+    color: #ffffff;
+    font-size: 4.5vh;
+    font-weight: 200;
+    padding: 14px 0;
+  }
+  #headerMyVitrine .allHead .rightFoot .buttonsHead {
+    display: flex;
+    flex-direction: column;
+  }
+  #headerMyVitrine .allHead .rightFoot .buttonsHead :first-child {
+    background-color: #A8BFB5;
+    margin-top: 20px;
+  }
+  #headerMyVitrine .allHead .rightFoot .buttonsHead :nth-child(2) {
+    margin-top: 20px;
+  }
+  #headerMyVitrine .allHead .rightFoot .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+    color: #ffffff;
+  }
+}
+@media (max-width: 1240px) and (max-width: 900px) {
+  #headerMyVitrine .allHead .openMenu i {
+    font-size: 40px;
+  }
+  #headerMyVitrine .allHead .closeMenu i {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  #headerMyVitrine .allHead img {
+    width: 63px;
+  }
+}
 footer {
   background-color: #A8BFB5;
 }
