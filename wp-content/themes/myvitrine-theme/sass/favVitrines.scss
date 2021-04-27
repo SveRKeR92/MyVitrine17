@@ -79,6 +79,8 @@
             background: white;
             border-radius: 19px;
             min-width: 250px;
+            min-height: 300px;
+            margin-top: 100px;
             .wp-block-group__inner-container {
                 display: flex;
                 justify-content: center;
@@ -91,16 +93,22 @@
                     justify-content: center;
                     flex-wrap: nowrap;
                     position: relative;
-                    figure {
+                    .roundImg {
                         margin: 0;
                         position: absolute;
-                        margin-bottom: 1 50px;
+                        top: -85px;
                         img {
                             border-radius: 100%;
                         }
                     }
+                    .instaImg {
+                        margin-right: 20px;
+                    }
                     h3 {
-                        width: 45px;
+                        width: 100%;
+                        margin-top: 20px;
+                        text-align: left;
+                        margin-left: 20px;
                     }
                 }
             }
@@ -108,6 +116,7 @@
                 width: 100%;
                 font-weight: bold;
                 font-size: 18px;
+                height: 25px;
             }
             h4 {
                 width: 100%;
@@ -118,7 +127,7 @@
             p {
                 width: 90%;
                 font-size: 14px;
-                margin-bottom: 30px;
+                ;
             }
             .categoryVitrine {
                 width: 220px;
