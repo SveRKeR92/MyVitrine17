@@ -924,6 +924,15 @@ textarea {
   color: #733B36;
 }
 
+.fa-star {
+  color: #733B36;
+  padding: 10px;
+}
+
+.fa-instagram {
+  padding-top: 5px;
+}
+
 .lightgreen {
   color: #A8BFB5;
 }
@@ -1246,10 +1255,76 @@ a {
   background-image: url("http://localhost/MyVitrine17/wp-content/uploads/2021/04/header-bg-img.png");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-body {
-  background-color: white;
+.header-vitrines::after {
+  content: "";
+  background-color: linear-gradient(to right, #F2EADF, #F2D0BD);
+}
+.header-vitrines .titles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-vitrines .titles h1 {
+  color: #733B36;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.header-vitrines .titles h2 {
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+}
+.header-vitrines .titles h3 {
+  color: #000;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.header-vitrines .head-search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.header-vitrines .head-search h3 {
+  color: #A65A49;
+  font-weight: 400;
+}
+.header-vitrines .head-search form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 80%;
+}
+.header-vitrines .head-search form button {
+  width: 100px;
+  margin-top: 50px;
+}
+.header-vitrines .head-search form .form-main {
+  display: flex;
+  background-color: #A8BFB5;
+  padding: 30px 40px;
+  justify-content: space-around;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+.header-vitrines .head-search form .form-main select {
+  padding: 5px;
+}
+.header-vitrines .head-search form .form-main h2 {
+  margin-top: 11px;
+}
+.header-vitrines .head-search form .form-main div {
+  display: flex;
+  flex-direction: column;
+}
+.header-vitrines .head-search form .form-main div label {
+  color: #fff;
 }
 
 * {
@@ -1265,6 +1340,9 @@ body {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
+}
+.contact-header .entry-title {
+  margin-left: 10%;
 }
 .contact-header .wpcf7-form {
   width: 500px;
@@ -1297,6 +1375,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 .social-medias .mail, .social-medias .medias {
   margin-top: 100px;
@@ -1323,6 +1402,16 @@ body {
   background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
 }
 
+.social-networks {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.social-networks img {
+  width: 15%;
+  padding: 0px 10px;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -1333,77 +1422,126 @@ h1 {
   width: 100%;
 }
 
-.page-id-92 .entry-content {
+.profil-ambassadeur .entry-content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur {
   background: linear-gradient(#F2D2BF, #F2EADE);
   width: 1200px;
   border-radius: 19px;
+  min-height: 320px;
+  margin-bottom: 50px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur figure {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .produitsReco {
+  height: 60px;
+  width: 80%;
+  background: #F2EADF;
+  border-radius: 9px;
+  margin: 30px 0px 30px;
+  display: flex;
+  align-items: center;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .produitsReco .wp-block-group__inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .produitsReco .wp-block-group__inner-container h2 {
+  margin: 0 !important;
+  width: 100%;
+  text-align: center;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column1 figure {
   margin: 0;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur img {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column1 img {
   border-radius: 100%;
   max-width: 100%;
   height: auto;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur h2 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column3 .wp-block-group__inner-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .column3 .wp-block-group__inner-container .produitsReco {
+  height: auto;
+  width: 80%;
+  background: #F2EADF;
+  border-radius: 9px;
+  margin: 30px 0px 30px;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur p {
+  width: 90%;
+}
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur h2 {
   color: #A65A49;
   font-size: 24px;
   font-weight: 600;
   width: 100%;
+  margin: 20px 0 30px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur h3 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur h3 {
   font-weight: 500;
   font-size: 24;
+  margin: 20px 0 20px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag {
   width: 250px;
   height: 35px;
+  margin: 20px 0 20px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 100%;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .wp-block-group__inner-container {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .wp-block-group__inner-container {
   justify-content: center;
   align-items: center;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container h4 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container h4 {
   margin: 0;
   font-size: 18px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag1 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag1 {
   width: 118px;
   height: 32px;
   background: #F0DBE1;
   border-radius: 4px;
 }
-.page-id-92 .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag2 {
+.profil-ambassadeur .entry-content .carteProfilAmbassadeur .groupeTag .wp-block-group__inner-container .tag2 {
   width: 118px;
   height: 32px;
   background: #EBF0DB;
   border-radius: 4px;
 }
-.page-id-92 .noProfil {
+
+.noProduct {
+  min-height: 250px;
   background: linear-gradient(#F2D2BF, #F2EADE);
   border-radius: 19px;
-  width: 70%;
-  height: 252px;
+  width: 1200px;
+  margin-bottom: 60px;
 }
-.page-id-92 .noProfil .wp-block-group__inner-container {
+.noProduct .wp-block-group__inner-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  padding: 10px;
 }
-.page-id-92 .noProfil .wp-block-group__inner-container h2 {
+.noProduct .wp-block-group__inner-container h2 {
   font-size: 36px;
   color: #A65A49;
   text-align: center;
@@ -1413,67 +1551,130 @@ h1 {
   .carteProfilAmbassadeur {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .column3 {
     width: 100% !important;
   }
 }
+@media screen and (max-width: 650px) {
+  * {
+    text-align: center;
+  }
+
+  .groupeTag {
+    width: 100% !important;
+  }
+  .groupeTag .wp-block-group__inner-container {
+    justify-content: space-around !important;
+  }
+
+  .column3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 * {
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.um-page-login {
   margin: 0;
 }
-
-.wp-block-columns {
+.um-page-login .wp-block-columns {
   height: 80vh;
 }
-
-.wp-block-column {
+.um-page-login .wp-block-column {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
-
-.login-register-right {
+.um-page-login .login-register-right {
   background: linear-gradient(#F2D2BF, #F2EADE);
 }
-.login-register-right h2 {
+.um-page-login .login-register-right h2 {
   color: black;
   font-size: 24px;
   font-weight: 500;
   width: 100%;
 }
-.login-register-right .wp-block-button__width-25 {
+.um-page-login .login-register-right .wp-block-button__width-25 {
   width: 210px !important;
 }
-
-.login-register-left h1 {
+.um-page-login .login-register-left h1 {
   color: #A8BFB5;
   font-size: 48px;
   width: 100%;
 }
-.login-register-left .um-row input {
+.um-page-login .login-register-left .um-row input {
   background: #EDEDED !important;
   color: #6C6C6C !important;
 }
-
-.login .um-center .um-button {
+.um-page-login .login .um-center .um-button {
   background: #A8BFB5 !important;
   border-radius: 19px !important;
   min-width: 210px !important;
 }
-
-.register .um-center .um-button {
+.um-page-login .register .um-center .um-button {
   background: #A65A49 !important;
   border-radius: 19px !important;
   min-width: 210px !important;
 }
+.um-page-login .wp-block-button a {
+  background: #A65A49;
+  border-radius: 19px !important;
+  width: 210px !important;
+  padding-left: 0;
+  padding-right: 0;
+}
 
-.wp-block-button a {
+.page-id-57 {
+  margin: 0;
+}
+.page-id-57 .wp-block-columns {
+  height: 80vh;
+}
+.page-id-57 .wp-block-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.page-id-57 .login-register-right {
+  background: linear-gradient(#F2D2BF, #F2EADE);
+}
+.page-id-57 .login-register-right h2 {
+  color: black;
+  font-size: 24px;
+  font-weight: 500;
+  width: 100%;
+}
+.page-id-57 .login-register-right .wp-block-button__width-25 {
+  width: 210px !important;
+}
+.page-id-57 .login-register-left h1 {
+  color: #A8BFB5;
+  font-size: 48px;
+  width: 100%;
+}
+.page-id-57 .login-register-left .um-row input {
+  background: #EDEDED !important;
+  color: #6C6C6C !important;
+}
+.page-id-57 .login .um-center .um-button {
+  background: #A8BFB5 !important;
+  border-radius: 19px !important;
+  min-width: 210px !important;
+}
+.page-id-57 .register .um-center .um-button {
+  background: #A65A49 !important;
+  border-radius: 19px !important;
+  min-width: 210px !important;
+}
+.page-id-57 .wp-block-button a {
   background: #A65A49;
   border-radius: 19px !important;
   width: 210px !important;
@@ -1491,6 +1692,9 @@ h1 {
   width: 100%;
 }
 
+.mes-favoris h2 {
+  margin-bottom: 20px;
+}
 .mes-favoris h3 {
   width: 100%;
   font-weight: bold;
@@ -1784,8 +1988,9 @@ footer #networksFoot {
   justify-content: center;
   padding: 46px 0;
 }
-footer #networksFoot a {
+footer #networksFoot img {
   padding: 0 7px;
+  width: 3%;
 }
 
 /* ---------------RESPONSIVE FOOTER-------------- */
