@@ -1229,6 +1229,44 @@ h1 {
   font-weight: 300;
 }
 
+.favtest .favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(#F2D2BF, #F2EADE);
+  justify-content: space-evenly;
+  padding: 100px 10px 50px;
+}
+.favtest .blocFavori {
+  width: 340px;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 13px;
+  position: relative;
+  min-height: 300px;
+  align-content: center;
+  margin-bottom: 100px;
+}
+.favtest .blocFavori img {
+  width: 155px;
+  height: 155px;
+  border-radius: 100%;
+  position: absolute;
+  top: -75px;
+}
+.favtest .blocFavori h2 {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.favtest .blocFavori p {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
 body {
   margin-bottom: 0 !important;
   height: 100%;
@@ -1999,16 +2037,7 @@ footer #networksFoot img {
 @media (max-width: 940px) {
   footer #contentFoot #AllLinksFoot {
     display: flex;
-<<<<<<< HEAD
     flex-direction: row;
-=======
-    /*justify-content: center;*/
-    justify-content: space-around;
-    padding: 0 5%;
-  }
-  #contentFoot #AllLinksFoot {
-    padding: 0;
->>>>>>> 381654de1f357c7bcf7fca74b97114573cbf419e
   }
   footer #contentFoot #AllLinksFoot #linksFoot {
     flex-direction: column;
