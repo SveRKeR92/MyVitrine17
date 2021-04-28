@@ -1272,39 +1272,28 @@ footer #networksFoot img {
 }
 
 /* ---------------RESPONSIVE FOOTER-------------- */
-@media (max-width: 900px) {
-  #linksFoot a {
-    padding: 0 30px;
+@media (max-width: 940px) {
+  footer #contentFoot #AllLinksFoot {
+    display: flex;
+    flex-direction: row;
+  }
+  footer #contentFoot #AllLinksFoot #linksFoot {
+    flex-direction: column;
+  }
+  footer #contentFoot #AllLinksFoot #linksFoot a {
+    padding: 5px 40px;
+  }
+  footer #contentFoot #networksFoot {
+    padding-bottom: 46px;
+  }
+  footer #contentFoot #networksFoot img {
+    padding: 0 7px;
+    width: 5%;
   }
 }
-@media (max-width: 750px) {
-  #contentFoot {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding: 0 5%;
-  }
-  #contentFoot #AllLinksFoot {
-    padding: 0;
-  }
-  #contentFoot #AllLinksFoot :nth-child(2) {
-    align-items: center;
-  }
-  #contentFoot #AllLinksFoot #linksFoot {
-    padding: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
-  }
-  #contentFoot #AllLinksFoot #linksFoot a {
-    padding: 26px 0;
-  }
-  #contentFoot #networksFoot {
-    flex-direction: column;
-    padding: 0;
-  }
-  #contentFoot #networksFoot a {
-    padding: 20px 0;
+@media (max-width: 640px) {
+  footer #contentFoot #networksFoot img {
+    width: 10%;
   }
 }
 .menu-toggle {
@@ -2004,39 +1993,28 @@ footer #networksFoot img {
 }
 
 /* ---------------RESPONSIVE FOOTER-------------- */
-@media (max-width: 900px) {
-  #linksFoot a {
-    padding: 0 30px;
+@media (max-width: 940px) {
+  footer #contentFoot #AllLinksFoot {
+    display: flex;
+    flex-direction: row;
+  }
+  footer #contentFoot #AllLinksFoot #linksFoot {
+    flex-direction: column;
+  }
+  footer #contentFoot #AllLinksFoot #linksFoot a {
+    padding: 5px 40px;
+  }
+  footer #contentFoot #networksFoot {
+    padding-bottom: 46px;
+  }
+  footer #contentFoot #networksFoot img {
+    padding: 0 7px;
+    width: 5%;
   }
 }
-@media (max-width: 750px) {
-  #contentFoot {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding: 0 5%;
-  }
-  #contentFoot #AllLinksFoot {
-    padding: 0;
-  }
-  #contentFoot #AllLinksFoot :nth-child(2) {
-    align-items: center;
-  }
-  #contentFoot #AllLinksFoot #linksFoot {
-    padding: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
-  }
-  #contentFoot #AllLinksFoot #linksFoot a {
-    padding: 26px 0;
-  }
-  #contentFoot #networksFoot {
-    flex-direction: column;
-    padding: 0;
-  }
-  #contentFoot #networksFoot a {
-    padding: 20px 0;
+@media (max-width: 640px) {
+  footer #contentFoot #networksFoot img {
+    width: 10%;
   }
 }
 #all404 {
