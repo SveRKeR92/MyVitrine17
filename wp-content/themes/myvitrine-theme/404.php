@@ -13,18 +13,18 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<section class="error-404 not-found">
-			
+
 			<section id="all404">
         <h1>ERREUR 404</h1>
         <h2>La page que vous recherchez semble introuvable.</h2>
-        <a href="#">Retour a la page d'accueil.</a>
+        <a href="/MyVitrine17">Retour a la page d'accueil.</a>
     </section>
 
-			
 
-					
 
-					
+
+
+
 
 			</div><!-- .page-content -->
 		</section><!-- .error-404 -->
