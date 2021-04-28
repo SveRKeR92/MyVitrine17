@@ -1977,6 +1977,35 @@ h1 {
 .all-vitrines .all-vitrines-title {
   color: #A8BFB5;
   text-transform: uppercase;
+  align-self: center;
+  padding-left: 33%;
+}
+.all-vitrines .vitrines {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.all-vitrines .vitrines article {
+  display: flex;
+}
+.all-vitrines .vitrines article .elementor-element {
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 200px;
+  min-height: 200px;
+  margin: 0 20px;
+}
+.all-vitrines .vitrines article .elementor-element .elementor-widget-container {
+  border-radius: 30px;
+}
+.all-vitrines .vitrines article h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.all-vitrines .vitrines .elementor-section-wrap {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
 }
 
 body {

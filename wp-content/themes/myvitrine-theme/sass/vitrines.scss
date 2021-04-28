@@ -122,5 +122,41 @@
     .all-vitrines-title {
         color: $green;
         text-transform: uppercase;
+        align-self: center;
+        padding-left: 33%;
+    }
+
+    .vitrines {
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+
+        article {
+            display: flex;
+
+            .elementor-element {
+                max-width: 400px;
+                max-height: 400px;
+                min-width: 200px;
+                min-height: 200px;
+                margin: 0 20px;
+
+                .elementor-widget-container {
+                    border-radius: 30px;
+                }
+            }
+
+            h3 {
+                font-weight: $bold;
+                font-size: 20px;
+            }
+        }
+
+        .elementor-section-wrap {
+            display: flex;
+            width: 90%;
+            justify-content: space-around;
+            //flex-flow: row wrap;
+        }
     }
 }

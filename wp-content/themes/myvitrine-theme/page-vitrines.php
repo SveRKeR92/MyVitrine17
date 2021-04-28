@@ -101,14 +101,16 @@ get_header();
 	<section class="all-vitrines">
 		<h1 class="all-vitrines-title">Toutes les vitrines</h1>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		<div class="vitrines">
+			<?php
+			while ( have_posts() ) :
+				the_post();
 
-			get_template_part( 'template-parts/content', 'vitrines' );
+				get_template_part( 'template-parts/content', 'vitrines' );
 
-		endwhile; // End of the loop.
-		?>
+			endwhile; // End of the loop.
+			?>
+		</div>
 		
 	</section>
 
