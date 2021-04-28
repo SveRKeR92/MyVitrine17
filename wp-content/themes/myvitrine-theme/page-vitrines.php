@@ -96,6 +96,14 @@ get_header();
 
 	<section class="vitrines-advised">
 		<h1 class="advised">Les vitrines recommandées</h1>
+
+		<?php 
+			/*while( have_posts() ) :
+				the_posts();
+
+
+
+			endwhile;*/ ?>
 	</section>
 
 	<section class="all-vitrines">
