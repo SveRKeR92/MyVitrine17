@@ -1160,6 +1160,8 @@ h1 {
   background: white;
   border-radius: 19px;
   min-width: 250px;
+  min-height: 300px;
+  margin-top: 100px;
 }
 .mes-favoris .favVitrine .wp-block-group__inner-container {
   display: flex;
@@ -1175,21 +1177,28 @@ h1 {
   flex-wrap: nowrap;
   position: relative;
 }
-.mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container figure {
+.mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container .roundImg {
   margin: 0;
   position: absolute;
-  margin-bottom: 1 50px;
+  top: -85px;
 }
-.mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container figure img {
+.mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container .roundImg img {
   border-radius: 100%;
 }
+.mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container .instaImg {
+  margin-right: 20px;
+}
 .mes-favoris .favVitrine .headerFavVitrine .wp-block-group__inner-container h3 {
-  width: 45px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 20px;
 }
 .mes-favoris .favVitrine h3 {
   width: 100%;
   font-weight: bold;
   font-size: 18px;
+  height: 25px;
 }
 .mes-favoris .favVitrine h4 {
   width: 100%;
@@ -1200,7 +1209,6 @@ h1 {
 .mes-favoris .favVitrine p {
   width: 90%;
   font-size: 14px;
-  margin-bottom: 30px;
 }
 .mes-favoris .favVitrine .categoryVitrine {
   width: 220px;
@@ -1480,9 +1488,6 @@ footer #networksFoot img {
 }
 #headerMyVitrine .allHead .rightFoot .buttonsHead :nth-child(2) {
   background-color: #a8bfb5;
-}
-#headerMyVitrine .allHead .rightFoot .buttonsHead :first-child {
-  background-color: #a65a49;
 }
 #headerMyVitrine .allHead .rightFoot .buttonsHead button {
   border: none;
