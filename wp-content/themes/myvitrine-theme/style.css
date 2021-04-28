@@ -947,6 +947,9 @@ textarea {
   align-items: center;
   background: linear-gradient(to bottom, #F2D0BD, #F2EADF);
 }
+.contact-header .contact-title {
+  padding-top: 2%;
+}
 .contact-header .entry-title {
   margin-left: 10%;
 }
@@ -1996,16 +1999,7 @@ footer #networksFoot img {
 @media (max-width: 940px) {
   footer #contentFoot #AllLinksFoot {
     display: flex;
-<<<<<<< HEAD
     flex-direction: row;
-=======
-    /*justify-content: center;*/
-    justify-content: space-around;
-    padding: 0 5%;
-  }
-  #contentFoot #AllLinksFoot {
-    padding: 0;
->>>>>>> 381654de1f357c7bcf7fca74b97114573cbf419e
   }
   footer #contentFoot #AllLinksFoot #linksFoot {
     flex-direction: column;
