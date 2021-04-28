@@ -2012,7 +2012,7 @@ footer #networksFoot img {
 @media (max-width: 750px) {
   #contentFoot {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     justify-content: space-around;
     padding: 0 5%;
   }
