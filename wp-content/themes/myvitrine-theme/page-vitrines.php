@@ -98,12 +98,12 @@ get_header();
 		<h1 class="advised">Les vitrines recommandées</h1>
 
 		<?php 
-			/*while( have_posts() ) :
-				the_posts();
+			while( have_posts() ) :
+				the_post();
 
+				get_template_part('template-parts/content', 'filter');
 
-
-			endwhile;*/ ?>
+			endwhile; ?>
 	</section>
 
 	<section class="all-vitrines">

@@ -1963,11 +1963,35 @@ h1 {
   width: 100%;
   display: flex;
   padding: 100px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.vitrines-advised .vitrines-posts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vitrines-advised .vitrines-posts .vit {
+  margin: 20px 50px;
+  background-color: #A8BFB5;
+  padding: 30px;
+  border-radius: 30px;
+}
+.vitrines-advised .vitrines-posts .vit .medias {
+  display: flex;
+}
+.vitrines-advised .vitrines-posts .vit .medias img {
+  transform: scale(0.75);
+  border-radius: 50%;
+}
+.vitrines-advised .vitrines-posts .vit .title {
+  color: #fff;
 }
 .vitrines-advised .advised {
   color: #000;
   text-transform: uppercase;
   justify-self: center;
+  align-self: center;
   margin-left: 24%;
 }
 
