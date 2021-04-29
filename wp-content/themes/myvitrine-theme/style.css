@@ -1307,6 +1307,9 @@ h1 {
   font-weight: 300;
 }
 
+.favtest article {
+  margin-bottom: 0;
+}
 .favtest .favorites-list {
   display: flex;
   flex-wrap: wrap;
@@ -1535,7 +1538,6 @@ footer #networksFoot img {
   }
   #headerMyVitrine .allHead .rightFoot .buttonsHead :first-child {
     background-color: #A8BFB5;
-    margin-top: 20px;
   }
   #headerMyVitrine .allHead .rightFoot .buttonsHead :nth-child(2) {
     margin-top: 20px;
@@ -1637,6 +1639,10 @@ footer #networksFoot img {
     font-weight: 100;
     border-radius: 8px;
   }
+  #headerMyVitrine .allHead button .inscription a {
+    margin-top: 0 !important;
+    color: red;
+  }
   #headerMyVitrine .allHead .rightFoot {
     height: 100vh;
     position: fixed;
@@ -1671,7 +1677,6 @@ footer #networksFoot img {
   }
   #headerMyVitrine .allHead .rightFoot .buttonsHead :first-child {
     background-color: #A8BFB5;
-    margin-top: 20px;
   }
   #headerMyVitrine .allHead .rightFoot .buttonsHead :nth-child(2) {
     margin-top: 20px;
@@ -1983,6 +1988,15 @@ h1 {
     justify-content: center;
   }
 }
+.profil-vitrines-template main {
+  width: 1200px;
+  background: linear-gradient(#F2D2BF, #F2EADE);
+  display: flex;
+}
+.profil-vitrines-template main article {
+  display: flex;
+}
+
 * {
   margin: 0;
   padding: 0;
