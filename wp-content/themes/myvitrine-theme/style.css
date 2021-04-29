@@ -2012,6 +2012,7 @@ h1 {
   color: #733B36;
   text-transform: uppercase;
   font-size: 50px;
+  padding-left: 40%;
 }
 .header-vitrines .titles h2 {
   color: black;
@@ -2064,6 +2065,105 @@ h1 {
 }
 .header-vitrines .head-search form .form-main div label {
   color: #fff;
+}
+
+.vitrines-advised {
+  width: 100%;
+  display: flex;
+  padding: 100px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.vitrines-advised .vitrines-posts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vitrines-advised .vitrines-posts .vit {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px;
+  background-color: #A8BFB5;
+  padding: 30px;
+  border-radius: 30px;
+}
+.vitrines-advised .vitrines-posts .vit .medias {
+  display: flex;
+}
+.vitrines-advised .vitrines-posts .vit .medias img {
+  transform: scale(0.75);
+  border-radius: 50%;
+}
+.vitrines-advised .vitrines-posts .vit .title {
+  color: #fff;
+}
+.vitrines-advised .advised {
+  color: #000;
+  text-transform: uppercase;
+  justify-self: center;
+  align-self: center;
+  margin-left: 24%;
+}
+
+.all-vitrines {
+  width: 100%;
+  display: flex;
+  padding: 100px 0;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to left, #F2EADF, #F2D0BD);
+}
+.all-vitrines .vitrines-posts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.all-vitrines .vitrines-posts .vit {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  margin: 20px 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  align-items: center;
+}
+.all-vitrines .vitrines-posts .vit .medias {
+  display: flex;
+  justify-content: space-around;
+}
+.all-vitrines .vitrines-posts .vit .medias i {
+  margin: 0 20px;
+}
+.all-vitrines .vitrines-posts .vit .medias img {
+  transform: scale(0.75);
+  border-radius: 50%;
+}
+.all-vitrines .vitrines-posts .vit .below {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-vitrines .vitrines-posts .vit .below button {
+  background-color: #A65A49;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px #58555A;
+  border: none;
+}
+.all-vitrines .vitrines-posts .vit .below button a {
+  text-decoration: none;
+  color: #fff;
+}
+.all-vitrines .vitrines-posts .vit .title {
+  color: #fff;
+}
+.all-vitrines .all-vitrines-title {
+  color: #A8BFB5;
+  text-transform: uppercase;
+  align-self: center;
+  padding-left: 33%;
 }
 
 body {
