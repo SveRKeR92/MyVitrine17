@@ -2418,6 +2418,7 @@ footer #networksFoot img {
   border-radius: 15px;
   width: 50%;
   margin: 15% auto;
+  overflow: auto;
 }
 .page-id-62 .modal .close {
   color: #A8BFB5;
@@ -2501,7 +2502,7 @@ footer #networksFoot img {
 }
 .page-id-62 .profile-container .categories {
   float: right;
-  width: min-content;
+  width: fit-content;
   padding: 12px 25px;
   background-color: #A8BFB5;
   color: white;

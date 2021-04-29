@@ -47,7 +47,8 @@
                   padding: 40px;
                   border-radius: 15px;
                   width: 50%;   
-                  margin: 15% auto;              
+                  margin: 15% auto;    
+                  overflow: auto;          
             }
 
             .close{
@@ -148,7 +149,7 @@
 
             .categories{
                  float: right;
-                 width: min-content;
+                 width: fit-content;
                  padding: 12px 25px;
                  background-color: #A8BFB5;
                  color: white;

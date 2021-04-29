@@ -20,7 +20,7 @@ function update_user_infos()
             $input["value"] = 'https://www.instagram.com/' . $input["value"];
             echo $input["value"];
         }
-        if(isset($infos[$input["name"]])){
+        if(isset($infos[$input["name"]]) && $infos[$input["name"]] != ""){
             update_user_meta($user->ID, $input["name"], $input["value"]);
         }else{
             add_user_meta($user->ID, $input["name"], $input["value"]);
