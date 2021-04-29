@@ -1926,8 +1926,14 @@ h1 {
   width: 80%;
 }
 .header-vitrines .head-search form button {
-  width: 100px;
-  margin-top: 50px;
+  width: 130px;
+  margin: 50px 0;
+  background-color: #A65A49;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  align-self: center;
+  cursor: pointer;
 }
 .header-vitrines .head-search form .form-main {
   display: flex;
@@ -1986,7 +1992,7 @@ h1 {
   text-transform: uppercase;
   justify-self: center;
   align-self: center;
-  margin-left: 24%;
+  padding-left: 24%;
 }
 
 .all-vitrines {
@@ -2041,7 +2047,7 @@ h1 {
   color: #fff;
 }
 .all-vitrines .vitrines-posts .vit .title {
-  color: #fff;
+  color: #000;
 }
 .all-vitrines .all-vitrines-title {
   color: #A8BFB5;
