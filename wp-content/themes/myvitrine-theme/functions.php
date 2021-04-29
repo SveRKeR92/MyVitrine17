@@ -147,6 +147,7 @@ function myvitrine_theme_scripts() {
 	wp_enqueue_script('myvitrine-theme-navigation', get_stylesheet_directory_uri() . '/js/burger.js');
 
 	wp_enqueue_script( 'myvitrine-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'myvitrine-theme-filter', get_template_directory_uri() . '/js/filter.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -186,20 +187,67 @@ require get_template_directory() . '/inc/custom-functions.php';
 /**
 * Customize the Favorites Listing HTML
 */
-add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
+/*add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
 function custom_favorites_listing_html($html, $markup_template, $post_id, $list_options)
 {
 	ob_start();
 	$data = get_post($post_id);
-	
+	var_dump($data->post_category);
+	$age = get_post_meta( get_the_ID(), 'age', true);
+	$ville = get_post_meta( get_the_ID(), 'ville', true);
 ?>
-<div class = blocFavori>
+<div id = "post-<?php the_ID(); ?>" class = blocFavori>
 	<img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="">
-	<h2> <?php echo $data->post_title; ?></h2>
+	<a href="<?php echo 'http://localhost/MyVitrine17/profil-vitrines/' ?>"> <?php echo $data->post_title; ?></a>
 	<p><?php echo $data->post_content; ?></p>
+	<?php if(!empty($age)) {
+		?> <p><?=$age?></p>
+		<?php } ?>
+	
+	<p></p>
 	<!-- <button class = simplefavorite-button active preset ></button> -->
 </div>
 <?php
 	return ob_get_clean();
-	
+}*/
+
+add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
+function custom_favorites_listing_html($html, $markup_template, $post_id, $list_options)
+{
+	ob_start();
+
+	$vitrines = array(
+		'post_type' => 'profil-vitrines',
+		'post_per_page' => -1,
+		'order_by' => 'date',
+		'order' => 'ASC'
+	);
+
+	$query = new WP_Query($vitrines);
+
+	$age = get_post_meta( get_the_ID(), 'age', true);
+	$ville = get_post_meta( get_the_ID(), 'ville', true);
+?>
+
+<div class="all-fav">
+
+ <?php if($query->have_posts()) :
+		while($query->have_posts()) : $query->the_post(); ?>
+
+		<div id="post-<?php the_ID(); ?>" class="blocFavori">
+			<?php the_post_thumbnail('medium'); ?>
+			<a href="#"><?= the_title(); ?></a>
+			<p><?= the_content(); ?></p>
+			<?php if(!empty($age) || !empty($ville)) : ?>
+				<p><?= $age ?></p>
+				<p><?= $ville ?></p>
+			<?php endif; ?>
+		</div>
+		<?php endwhile;
+	endif; ?>
+
+</div>
+
+<?php
+	return ob_get_clean();
 }

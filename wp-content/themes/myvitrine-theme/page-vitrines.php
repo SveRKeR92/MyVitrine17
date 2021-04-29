@@ -26,6 +26,7 @@ get_header();
 
 			<div class="head-search">
 				<h3>Que recherchez vous ?</h3>
+<<<<<<< HEAD
 				<form action="#">
 					<div class="form-main">
 
@@ -91,6 +92,9 @@ get_header();
 
 
 				</form>
+=======
+				<?php get_template_part('template-parts/content', 'filter') ?>
+>>>>>>> master
 			</div>
             <button class="valide-btn" type="submit">Valider</button>
 	</section>
@@ -102,7 +106,7 @@ get_header();
 			while( have_posts() ) :
 				the_post();
 
-				get_template_part('template-parts/content', 'none');
+				get_template_part('template-parts/content', get_post_type() );
 
 			endwhile; ?>
 	</section>

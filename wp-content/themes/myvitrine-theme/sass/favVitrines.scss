@@ -148,6 +148,9 @@
     }
     
     .favtest {
+        article {
+            margin-bottom: 0;
+        }
         .favorites-list {
             display: flex;
             flex-wrap: wrap;
