@@ -67,16 +67,6 @@
             margin-top: 30px;
             width: 80%;
 
-            button {
-                width: 130px;
-                margin: 50px 0;
-                background-color: $softBrown;
-                border: none;
-                color: #fff;
-                padding: 10px 20px;
-                align-self: center;
-                cursor: pointer;
-            }
 
             .form-main {
                 display: flex;
@@ -107,11 +97,12 @@
     }
 }
 .valide-btn{
-    padding: 2% 4%;
+    padding: 20px 55px;
     background-color: #A65A49;
     color: white;
-    font-family: Poppins;
+    font-family: $poppins;
     margin: 20px 0;
+    border-radius: 5px;
 }
 .vitrines-advised {
     width: 100%;
@@ -153,11 +144,8 @@
         text-transform: uppercase;
         justify-self: center;
         align-self: center;
-<<<<<<< HEAD
 
-=======
         padding-left: 24%;
->>>>>>> master
     }
 }
 
@@ -269,7 +257,7 @@
     }
 
 }
-@media (max-width: 900px){
+@media (max-width: 400px){
     .all-vitrines{
         .vitrines-posts{
             .vit{
@@ -278,5 +266,13 @@
             }
         }
 
+    }
+    .valide-btn{
+        padding: 4% 8%;
+        background-color: #A65A49;
+        color: white;
+        font-family: $poppins;
+        margin: 20px 0;
+        border-radius: 5px;
     }
 }
