@@ -187,7 +187,7 @@ require get_template_directory() . '/inc/custom-functions.php';
 /**
 * Customize the Favorites Listing HTML
 */
-add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
+/*add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
 function custom_favorites_listing_html($html, $markup_template, $post_id, $list_options)
 {
 	ob_start();
@@ -209,5 +209,45 @@ function custom_favorites_listing_html($html, $markup_template, $post_id, $list_
 </div>
 <?php
 	return ob_get_clean();
-	
+}*/
+
+add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
+function custom_favorites_listing_html($html, $markup_template, $post_id, $list_options)
+{
+	ob_start();
+
+	$vitrines = array(
+		'post_type' => 'profil-vitrines',
+		'post_per_page' => -1,
+		'order_by' => 'date',
+		'order' => 'ASC'
+	);
+
+	$query = new WP_Query($vitrines);
+
+	$age = get_post_meta( get_the_ID(), 'age', true);
+	$ville = get_post_meta( get_the_ID(), 'ville', true);
+?>
+
+<div class="all-fav">
+
+ <?php if($query->have_posts()) :
+		while($query->have_posts()) : $query->the_post(); ?>
+
+		<div id="post-<?php the_ID(); ?>" class="blocFavori">
+			<?php the_post_thumbnail('medium'); ?>
+			<a href="#"><?= the_title(); ?></a>
+			<p><?= the_content(); ?></p>
+			<?php if(!empty($age) || !empty($ville)) : ?>
+				<p><?= $age ?></p>
+				<p><?= $ville ?></p>
+			<?php endif; ?>
+		</div>
+		<?php endwhile;
+	endif; ?>
+
+</div>
+
+<?php
+	return ob_get_clean();
 }

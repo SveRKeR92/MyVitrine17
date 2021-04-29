@@ -6,8 +6,7 @@
         'post_type' => 'profil-vitrines',
         'posts_per_page' => -1,
         'order_by' => 'date',
-        'order' => 'desc',
-        'age' => 23
+        'order' => 'desc'
     );
 
     $query = new WP_Query($vitrines);
