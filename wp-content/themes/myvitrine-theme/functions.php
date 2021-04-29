@@ -191,12 +191,19 @@ function custom_favorites_listing_html($html, $markup_template, $post_id, $list_
 {
 	ob_start();
 	$data = get_post($post_id);
-	
+	var_dump($data->post_category);
+	$age = get_post_meta( get_the_ID(), 'age', true);
+	$ville = get_post_meta( get_the_ID(), 'ville', true);
 ?>
-<div class = blocFavori>
+<div id = "post-<?php the_ID(); ?>" class = blocFavori>
 	<img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="">
-	<h2> <?php echo $data->post_title; ?></h2>
+	<a href="<?php echo 'http://localhost/MyVitrine17/profil-vitrines/' ?>"> <?php echo $data->post_title; ?></a>
 	<p><?php echo $data->post_content; ?></p>
+	<?php if(!empty($age)) {
+		?> <p><?=$age?></p>
+		<?php } ?>
+	
+	<p></p>
 	<!-- <button class = simplefavorite-button active preset ></button> -->
 </div>
 <?php
