@@ -182,3 +182,24 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 require get_template_directory() . '/inc/custom-functions.php';
+
+/**
+* Customize the Favorites Listing HTML
+*/
+add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
+function custom_favorites_listing_html($html, $markup_template, $post_id, $list_options)
+{
+	ob_start();
+	$data = get_post($post_id);
+	
+?>
+<div class = blocFavori>
+	<img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="">
+	<h2> <?php echo $data->post_title; ?></h2>
+	<p><?php echo $data->post_content; ?></p>
+	<!-- <button class = simplefavorite-button active preset ></button> -->
+</div>
+<?php
+	return ob_get_clean();
+	
+}
