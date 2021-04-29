@@ -20,12 +20,13 @@ get_header();
 		<section class="header-vitrines">
 			<div class="titles">
 				<h1>My Vitrine</h1>
-				<h2>Lorem ipsum dolor sit amet.</h2>
-				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum.</h3>
+				<h2>Une solution pour tous </h2>
+				<h3>Ce produit est-il vraiment bien, est-il efficace ? </h3>
 			</div>
 
 			<div class="head-search">
 				<h3>Que recherchez vous ?</h3>
+
 				<form action="#">
 					<div class="form-main">
 
@@ -37,25 +38,6 @@ get_header();
 							<label for="ambassadeur">Nom de l'ambassadrice:</label>
 							<input type="text" id="ambassadeur" placeholder="Entrez le nom...">
 						</div>
-
-						<!-- <div>
-							<label for="categories">Catégorie produit:</label>
-							<select name="categories" id="categories">
-								<option value="">Catégorie de produits</option>
-								<option value="face">Soins visages</option>
-								<option value="hair">Soins cheveux</option>
-								<option value="body">Soins corps</option>
-								<option value="hygiène">Hygiène</option>
-								<option value="make-up">Maquillage</option>
-								<option value="food">Complément alimentaire</option>
-								<option value="ecology">Zéro déchet</option>
-								<option value="jewels">Bijoux</option>
-								<option value="yoga">Yoga</option>
-								<option value="home">Bien-être maison</option>
-								<option value="deco">Décoration</option>
-								<option value="other">Autre produit</option>
-							</select>
-						</div> -->
 
 						<div>
 							<label for="city">Ville:</label>
@@ -108,9 +90,37 @@ get_header();
 							</select>
 						</div>
 
-					<button type="submit">Valider</button>
+
 				</form>
+
 			</div>
+            <button class="valide-btn" type="submit">Valider</button>
+	</section>
+
+	<section class="vitrines-advised">
+		<h2 class="advised">Les vitrines recommandées</h2>
+
+		<?php
+			while( have_posts() ) :
+				the_post();
+
+				get_template_part('template-parts/content', get_post_type() );
+
+			endwhile; ?>
+	</section>
+
+	<section class="all-vitrines">
+		<h1 class="all-vitrines-title">Toutes les vitrines</h1>
+
+			<?php
+			while ( have_posts() ) :
+				the_post();
+
+				get_template_part( 'template-parts/content', 'vitrines' );
+
+			endwhile; // End of the loop.
+			?>
+
 	</section>
 
 	</main><!-- #main -->

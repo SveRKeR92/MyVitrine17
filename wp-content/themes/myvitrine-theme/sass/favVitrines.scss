@@ -146,3 +146,46 @@
             }
         }
     }
+    
+    .favtest {
+        article {
+            margin-bottom: 0;
+        }
+        .favorites-list {
+            display: flex;
+            flex-wrap: wrap;
+            background: linear-gradient(#F2D2BF, #F2EADE);
+            justify-content: space-evenly;
+            padding: 100px 10px 50px;
+        }
+        .blocFavori {
+            width: 340px;
+            background: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-radius: 13px;
+            position: relative;
+            min-height: 300px;
+            align-content: center;
+            margin-bottom: 100px;
+            img {
+                width: 155px;
+                height: 155px;
+                border-radius: 100%;
+                position: absolute;
+                top: -75px;
+            }
+            h2 {
+                text-align: center;
+                font-size: 18px;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }

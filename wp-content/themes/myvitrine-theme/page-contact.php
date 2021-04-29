@@ -18,6 +18,7 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<section class="contact-header">
+            <h2 class="contact-title">CONTACTEZ-NOUS !</h2>
         <?php
 		while ( have_posts() ) :
 			the_post();
