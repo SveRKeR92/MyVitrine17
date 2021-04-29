@@ -60,10 +60,10 @@ if(!isset($infos["profile_created"])){
             </div>
             <div>
                   <span class="nproducts">Nombre de produits recommandés</span>
-                  <p class="desc"><?= $infos["description"][0] != "" ? $infos["description"][0] : "Vous n'avez pas de description" ?></p>
-                  <button id="edit"><i class="fas fa-edit fa-2x"></i></button>
+                  <p class="desc"><?= $infos["description"][0] != "" ? $infos["description"][0] : "Vous n'avez pas de description" ?></p>        
             </div>
       </div>
+      <button id="edit"><i class="fas fa-edit fa-2x"></i></button>
 </div>
 
 <?php
