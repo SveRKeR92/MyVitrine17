@@ -8,7 +8,7 @@
 }
 
 .header-vitrines {
-    background-image: url("http://localhost/MyVitrine17/wp-content/uploads/2021/04/header-bg-img.png");
+    background-image: url("http://localhost/MyVitrine17/wp-content/uploads/2021/04/fond.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -30,19 +30,22 @@
             color: $brown;
             text-transform: uppercase;
             font-size: 50px;
-            padding-left: 40%;
+            text-align: center;
         }
 
         h2 {
             color: black;
             font-weight: 500;
             font-size: 30px;
+
         }
 
         h3 {
             color: #000;
             font-weight: 400;
             margin-top: 50px;
+            text-align: center;
+            font-size: 1.3em;
         }
     }
 
@@ -97,7 +100,13 @@
         }
     }
 }
-
+.valide-btn{
+    padding: 2% 4%;
+    background-color: #A65A49;
+    color: white;
+    font-family: Poppins;
+    margin: 20px 0;
+}
 .vitrines-advised {
     width: 100%;
     display: flex;
@@ -128,17 +137,17 @@
             }
 
             .title {
-                color: #fff;
+                color: black;
             }
         }
     }
 
     .advised {
-        color: #000;
+        color:#733B36;
         text-transform: uppercase;
         justify-self: center;
         align-self: center;
-        margin-left: 24%;
+
     }
 }
 
@@ -210,5 +219,54 @@
         text-transform: uppercase;
         align-self: center;
         padding-left: 33%;
+    }
+}
+
+@media (max-width: 900px){
+    .form-main{
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 50px;
+        margin: auto;
+        text-align: center;
+    }
+    h3{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .all-vitrines{
+        .vitrines-posts{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .vit{
+                width: 50%;
+
+                .title{
+                    color: #0b0b0b;
+
+                }
+            }
+        }
+        .all-vitrines-title{
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+
+}
+@media (max-width: 900px){
+    .all-vitrines{
+        .vitrines-posts{
+            .vit{
+                width: 80%;
+                margin: 10px auto;
+            }
+        }
+
     }
 }

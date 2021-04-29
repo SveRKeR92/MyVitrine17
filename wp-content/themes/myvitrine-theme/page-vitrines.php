@@ -20,8 +20,8 @@ get_header();
 		<section class="header-vitrines">
 			<div class="titles">
 				<h1>My Vitrine</h1>
-				<h2>Lorem ipsum dolor sit amet.</h2>
-				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam elementum.</h3>
+				<h2>Une solution pour tous </h2>
+				<h3>Ce produit est-il vraiment bien, est-il efficace ? </h3>
 			</div>
 
 			<div class="head-search">
@@ -89,15 +89,16 @@ get_header();
 							</select>
 						</div>
 
-					<button type="submit">Valider</button>
+
 				</form>
 			</div>
+            <button class="valide-btn" type="submit">Valider</button>
 	</section>
 
 	<section class="vitrines-advised">
-		<h1 class="advised">Les vitrines recommandées</h1>
+		<h2 class="advised">Les vitrines recommandées</h2>
 
-		<?php 
+		<?php
 			while( have_posts() ) :
 				the_post();
 
@@ -117,7 +118,7 @@ get_header();
 
 			endwhile; // End of the loop.
 			?>
-		
+
 	</section>
 
 	</main><!-- #main -->

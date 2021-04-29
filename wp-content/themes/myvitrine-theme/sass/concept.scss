@@ -2,6 +2,7 @@
 
       h2 {
             margin-bottom: 70px;
+            padding: 2%;
       }
 
       .wp-block-image {
@@ -14,6 +15,14 @@
             font-size: 24px;
             font-weight: 500;
             box-shadow: 0 4px 8px rgba($color: #000000, $alpha: 0.25);
+      }
+      .wp-block-button__link.has-black-color.has-text-color.has-background {
+            margin: 10px;
+      }
+      .wp-block-columns{
+            width: 80%;
+            margin: auto;
+            justify-content: center;
       }
 
 
