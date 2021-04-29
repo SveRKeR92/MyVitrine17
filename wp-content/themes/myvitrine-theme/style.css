@@ -2497,6 +2497,13 @@ footer #networksFoot img {
   color: black;
   text-decoration: none;
 }
+.page-id-62 .profile-container #edit {
+  background-color: transparent;
+  border: none;
+  float: right;
+  position: relative;
+  top: -15px;
+}
 .page-id-62 .profile-container #edit:hover {
   cursor: pointer;
 }

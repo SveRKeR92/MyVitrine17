@@ -43,7 +43,7 @@ if(!isset($infos["profile_created"])){
 ?>
 
 <div class="profile-container">
-      <div class="flex">
+<div class="flex">
             <div>
                   <div class="flex">
                         <div>
