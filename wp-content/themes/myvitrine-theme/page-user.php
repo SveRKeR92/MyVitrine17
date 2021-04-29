@@ -43,28 +43,27 @@ if(!isset($infos["profile_created"])){
 ?>
 
 <div class="profile-container">
-      <div class="flex">
+<div class="flex">
             <div>
                   <div class="flex">
                         <div>
                               <img src="<?= $infos["profile_picture_url"][0] ?>" alt="image de profil">
                         </div>
                         <div>
-                              <p class="heading"><?= $infos["first_name"][0] ?>  <?= $infos["last_name"][0] ?></p>
-                              <p class="detail"><?= $infos["birth_date"][0] ?></p>
-                              <p class="detail"><?= $infos["city"][0] ?></p>
+                              <p class="heading"><?= $infos["first_name"][0] != "" ? $infos["first_name"][0] : "Prénom manquant" ?>  <?= $infos["last_name"][0] != "" ? $infos["last_name"][0] : "Nom manquant"?></p>
+                              <p class="detail"><?= $infos["birth_date"][0] != "" ? $infos["birth_date"][0] : "Age manquant" ?></p>
+                              <p class="detail"><?= $infos["city"][0] != "" ? $infos["city"][0] : "Ville manquante" ?></p>
                               <a href="<?= $infos["instagram"][0] ?>" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
                         </div>
                   </div>
-                  <div class="categories"><?= $infos["product_category"][0] ?></div>
+                  <div class="categories"><?= $infos["product_category"][0] != "" ? $infos["product_category"][0] : "Vous n'avez pas défini de catégorie" ?></div>
             </div>
             <div>
                   <span class="nproducts">Nombre de produits recommandés</span>
-                  <p class="desc"><?= $infos["description"][0] ?></p>
+                  <p class="desc"><?= $infos["description"][0] != "" ? $infos["description"][0] : "Vous n'avez pas de description" ?></p>
+                  <button id="edit"><i class="fas fa-edit fa-2x"></i></button>
             </div>
       </div>
-
-      <button id="edit"><i class="fas fa-edit fa-2x"></i></button>
 </div>
 
 <?php
