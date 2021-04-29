@@ -1,32 +1,39 @@
-<?php
-/**
- * Template part for displaying page content in page.php
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package MyVitrine_Theme
- */
+<div class="vitrines-posts">
 
-?>
+    <?php
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+    $vitrines = array(
+        'post_type' => 'profil-vitrines',
+        'posts_per_page' => -1,
+        'order_by' => 'date',
+        'order' => 'desc'
+    );
 
-	<?php myvitrine_theme_post_thumbnail(); ?>
+    $vitrine_id = get_the_ID();
+    $vitrines_terms = wp_get_post_terms( $vitrine_id, ['category', 'post_tag'] );
 
-	<div class="entry-content">
-		<?php
-		the_content();
+    $query = new WP_Query($vitrines);
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'myvitrine-theme' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+    if($query->have_posts()) :
+        while($query->have_posts()) : $query->the_post();?>
 
-</article><!-- #post-<?php the_ID(); ?> -->
+            <div class="vit">
+                <div class="medias">
+                    <a href="#"><i class="far fa-star fa-2x"></i></a>
+                    <?php the_post_thumbnail('medium'); ?>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+                
+                <div class="below">
+                    <?php the_title('<h2 class="title">', '</h2>'); ?>
+                    <?php the_content(); ?>
+                    <button><a href="#">Catégorie</a></button>
+                </div>
+            </div>
+
+        <?php endwhile;
+    endif;
+    wp_reset_postdata();
+    ?>
+
+</div>

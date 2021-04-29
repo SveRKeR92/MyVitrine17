@@ -111,6 +111,8 @@
         flex-wrap: wrap;
 
         .vit {
+            display: flex;
+            flex-direction: column;
             margin: 20px 50px;
             background-color: $green;
             padding: 30px;
@@ -142,50 +144,71 @@
 
 .all-vitrines {
     width: 100%;
-    background: $reverseGradient;
     display: flex;
+    padding: 100px 0;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background: $reverseGradient;
+
+    .vitrines-posts {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .vit {
+            display: flex;
+            width: 25%;
+            flex-direction: column;
+            margin: 20px 50px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 30px;
+            align-items: center;
+
+            .medias {
+                display: flex;
+                justify-content: space-around;
+
+                 i {
+                    margin: 0 20px;
+                 }
+
+                img {
+                    transform: scale(0.75);
+                    border-radius: 50%;
+                }
+            }
+
+            .below {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                button {
+                    background-color: $softBrown;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    box-shadow: 0px 5px 10px #58555A;
+                    border: none;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .title {
+                color: #fff;
+            }
+        }
+    }
 
     .all-vitrines-title {
         color: $green;
         text-transform: uppercase;
         align-self: center;
         padding-left: 33%;
-    }
-
-    .vitrines {
-        width: 90%;
-        display: flex;
-        flex-flow: row wrap;
-
-        article {
-            display: flex;
-
-            .elementor-element {
-                max-width: 400px;
-                max-height: 400px;
-                min-width: 200px;
-                min-height: 200px;
-                margin: 0 20px;
-
-                .elementor-widget-container {
-                    border-radius: 30px;
-                }
-            }
-
-            h3 {
-                font-weight: $bold;
-                font-size: 20px;
-            }
-        }
-
-        .elementor-section-wrap {
-            display: flex;
-            width: 90%;
-            justify-content: space-around;
-            //flex-flow: row wrap;
-        }
     }
 }

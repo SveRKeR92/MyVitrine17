@@ -101,7 +101,7 @@ get_header();
 			while( have_posts() ) :
 				the_post();
 
-				get_template_part('template-parts/content', 'filter');
+				get_template_part('template-parts/content', 'none');
 
 			endwhile; ?>
 	</section>
@@ -109,7 +109,6 @@ get_header();
 	<section class="all-vitrines">
 		<h1 class="all-vitrines-title">Toutes les vitrines</h1>
 
-		<div class="vitrines">
 			<?php
 			while ( have_posts() ) :
 				the_post();
@@ -118,7 +117,6 @@ get_header();
 
 			endwhile; // End of the loop.
 			?>
-		</div>
 		
 	</section>
 
