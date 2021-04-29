@@ -29,7 +29,7 @@
 
 	</div>
 
-	<!-- <div class="form-main">
+	 <div class="form-main">
 
 		<div>
 			<h2>Produit</h2>
