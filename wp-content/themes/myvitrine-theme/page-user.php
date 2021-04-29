@@ -15,14 +15,115 @@
 get_header();
 
 $user = wp_get_current_user();
-var_dump($user);
+$infos = get_user_meta($user->ID);
+// echo $infos["nickname"][0];
 
-echo admin_url('admin_ajax.php');
+// if(isset($infos["nickname"])){
+//       echo "La valeur existe";
+// }else {
+//       echo "La valeur n'existe pas";
+// }
 ?>
 
 <h1><?= $user->display_name ?></h1>
 
+<?php 
+if(!isset($infos["profile_created"])){
+?>
 
+<div class="init" id="step1">
+      <h2>Etape 1 : Créer mon profil d'ambassadeur</h2>
+      <button class="add" id="profile_add"><i class="fas fa-plus fa-2x"></i></button>
+</div>
+
+<!-- First Modal Form -->
+
+<?php
+} else{
+?>
+
+<div class="profile-container">
+      <div class="flex">
+            <div>
+                  <div class="flex">
+                        <div>
+                              <img src="<?= $infos["profile_picture_url"][0] ?>" alt="image de profil">
+                        </div>
+                        <div>
+                              <p class="heading"><?= $infos["first_name"][0] ?>  <?= $infos["last_name"][0] ?></p>
+                              <p class="detail"><?= $infos["birth_date"][0] ?></p>
+                              <p class="detail"><?= $infos["city"][0] ?></p>
+                              <a href="<?= $infos["instagram"][0] ?>" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                  </div>
+                  <div class="categories"><?= $infos["product_category"][0] ?></div>
+            </div>
+            <div>
+                  <span class="nproducts">Nombre de produits recommandés</span>
+                  <p class="desc"><?= $infos["description"][0] ?></p>
+                  <span id="edit"><i class="fas fa-edit"></i></span>
+            </div>
+      </div>
+</div>
+
+<?php
+}
+?>
+
+<div id="modal1" class="modal">
+      <div class="modal-content">
+            <span class="close" id="close1">&times;</span>
+            <h3>Informations Vitrine</h3>
+            <form id="form">
+                  <input type="text" name="last_name" placeholder="Nom">
+                  <input type="text" name="first_name" placeholder="Prénom">
+                  <input type="text" name="profile_picture_url" placeholder="Image de profil (lien)">
+                  <input type="number" name="birth_date" placeholder="Age">
+                  <input type="text" name="city" placeholder="Ville">
+                  <input type="text" name="instagram" placeholder="Instagram">
+                  <input type="text" name="product_category" placeholder="Catégorie de produits">
+                  <textarea name="description" rows="5" placeholder="Description..."></textarea>
+                  <button id="click">Ajouter un profil</button>
+            </form>
+      </div>
+</div>
+
+
+
+<script>
+      jQuery('#click').click(function(e){
+            e.preventDefault();
+            jQuery.ajax({
+                  url: the_ajax_script.ajaxurl,
+                  type: 'POST',
+                  data: {
+                        'action' : 'update_user_infos',
+                        'inputs' : jQuery("#form").serializeArray()
+                  },
+                  success:function(){
+                        location.reload()
+                  },
+                  error:function(){
+                        alert("error");
+                  }
+            })
+      });
+
+      jQuery('#step1').click(function(e){
+            e.preventDefault();
+            jQuery('#modal1').css('display', 'block');
+      });
+
+      jQuery('#close1').click(function(){
+            jQuery('#modal1').css('display', 'none');
+      });
+
+      jQuery('#edit').click(function(e){
+            e.preventDefault();
+            jQuery('#modal1').css('display', 'block');
+      });
+
+</script>
 
 <?php
 

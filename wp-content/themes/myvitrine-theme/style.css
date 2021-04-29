@@ -2375,5 +2375,150 @@ footer #networksFoot img {
     padding: 10px;
   }
 }
+.page-id-62 .init {
+  width: 60%;
+  min-width: 600px;
+  padding: 50px 20px;
+  background: linear-gradient(180deg, #F2D2BF 0%, #F2EADE 100%);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+.page-id-62 .init:hover {
+  cursor: pointer;
+}
+.page-id-62 .init h2 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #A65A49;
+  text-align: center;
+}
+.page-id-62 .init .add {
+  margin-top: 40px;
+  padding: 9px 13px;
+  background: #A8BFB5;
+  color: white;
+  border-radius: 5px;
+}
+.page-id-62 .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.page-id-62 .modal-content {
+  background: linear-gradient(180deg, #F2D2BF 0%, #F2EADE 100%);
+  padding: 40px;
+  border-radius: 15px;
+  width: 50%;
+  margin: 15% auto;
+}
+.page-id-62 .modal .close {
+  color: #A8BFB5;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.page-id-62 .modal .close:hover, .page-id-62 .modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.page-id-62 .modal h3 {
+  color: #A65A49;
+  font-size: 24px;
+}
+.page-id-62 .modal form {
+  display: flex;
+  flex-direction: column;
+}
+.page-id-62 .modal form input, .page-id-62 .modal form textarea {
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 10px 25px;
+  width: 60%;
+  margin: 15px auto;
+  outline: none;
+  resize: none;
+}
+.page-id-62 .modal form button {
+  margin: 0 auto;
+  color: #FFFFFF;
+  background: #A8BFB5;
+  border-radius: 19px;
+  font-size: 24px;
+  padding: 5px 30px;
+}
+.page-id-62 .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.page-id-62 .profile-container {
+  width: 80%;
+  min-width: 600px;
+  padding: 50px 20px;
+  background: linear-gradient(180deg, #F2D2BF 0%, #F2EADE 100%);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 19px;
+  margin: 0 auto;
+}
+.page-id-62 .profile-container img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 55px;
+}
+.page-id-62 .profile-container p {
+  margin-bottom: 10px;
+}
+.page-id-62 .profile-container .heading {
+  color: #A65A49;
+  font-weight: 800;
+  font-size: 24px;
+}
+.page-id-62 .profile-container .detail {
+  font-size: 24px;
+  font-weight: 500;
+}
+.page-id-62 .profile-container a {
+  color: black;
+  text-decoration: none;
+}
+.page-id-62 .profile-container a:visited {
+  color: black;
+  text-decoration: none;
+}
+.page-id-62 .profile-container #edit:hover {
+  cursor: pointer;
+}
+.page-id-62 .profile-container .categories {
+  float: right;
+  width: min-content;
+  padding: 12px 25px;
+  background-color: #A8BFB5;
+  color: white;
+  border-radius: 20px;
+  margin-top: 9px;
+}
+.page-id-62 .profile-container .nproducts {
+  font-weight: 800;
+  font-size: 24px;
+  color: #A65A49;
+  padding: 11px 25px;
+  border-radius: 9px;
+  background-color: #F2EADF;
+}
+.page-id-62 .profile-container .desc {
+  margin-top: 50px;
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=style.css.map */
