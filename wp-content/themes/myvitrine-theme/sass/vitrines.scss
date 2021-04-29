@@ -1,6 +1,6 @@
 @import "abstracts/variables/custom_variables.scss";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,6 +30,7 @@
             color: $brown;
             text-transform: uppercase;
             font-size: 50px;
+            padding-left: 40%;
         }
 
         h2 {
@@ -94,5 +95,120 @@
                 }
             }
         }
+    }
+}
+
+.vitrines-advised {
+    width: 100%;
+    display: flex;
+    padding: 100px 0;
+    flex-direction: column;
+    align-items: center;
+
+    .vitrines-posts {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .vit {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 50px;
+            background-color: $green;
+            padding: 30px;
+            border-radius: 30px;
+
+            .medias {
+                display: flex;
+
+                img {
+                    transform: scale(0.75);
+                    border-radius: 50%;
+                }
+            }
+
+            .title {
+                color: #fff;
+            }
+        }
+    }
+
+    .advised {
+        color: #000;
+        text-transform: uppercase;
+        justify-self: center;
+        align-self: center;
+        margin-left: 24%;
+    }
+}
+
+.all-vitrines {
+    width: 100%;
+    display: flex;
+    padding: 100px 0;
+    flex-direction: column;
+    align-items: center;
+    background: $reverseGradient;
+
+    .vitrines-posts {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .vit {
+            display: flex;
+            width: 25%;
+            flex-direction: column;
+            margin: 20px 50px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 30px;
+            align-items: center;
+
+            .medias {
+                display: flex;
+                justify-content: space-around;
+
+                 i {
+                    margin: 0 20px;
+                 }
+
+                img {
+                    transform: scale(0.75);
+                    border-radius: 50%;
+                }
+            }
+
+            .below {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                button {
+                    background-color: $softBrown;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    box-shadow: 0px 5px 10px #58555A;
+                    border: none;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .title {
+                color: #fff;
+            }
+        }
+    }
+
+    .all-vitrines-title {
+        color: $green;
+        text-transform: uppercase;
+        align-self: center;
+        padding-left: 33%;
     }
 }
