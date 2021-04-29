@@ -1,10 +1,9 @@
-/* Error: expected "{".
+/* Error: Can't find stylesheet to import.
  *     ,
- * 159 |         padding-left: 24%;
- *     |                          ^
+ * 125 | @import "vitrines";
+ *     |         ^^^^^^^^^^
  *     '
- *   sass/vitrines.scss 159:26  @import
- *   sass/style.scss 125:9      root stylesheet */
+ *   sass\style.scss 125:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a     \2577 \a 159 \2502          padding-left: 24%;\a     \2502                           ^\a     \2575 \a   sass/vitrines.scss 159:26  @import\a   sass/style.scss 125:9      root stylesheet';
+  content: "Error: Can't find stylesheet to import.\a     \2577 \a 125 \2502  @import \"vitrines\";\d\a     \2502          ^^^^^^^^^^\a     \2575 \a   sass\\style.scss 125:9  root stylesheet";
 }

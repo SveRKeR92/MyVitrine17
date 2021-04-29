@@ -187,18 +187,18 @@ require get_template_directory() . '/inc/custom-functions.php';
 /**
 * Customize the Favorites Listing HTML
 */
-/*add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
+add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
 function custom_favorites_listing_html($html, $markup_template, $post_id, $list_options)
 {
 	ob_start();
 	$data = get_post($post_id);
-	var_dump($data->post_category);
+	
 	$age = get_post_meta( get_the_ID(), 'age', true);
 	$ville = get_post_meta( get_the_ID(), 'ville', true);
 ?>
 <div id = "post-<?php the_ID(); ?>" class = blocFavori>
 	<img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="">
-	<a href="<?php echo 'http://localhost/MyVitrine17/profil-vitrines/' ?>"> <?php echo $data->post_title; ?></a>
+	<a href=""> <?php echo $data->post_title; ?></a>
 	<p><?php echo $data->post_content; ?></p>
 	<?php if(!empty($age)) {
 		?> <p><?=$age?></p>
@@ -209,8 +209,8 @@ function custom_favorites_listing_html($html, $markup_template, $post_id, $list_
 </div>
 <?php
 	return ob_get_clean();
-}*/
-
+}
+/*
 add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
 function custom_favorites_listing_html($html, $markup_template, $post_id, $list_options)
 {
@@ -250,4 +250,4 @@ function custom_favorites_listing_html($html, $markup_template, $post_id, $list_
 
 <?php
 	return ob_get_clean();
-}
+}*/

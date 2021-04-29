@@ -1,175 +1,227 @@
-        * {
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        h1 {
-            color: #A8BFB5;
-            font-size: 48px;
-            width: 100%;
-        }
-        
-        .profil-ambassadeur {
-            .entry-content {
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #A8BFB5;
+    font-size: 48px;
+    width: 100%;
+}
+
+.profil-ambassadeur {
+    .entry-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .carteProfilAmbassadeur {
+            background: linear-gradient(#F2D2BF, #F2EADE);
+            width: 1200px;
+            border-radius: 19px;
+            min-height: 320px;
+            margin-bottom: 50px;
+            .produitsReco {
+                height: 60px;
+                width: 80%;
+                background: #F2EADF;
+                border-radius: 9px;
+                margin: 30px 0px 30px;
                 display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                .carteProfilAmbassadeur {
-                    background: linear-gradient(#F2D2BF, #F2EADE);
-                    width: 1200px;
-                    border-radius: 19px;
-                    min-height: 320px;
-                    margin-bottom: 50px;
-                    .produitsReco {
-                        height: 60px;
-                        width: 80%;
-                        background: #F2EADF;
-                        border-radius: 9px;
-                        margin: 30px 0px 30px;
-                        display: flex;
-                        align-items: center;
-                        .wp-block-group__inner-container {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 100%;
-                            width: 100%;
-                            h2 {
-                                margin: 0 !important;
-                                width: 100%;
-                                text-align: center;
-                            }
-                        }
-                    }
-                    .column1 {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        figure {
-                            margin: 0;
-                        }
-                        img {
-                            border-radius: 100%;
-                            max-width: 100%;
-                            height: auto;
-                        }
-                    }
-                    .column3 .wp-block-group__inner-container {
-                        display: flex;
-                        flex-wrap: wrap;
-                        .produitsReco {
-                            height: auto;
-                            width: 80%;
-                            background: #F2EADF;
-                            border-radius: 9px;
-                            margin: 30px 0px 30px;
-                        }
-                    }
-                    p {
-                        width: 90%;
-                    }
+                align-items: center;
+                .wp-block-group__inner-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
                     h2 {
-                        color: #A65A49;
-                        font-size: 24px;
-                        font-weight: 600;
+                        margin: 0 !important;
                         width: 100%;
-                        margin: 20px 0 30px;
-                    }
-                    h3 {
-                        font-weight: 500;
-                        font-size: 24;
-                        margin: 20px 0 20px;
-                    }
-                    .groupeTag {
-                        width: 250px;
-                        height: 35px;
-                        margin: 20px 0 20px;
-                        .wp-block-group__inner-container {
-                            display: flex;
-                            justify-content: space-between;
-                            width: 100%;
-                            height: 100%;
-                            .wp-block-group__inner-container {
-                                justify-content: center;
-                                align-items: center;
-                            }
-                            h4 {
-                                margin: 0;
-                                font-size: 18px;
-                            }
-                            .tag1 {
-                                width: 118px;
-                                height: 32px;
-                                background: #F0DBE1;
-                                border-radius: 4px;
-                            }
-                            .tag2 {
-                                width: 118px;
-                                height: 32px;
-                                background: #EBF0DB;
-                                border-radius: 4px;
-                            }
-                        }
+                        text-align: center;
                     }
                 }
             }
-        }
-        
-        .noProduct {
-            min-height: 250px;
-            background: linear-gradient(#F2D2BF, #F2EADE);
-            border-radius: 19px;
-            width: 1200px;
-            margin-bottom: 60px;
-            .wp-block-group__inner-container {
+            .column1 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
-                min-height: 100%;
-                padding: 10px;
-                h2 {
-                    font-size: 36px;
-                    color: #A65A49;
-                    text-align: center;
+                figure {
+                    margin: 0;
+                }
+                img {
+                    border-radius: 100%;
+                    max-width: 100%;
+                    height: auto;
                 }
             }
-        }
-        
-        @media screen and (max-width: 1000px) {
-            .carteProfilAmbassadeur {
+            .column3 .wp-block-group__inner-container {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
+                .produitsReco {
+                    height: auto;
+                    width: 80%;
+                    background: #F2EADF;
+                    border-radius: 9px;
+                    margin: 30px 0px 30px;
+                }
             }
-            .column3 {
-                width: 100% !important;
+            p {
+                width: 90%;
             }
-        }
-        
-        @media screen and (max-width: 650px) {
-            * {
-                text-align: center;
+            h2 {
+                color: #A65A49;
+                font-size: 24px;
+                font-weight: 600;
+                width: 100%;
+                margin: 20px 0 30px;
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 24;
+                margin: 20px 0 20px;
             }
             .groupeTag {
-                width: 100% !important;
+                width: 250px;
+                height: 35px;
+                margin: 20px 0 20px;
                 .wp-block-group__inner-container {
-                    justify-content: space-around !important;
-                }
-            }
-            .column3 {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        }
-        
-        .profil-vitrines-template {
-            main {
-                width: 1200px;
-                background: linear-gradient(#F2D2BF, #F2EADE);
-                display: flex;
-                article {
                     display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100%;
+                    .wp-block-group__inner-container {
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    h4 {
+                        margin: 0;
+                        font-size: 18px;
+                    }
+                    .tag1 {
+                        width: 118px;
+                        height: 32px;
+                        background: #F0DBE1;
+                        border-radius: 4px;
+                    }
+                    .tag2 {
+                        width: 118px;
+                        height: 32px;
+                        background: #EBF0DB;
+                        border-radius: 4px;
+                    }
                 }
             }
         }
+    }
+}
+
+.noProduct {
+    min-height: 250px;
+    background: linear-gradient(#F2D2BF, #F2EADE);
+    border-radius: 19px;
+    width: 1200px;
+    margin-bottom: 60px;
+    .wp-block-group__inner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 100%;
+        padding: 10px;
+        h2 {
+            font-size: 36px;
+            color: #A65A49;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .carteProfilAmbassadeur {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .column3 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    * {
+        text-align: center;
+    }
+    .groupeTag {
+        width: 100% !important;
+        .wp-block-group__inner-container {
+            justify-content: space-around !important;
+        }
+    }
+    .column3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.single-profil-vitrines {
+    main {
+        display: flex;
+        justify-content: center;
+    }
+    .profilAmbassadeur {
+        max-width: 1200px;
+        min-height: 320px;
+        display: flex;
+        background: linear-gradient(#F2D2BF, #F2EADE);
+        border-radius: 19px;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        .profilAmbassadeur-1 {
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 160px;
+                height: 160px;
+                border-radius: 100%;
+            }
+        }
+        .profilAmbassadeur-2 {
+            width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            h2 {
+                color: #A65A49;
+                font-size: 24px;
+                font-weight: 700;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            h3 {
+                font-size: 24px;
+                font-weight: 500;
+                width: 100%;
+            }
+        }
+        .profilAmbassadeur-3 {
+            width: 600px;
+            display: flex;
+            align-items: center;
+            p {
+                width: 80%;
+                font-size: 18px;
+            }
+        }
+        button {
+            height: 30px;
+            background: #A65A49 !important;
+            border: none !important;
+        }
+    }
+    article {
+        display: none;
+    }
+}
