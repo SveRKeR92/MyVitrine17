@@ -61,7 +61,7 @@ if(!isset($infos["profile_created"])){
             <div>
                   <span class="nproducts">Nombre de produits recommandés</span>
                   <p class="desc"><?= $infos["description"][0] ?></p>
-                  <span id="edit"><i class="fas fa-edit"></i></span>
+                  <button id="edit"><i class="fas fa-edit"></i></button>
             </div>
       </div>
 </div>
