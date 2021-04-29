@@ -2,9 +2,6 @@ const rightFoot = document.querySelector('.rightFoot');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
 
-console.log("bonjour")
-
-
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 

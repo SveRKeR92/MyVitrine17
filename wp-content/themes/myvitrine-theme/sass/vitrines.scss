@@ -65,8 +65,14 @@
             width: 80%;
 
             button {
-                width: 100px;
-                margin-top: 50px;
+                width: 130px;
+                margin: 50px 0;
+                background-color: $softBrown;
+                border: none;
+                color: #fff;
+                padding: 10px 20px;
+                align-self: center;
+                cursor: pointer;
             }
 
             .form-main {
@@ -138,7 +144,7 @@
         text-transform: uppercase;
         justify-self: center;
         align-self: center;
-        margin-left: 24%;
+        padding-left: 24%;
     }
 }
 
@@ -200,7 +206,7 @@
             }
 
             .title {
-                color: #fff;
+                color: #000;
             }
         }
     }
