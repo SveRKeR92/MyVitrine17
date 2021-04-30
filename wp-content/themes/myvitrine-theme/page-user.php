@@ -23,6 +23,14 @@ $infos = get_user_meta($user->ID);
 // }else {
 //       echo "La valeur n'existe pas";
 // }
+
+$post = get_post();
+var_dump($post);
+echo "<br>";
+echo "<br>";
+echo "<br>";
+$produtcs = get_the_terms($post->ID, 'All produits');
+var_dump($produtcs);
 ?>
 
 <h1><?= $user->display_name ?></h1>
