@@ -1,9 +1,13 @@
 jQuery(function($){
-	$('#filter').submit(function(){
+	$('#filter').submit(function(event){
+		event.preventDefault()
 		var filter = $('#filter')
 		$.ajax({
-			url:filter.attr('action'),
-			data:filter.serialize(), // form data
+			url: ajax_object.ajax_url,
+			data:{
+				data: filter.serialize(),
+				action: "vitrines_filter_function"
+			}, // form data
 			type:filter.attr('method'), // POST
 			beforeSend:function(xhr){
 				filter.find('button').text('Processing...') // changing the button label
