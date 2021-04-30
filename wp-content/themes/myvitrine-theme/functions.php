@@ -187,44 +187,26 @@ require get_template_directory() . '/inc/custom-functions.php';
 /**
 * Customize the Favorites Listing HTML
 */
-
 add_filter( 'favorites/list/listing/html', 'custom_favorites_listing_html', 10, 4 );
 function custom_favorites_listing_html($html, $markup_template, $post_id, $list_options)
 {
 	ob_start();
-
-	$vitrines = array(
-		'post_type' => 'profil-vitrines',
-		'post_per_page' => -1,
-		'order_by' => 'date',
-		'order' => 'ASC'
-	);
-
-	$query = new WP_Query($vitrines);
-
+	$data = get_post($post_id);
+	
 	$age = get_post_meta( get_the_ID(), 'age', true);
 	$ville = get_post_meta( get_the_ID(), 'ville', true);
 ?>
-
-<div class="all-fav">
-
- <?php if($query->have_posts()) :
-		while($query->have_posts()) : $query->the_post(); ?>
-
-		<div id="post-<?php the_ID(); ?>" class="blocFavori">
-			<?php the_post_thumbnail('medium'); ?>
-			<a href="#"><?= the_title(); ?></a>
-			<p><?= the_content(); ?></p>
-			<?php if(!empty($age) || !empty($ville)) : ?>
-				<p><?= $age ?></p>
-				<p><?= $ville ?></p>
-			<?php endif; ?>
-		</div>
-		<?php endwhile;
-	endif; ?>
-
+<div id = "post-<?php the_ID(); ?>" class = blocFavori>
+	<img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="">
+	<a href=""> <?php echo $data->post_title; ?></a>
+	<p><?php echo $data->post_content; ?></p>
+	<?php if(!empty($age)) {
+		?> <p><?=$age?></p>
+		<?php } ?>
+	
+	<p></p>
+	<!-- <button class = simplefavorite-button active preset ></button> -->
 </div>
-
 <?php
 	return ob_get_clean();
 }
