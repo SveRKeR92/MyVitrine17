@@ -16,11 +16,11 @@ function update_user_infos()
     echo "<br>";
     foreach($_POST["inputs"] as $input){
         var_dump($input);
-        if($input["name"] == 'instagram'){
+        if($input["name"] == 'instagram' && $input["value"] != ""){
             $input["value"] = 'https://www.instagram.com/' . $input["value"];
             echo $input["value"];
         }
-        if(isset($infos[$input["name"]]) && $infos[$input["value"]] != ""){
+        if(isset($infos[$input["name"]]) && $input["value"] != ""){
             update_user_meta($user->ID, $input["name"], $input["value"]);
         }else{
             add_user_meta($user->ID, $input["name"], $input["value"]);
@@ -32,6 +32,7 @@ function update_user_infos()
 }
 
 add_action('wp_ajax_update_user_infos', 'update_user_infos');
+add_action('wp_ajax_nopriv_update_user_infos', 'update_user_infos');
 
 function js_enqueue_scripts()
 {
@@ -41,3 +42,8 @@ function js_enqueue_scripts()
 }
 
 add_action("wp_enqueue_scripts", "js_enqueue_scripts");
+
+
+
+add_action( 'wp_ajax_add_product', 'add_product' );
+add_action('wp_ajax_nopriv_add_product', 'add_product');
