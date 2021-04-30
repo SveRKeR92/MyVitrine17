@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -25,58 +26,54 @@ $infos = get_user_meta($user->ID);
 // }
 
 $post = get_post();
-$tax = get_taxonomy('category_produits');
+
 var_dump($post);
 echo "<br>";
-var_dump($tax);
 echo "<br>";
-echo "<br>";
-$produtcs = get_the_terms($post->ID, 'All produits');
-var_dump($infos);
 ?>
 
 <h1><?= $user->display_name ?></h1>
 
 <?php
-if(!isset($infos["profile_created"])){
+if (!isset($infos["profile_created"])) {
 ?>
 
-<div class="init" id="step1">
-      <h2>Etape 1 : Créer mon profil d'ambassadeur</h2>
-      <button class="add" id="profile_add"><i class="fas fa-plus fa-2x"></i></button>
-</div>
+      <div class="init" id="step1">
+            <h2>Etape 1 : Créer mon profil d'ambassadeur</h2>
+            <button class="add" id="profile_add"><i class="fas fa-plus fa-2x"></i></button>
+      </div>
 
-<!-- First Modal Form -->
+      <!-- First Modal Form -->
 
 <?php
-} else{
+} else {
 ?>
 
-<div class="profile-container">
-<div>
-            <div class="contenu_profil">
-                  <div class="info_profil">
-                        <div class="photo_profil">
-                              <img src="<?= $infos["profile_picture_url"][0] ?>" alt="image de profil">
+      <div class="profile-container">
+            <div>
+                  <div class="contenu_profil">
+                        <div class="info_profil">
+                              <div class="photo_profil">
+                                    <img src="<?= $infos["profile_picture_url"][0] ?>" alt="image de profil">
+                              </div>
+                              <div class="contact_profil">
+                                    <p class="heading"><?= $infos["first_name"][0] != "" ? $infos["first_name"][0] : "Prénom manquant" ?> <?= $infos["last_name"][0] != "" ? $infos["last_name"][0] : "Nom manquant" ?></p>
+                                    <p class="detail"><?= $infos["birth_date"][0] != "" ? $infos["birth_date"][0] : "Age manquant" ?></p>
+                                    <p class="detail"><?= $infos["city"][0] != "" ? $infos["city"][0] : "Ville manquante" ?></p>
+                                    <a href="<?= $infos["instagram"][0] ?>" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                    <div class="categories"><?= $infos["product_category"][0] != "" ? $infos["product_category"][0] : "Vous n'avez pas défini de catégorie" ?></div>
+                              </div>
                         </div>
-                        <div class="contact_profil">
-                              <p class="heading"><?= $infos["first_name"][0] != "" ? $infos["first_name"][0] : "Prénom manquant" ?>  <?= $infos["last_name"][0] != "" ? $infos["last_name"][0] : "Nom manquant"?></p>
-                              <p class="detail"><?= $infos["birth_date"][0] != "" ? $infos["birth_date"][0] : "Age manquant" ?></p>
-                              <p class="detail"><?= $infos["city"][0] != "" ? $infos["city"][0] : "Ville manquante" ?></p>
-                              <a href="<?= $infos["instagram"][0] ?>" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                            <div class="categories"><?= $infos["product_category"][0] != "" ? $infos["product_category"][0] : "Vous n'avez pas défini de catégorie" ?></div>
+
+
+                        <div class="info_produit_profil">
+                              <span class="nproducts">Nombre de produits recommandés</span>
+                              <p class="desc"><?= $infos["description"][0] != "" ? $infos["description"][0] : "Vous n'avez pas de description" ?></p>
                         </div>
                   </div>
-
-
-            <div class="info_produit_profil">
-                  <span class="nproducts">Nombre de produits recommandés</span>
-                  <p class="desc"><?= $infos["description"][0] != "" ? $infos["description"][0] : "Vous n'avez pas de description" ?></p>
             </div>
-            </div>
+            <button id="edit"><i class="fas fa-edit fa-2x"></i></button>
       </div>
-      <button id="edit"><i class="fas fa-edit fa-2x"></i></button>
-</div>
 
 <?php
 }
@@ -92,51 +89,71 @@ if(!isset($infos["profile_created"])){
                   <input type="text" name="profile_picture_url" placeholder="Image de profil (lien)">
                   <input type="number" name="birth_date" placeholder="Age">
                   <input type="text" name="city" placeholder="Ville">
-                  <input type="text" name="instagram" placeholder="Instagram">
+                  <input type="text" name="instagram" placeholder="Nom d'utilisateur Instagram">
                   <input type="text" name="product_category" placeholder="Catégorie de produits">
                   <textarea name="description" rows="5" placeholder="Description..."></textarea>
-                  <button id="click">Ajouter un profil</button>
+                  <button id="click">Soumettre</button>
             </form>
       </div>
 </div>
 
+<form id="product_form">
+      <input type="text" placeholder="Marque du produit">
+      <input type="text" placeholder="Nom du produit">
+      <input type="text" placeholder="Image du produit (lien)">
+      <input type="text" placeholder="Catégorie du produit">
+      <textarea name="description" rows="5" placeholder="Description..."></textarea>
+      <button id="click_product">Soumettre</button>
+</form>
+
 
 
 <script>
-      jQuery('#click').click(function(e){
+      jQuery('#click').click(function(e) {
             e.preventDefault();
             jQuery.ajax({
                   url: the_ajax_script.ajaxurl,
                   type: 'POST',
                   data: {
-                        'action' : 'update_user_infos',
-                        'inputs' : jQuery("#form").serializeArray()
+                        'action': 'update_user_infos',
+                        'inputs': jQuery("#form").serializeArray()
                   },
-                  success:function(){
+                  success: function() {
                         location.reload()
                   },
-                  error:function(){
+                  error: function() {
                         alert("error");
                   }
-            })
+            });
       });
 
-      jQuery('#step1').click(function(e){
+      jQuery('#step1').click(function(e) {
             e.preventDefault();
             jQuery('#modal1').css('display', 'block');
       });
 
-      jQuery('#close1').click(function(){
+      jQuery('#close1').click(function() {
             jQuery('#modal1').css('display', 'none');
       });
 
-      jQuery('#edit').click(function(e){
+      jQuery('#edit').click(function(e) {
             e.preventDefault();
             jQuery('#modal1').css('display', 'block');
       });
-
 </script>
 
 <?php
+
+if (have_posts()) {
+      while (have_posts()) {
+            the_post();
+            $tax = get_taxonomy('All produits');
+            var_dump($tax);
+            echo "<br>";
+            echo "<br>";
+            $products = get_the_terms($post->ID, 'produits');
+            var_dump($products);
+      }
+}
 
 get_footer();

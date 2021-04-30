@@ -2436,11 +2436,11 @@ footer #networksFoot img {
   color: #A65A49;
   font-size: 24px;
 }
-.page-id-62 .modal form {
+.page-id-62 form {
   display: flex;
   flex-direction: column;
 }
-.page-id-62 .modal form input, .page-id-62 .modal form textarea {
+.page-id-62 form input, .page-id-62 form textarea {
   box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   padding: 10px 25px;
@@ -2449,7 +2449,7 @@ footer #networksFoot img {
   outline: none;
   resize: none;
 }
-.page-id-62 .modal form button {
+.page-id-62 form button {
   margin: 3% auto;
   color: #FFFFFF;
   background: #A8BFB5;
