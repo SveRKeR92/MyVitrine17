@@ -1,5 +1,7 @@
 <form action="<?= admin_url(); ?>admin-ajax.php" method="POST" id="filter">
 
+    <h2>Ambassadrice</h2>
+
     <?php
 
     if($vitrines_terms = get_terms(array(
@@ -23,9 +25,10 @@
 		<input type="radio" name="date" value="DESC" selected="selected" /> Date: Descending
 	</label>
 
+    <br>
     <button>Apply</button>
     <input type="hidden" name="action" id="myfilter">
 
 </form>
 
-<div id="response"></div>
+<div id="response">Omega bruh</div>

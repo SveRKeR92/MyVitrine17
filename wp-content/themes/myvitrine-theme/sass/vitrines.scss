@@ -53,11 +53,20 @@
         }
         form {
             display: flex;
-            flex-direction: column;
-            margin-top: 30px;
             width: 80%;
+            background-color: $green;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            margin: 100px 0;
+            border-radius: 20px;
 
+            select {
+                padding: 5px;
+                margin: 0 40px;
+            }
 
+<<<<<<< HEAD
             .form-main {
                 display: flex;
                 background-color: $green;
@@ -78,6 +87,19 @@
                         color: #fff;
                     }
                 }
+=======
+            input {
+                margin: 0 20px;
+            }
+
+            button {
+                background-color: $softBrown;
+                color: #fff;
+                border-radius: 10px;
+                padding: 10px 30px;
+                margin: 0 20px;
+                cursor: pointer;
+>>>>>>> setUpVitrines
             }
         }
     }

@@ -2185,30 +2185,28 @@ h1 {
 }
 .header-vitrines .head-search form {
   display: flex;
-  flex-direction: column;
-  margin-top: 30px;
   width: 80%;
-}
-.header-vitrines .head-search form .form-main {
-  display: flex;
   background-color: #A8BFB5;
-  padding: 30px 40px;
-  justify-content: space-around;
-  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  margin: 100px 0;
   border-radius: 20px;
 }
-.header-vitrines .head-search form .form-main select {
+.header-vitrines .head-search form select {
   padding: 5px;
+  margin: 0 40px;
 }
-.header-vitrines .head-search form .form-main h2 {
-  margin-top: 11px;
+.header-vitrines .head-search form input {
+  margin: 0 20px;
 }
-.header-vitrines .head-search form .form-main div {
-  display: flex;
-  flex-direction: column;
-}
-.header-vitrines .head-search form .form-main div label {
+.header-vitrines .head-search form button {
+  background-color: #A65A49;
   color: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 0 20px;
+  cursor: pointer;
 }
 
 .valide-btn {
