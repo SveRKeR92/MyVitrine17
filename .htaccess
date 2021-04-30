@@ -1,21 +1,5 @@
-# BEGIN SecuPress readme_discloses
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /MyVitrine17/
-    RewriteRule ^(.*/)?(readme|changelog|debug)\.(txt|md|html|log)$ - [R=404,L,NC]
-</IfModule>
-# END SecuPress
-
-# BEGIN SecuPress php_disclosure
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{QUERY_STRING} \=PHP[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12} [NC]
-    RewriteRule .* - [F]
-</IfModule>
-# END SecuPress
-
 # BEGIN WpFastestCache
-# Modified Time: 30-04-21 12:31:58
+# Modified Time: 30-04-21 15:29:45
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -34,12 +18,11 @@ RewriteCond %{HTTPS} !=on
 RewriteCond %{REQUEST_URI} !(\/){2}$
 RewriteCond %{REQUEST_URI} \/$
 RewriteCond %{QUERY_STRING} !.+
-RewriteCond %{HTTP:Cookie} !wordpress_logged_in
 RewriteCond %{HTTP:Cookie} !comment_author_
 RewriteCond %{HTTP:Cookie} !safirmobilswitcher=mobil
 RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
 RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/all/$1/index.html -f [or]
-RewriteCond C:\laragon\www\MyVitrine17\wp-content/cache/all/$1/index.html -f
+RewriteCond D:\laragon\www\MyVitrine17\wp-content/cache/all/$1/index.html -f
 RewriteRule ^(.*) "/wp-content/cache/all/$1/index.html" [L]
 </IfModule>
 <FilesMatch "index\.(html|htm)$">
@@ -74,6 +57,22 @@ AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
 AddOutputFilterByType DEFLATE font/opentype font/ttf font/eot font/otf
 </IfModule>
 # END GzipWpFastestCache
+# BEGIN SecuPress readme_discloses
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /MyVitrine17/
+    RewriteRule ^(.*/)?(readme|changelog|debug)\.(txt|md|html|log)$ - [R=404,L,NC]
+</IfModule>
+# END SecuPress
+
+# BEGIN SecuPress php_disclosure
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{QUERY_STRING} \=PHP[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12} [NC]
+    RewriteRule .* - [F]
+</IfModule>
+# END SecuPress
+
 # BEGIN LBCWpFastestCache
 <FilesMatch "\.(webm|ogg|mp4|ico|pdf|flv|jpg|jpeg|png|gif|webp|js|css|swf|x-html|css|xml|js|woff|woff2|otf|ttf|svg|eot)(\.gz)?$">
 <IfModule mod_expires.c>

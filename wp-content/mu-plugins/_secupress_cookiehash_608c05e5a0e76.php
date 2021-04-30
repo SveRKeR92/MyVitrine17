@@ -17,4 +17,4 @@ if ( ! get_site_option( 'secupress_active_submodule_wp-config-constant-cookiehas
 	return;
 }
 
-define( 'COOKIEHASH', md5( __FILE__ . 'pRnc114fem0Dt#F4Q3EzE2W)XtmD(U08#RX&s%lzI8@W6gy9YO!d447SgJzWlb%z' ) );
+define( 'COOKIEHASH', md5( __FILE__ . 'g2ps&jbNtOn$Qpp1vbz&okw1a(ej6Zeofy%rp!TOz%(77okz&aJGquO$yUylutz0' ) );
