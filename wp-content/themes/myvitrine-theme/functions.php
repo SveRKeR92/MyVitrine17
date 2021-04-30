@@ -197,7 +197,7 @@ function custom_favorites_listing_html($html, $markup_template, $post_id, $list_
 	$ville = get_post_meta( get_the_ID(), 'ville', true);
 ?>
 <div id = "post-<?php the_ID(); ?>" class = blocFavori>
-	<img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="">
+<a href="<?php the_permalink($data); ?>"><img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="post"></a>
 	<a href=""> <?php echo $data->post_title; ?></a>
 	<p><?php echo $data->post_content; ?></p>
 	<?php if(!empty($age)) {
