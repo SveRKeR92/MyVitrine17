@@ -21,18 +21,19 @@ get_header();
 	$ville = get_post_meta( get_the_ID(), 'ville', true);
 			?>
 <div id = "post-<?php the_ID(); ?>" class = profilAmbassadeur>
+	<div class="profilAmbassadeur1">
+		<div class = profilAmbassadeur1-1>
+			<img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="">
+		</div>
 
-	<div class = profilAmbassadeur-1>
-		<img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="">
+		<div class = profilAmbassadeur1-2>
+			<h2> <?php echo $data->post_title; ?></h2>
+			<?php if(!empty($age)) {
+			?> <h3><?=$age?> ans</h3>
+			<?php } ?>
+		</div>
 	</div>
-
-	<div class = profilAmbassadeur-2>
-		<h2> <?php echo $data->post_title; ?></h2>
-		<?php if(!empty($age)) {
-		?> <h3><?=$age?> ans</h3>
-		<?php } ?>
-	</div>
-	<div class = profilAmbassadeur-3>
+	<div class = profilAmbassadeur2>
 		<p><?php echo $data->post_content; ?></p>
 	</div>
 	
