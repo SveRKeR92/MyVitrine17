@@ -2576,6 +2576,11 @@ footer #networksFoot img {
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
+  margin: 0 auto;
+}
+.page-id-62 .profile-container .contact_profil {
+  display: flex;
+  flex-direction: column;
 }
 .page-id-62 .profile-container p {
   margin-bottom: 10px;

@@ -117,7 +117,12 @@
                   height: 160px;
                   border-radius: 50%;
                   object-fit: cover;
-                  //margin-right: 55px;
+                  margin: 0 auto;
+            }
+
+            .contact_profil{
+                  display: flex;
+                  flex-direction: column;
             }
 
             p{
