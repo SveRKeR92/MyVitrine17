@@ -2426,6 +2426,11 @@ h1 {
   padding-left: 33%;
 }
 
+.attachment-medium.size-medium.wp-post-image {
+  width: 140px !important;
+  height: 140px !important;
+}
+
 @media (max-width: 900px) {
   .form-main {
     display: flex;

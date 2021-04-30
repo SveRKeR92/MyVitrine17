@@ -148,6 +148,10 @@ function myvitrine_theme_scripts() {
 
 	wp_enqueue_script( 'myvitrine-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'myvitrine-theme-filter', get_template_directory_uri() . '/js/filter.js', array('jquery'), _S_VERSION, true );
+	$ajax = array(
+		'ajax_url' => admin_url( 'admin-ajax.php' )
+	);
+	wp_localize_script( 'myvitrine-theme-filter', 'ajax_object', $ajax );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -198,7 +202,7 @@ function custom_favorites_listing_html($html, $markup_template, $post_id, $list_
 ?>
 <div id = "post-<?php the_ID(); ?>" class = blocFavori>
 <a href="<?php the_permalink($data); ?>"><img src="<?php echo get_the_post_thumbnail_url($post_id); ?>" alt="post"></a>
-	<a href=""> <?php echo $data->post_title; ?></a>
+	<a href="<?php the_permalink($data); ?>"> <?php echo $data->post_title; ?></a>
 	<p><?php echo $data->post_content; ?></p>
 	<?php if(!empty($age)) {
 		?> <p><?=$age?></p>
@@ -211,17 +215,17 @@ function custom_favorites_listing_html($html, $markup_template, $post_id, $list_
 	return ob_get_clean();
 }
 
-add_action('wp_ajax_myfilter', 'vitrines_filter_function');
-add_action('wp_ajax_nopriv_myfilter', 'vitrines_filter_function');
+add_action('wp_ajax_vitrines_filter_function', 'vitrines_filter_function');
+add_action('wp_ajax_nopriv_vitrines_filter_function', 'vitrines_filter_function');
 
 function vitrines_filter_function() {
-	$args = array(
+	$vitrines_advised = array(
 		'order_by' => 'date',
 		'order' => $_POST['date']
 	);
 
 	if(isset($_POST['categoryfilter'])) {
-		$args['tax_query'] = array(
+		$vitrines_advised['tax_query'] = array(
 			array(
 				'taxonomy' => 'category_produits',
 				'fields' => 'id',
@@ -230,11 +234,11 @@ function vitrines_filter_function() {
 		);
 	}
 
-	$query = new WP_Query($args);
+	$query = new WP_Query($vitrines_advised);
 
 	if($query->have_posts()) :
 		while($query->have_posts()) : $query->the_post();
-			echo '<h2>' . $query->post->post_title . '</h2>';
+			echo '<h2>' . the_title() . '</h2>';
 		endwhile;
 		wp_reset_postdata();
 	else : 
