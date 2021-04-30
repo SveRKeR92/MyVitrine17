@@ -1,6 +1,7 @@
 @import "abstracts/variables/custom_variables.scss";
 
 .page-id-62 {
+
       .init {
             width: 60%;
             min-width: 600px;
@@ -46,8 +47,10 @@
                   background: linear-gradient(180deg, #F2D2BF 0%, #F2EADE 100%);
                   padding: 40px;
                   border-radius: 15px;
-                  width: 50%;   
-                  margin: 15% auto;              
+                  width: 50%;
+                  margin: 5vh auto;
+                  overflow: auto;
+                  height: 90vh;
             }
 
             .close{
@@ -78,12 +81,12 @@
                         padding: 10px 25px;
                         width: 60%;
                         margin: 15px auto;
-                        outline: none; 
-                        resize: none;  
+                        outline: none;
+                        resize: none;
                   }
 
                   button{
-                        margin: 0 auto;
+                        margin: 3% auto;
                         color: #FFFFFF;
                         background: #A8BFB5;
                         border-radius: 19px;
@@ -106,7 +109,7 @@
             background: linear-gradient(180deg, #F2D2BF 0%, #F2EADE 100%);
             box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
             border-radius: 19px;
-            margin: 0 auto;
+            margin: 10px auto 20px auto;
             // display: grid;
             // place-items: center;
             img{
@@ -114,7 +117,7 @@
                   height: 160px;
                   border-radius: 50%;
                   object-fit: cover;
-                  margin-right: 55px;
+                  //margin-right: 55px;
             }
 
             p{
@@ -142,18 +145,29 @@
                   }
             }
 
+            #edit{
+                  background-color: transparent;
+                  border: none;
+                  float: right;
+                  position: relative;
+                  top: -15px;
+            }
+
             #edit:hover{
                   cursor:pointer;
             }
 
             .categories{
-                 float: right;
-                 width: min-content;
-                 padding: 12px 25px;
+
+                 width: 50%;
+                 padding: 1% 0.5%;
                  background-color: #A8BFB5;
                  color: white;
                  border-radius: 20px;
-                 margin-top: 9px;
+                 margin: 9px auto;
+                  text-align: center;
+                  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+
             }
 
             .nproducts{
@@ -163,6 +177,7 @@
                   padding: 11px 25px;
                   border-radius: 9px;
                   background-color: #F2EADF;
+                  display: inline-block;
             }
 
             .desc{
@@ -170,8 +185,116 @@
                   font-size: 18px;
             }
       }
+      .contenu_profil{
+            display: flex;
+      .info_profil{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+      }
+            .info_produit_profil{
+                  width: 50%;
+            }
+      }
 }
 
+@media (max-width: 900px){
+      .page-id-62 {
+            .contenu_profil {
+                  display: flex;
+                  flex-direction: column;
 
+                  .info_produit_profil {
+                        width: 100%;
+                        margin: 3% auto 2% auto;
+                        text-align: center;
+
+
+                  }
+            }
+            .modal {
+
+
+                  &-content {
+
+                        width: 80%;
+                        margin: 5vh auto;
+                        overflow: auto;
+                        height: 90vh;
+                  }
+            }
+      }
+}
+
+@media (max-width: 400px){
+.page-id-62{
+      h1{
+            font-size: 20px;
+            padding: 3%;
+      }
+      .init{
+            min-width: 300px;
+      }
+
+      .profile-container {
+            min-width: 300px;
+            padding: 10% 0;
+
+            .contenu_profil {
+                  width: 100%;
+
+                  .heading {
+                        font-size: 1em;
+                        text-align: center;
+                  }
+                  .categories{
+
+                        width: 80%;
+
+
+                  }
+
+                  .info_produit_profil {
+                        width: 100%;
+
+                        .nproducts {
+                              font-size: 15px;
+                              display: inline-block;
+
+                        }
+
+                        .desc {
+                              margin-top: 2%;
+                        }
+
+                  }
+            }
+      }
+      .modal {
+
+
+            &-content {
+
+                  width: 80%;
+                  margin: 5vh auto;
+                  overflow: auto;
+                  height: 90vh;
+
+                  h3{
+                       font-size: 24px !important;
+                  }
+
+            }
+            #form{
+                  input, textarea{
+
+                        width: 90%;
+
+                  }
+            }
+      }
+
+}
+}
 
 

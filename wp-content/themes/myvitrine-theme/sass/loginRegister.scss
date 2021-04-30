@@ -118,3 +118,34 @@
         padding-right: 0;
     }
 }
+
+@media (max-width: 900px) {
+    .um-page-register {
+        .wp-block-columns {
+            width: 100%;
+            .wp-block-column {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .um-page-register {
+        .wp-block-columns {
+            height: 100%;
+            .wp-block-column {
+                padding-top: 90px;
+                h2 {
+                    margin-bottom: 90px;
+                }
+            }
+        }
+        .login-register-left {
+            h1 {
+                margin-bottom: 90px;
+            }
+        }
+    }
+}

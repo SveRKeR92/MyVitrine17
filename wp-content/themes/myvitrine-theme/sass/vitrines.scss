@@ -56,16 +56,8 @@
             flex-direction: column;
             margin-top: 30px;
             width: 80%;
-            button {
-                width: 130px;
-                margin: 50px 0;
-                background-color: $softBrown;
-                border: none;
-                color: #fff;
-                padding: 10px 20px;
-                align-self: center;
-                cursor: pointer;
-            }
+
+
             .form-main {
                 display: flex;
                 background-color: $green;
@@ -90,13 +82,13 @@
         }
     }
 }
-
-.valide-btn {
-    padding: 2% 4%;
+.valide-btn{
+    padding: 20px 55px;
     background-color: #A65A49;
     color: white;
-    font-family: Poppins;
+    font-family: $poppins;
     margin: 20px 0;
+    border-radius: 5px;
 }
 
 .vitrines-advised {
@@ -133,6 +125,7 @@
         text-transform: uppercase;
         justify-self: center;
         align-self: center;
+
         padding-left: 24%;
     }
 }
@@ -231,14 +224,21 @@
         }
     }
 }
-
-@media (max-width: 900px) {
-    .all-vitrines {
-        .vitrines-posts {
-            .vit {
+@media (max-width: 400px){
+    .all-vitrines{
+        .vitrines-posts{
+            .vit{
                 width: 80%;
                 margin: 10px auto;
             }
         }
+    }
+    .valide-btn{
+        padding: 4% 8%;
+        background-color: #A65A49;
+        color: white;
+        font-family: $poppins;
+        margin: 20px 0;
+        border-radius: 5px;
     }
 }

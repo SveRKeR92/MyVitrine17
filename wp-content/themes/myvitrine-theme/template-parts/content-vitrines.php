@@ -17,7 +17,7 @@
             <div id="post-<?php the_ID(); ?>" class="vit">
                 <div class="medias">
                     <a href="#"><i class="far fa-star fa-2x"></i></a>
-                    <?php the_post_thumbnail('medium'); ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
                     <i class="fa fa-instagram fa-2x"></i>
                 </div>
 
@@ -32,7 +32,7 @@
                 <div class="below">
                     <?php the_title('<h2 class="title">', '</h2>'); ?>
                     <?php the_content(); ?>
-                    <button><a href=""><?= $vitrines_terms[0]->name; ?></a></button>
+                    <button><a href="#"><?= $vitrines_terms[0]->name; ?></a></button>
                 </div>
             </div>
 

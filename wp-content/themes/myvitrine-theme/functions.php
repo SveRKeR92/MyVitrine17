@@ -147,7 +147,7 @@ function myvitrine_theme_scripts() {
 	wp_enqueue_script('myvitrine-theme-navigation', get_stylesheet_directory_uri() . '/js/burger.js');
 
 	wp_enqueue_script( 'myvitrine-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'myvitrine-theme-filter', get_template_directory_uri() . '/js/filter.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'myvitrine-theme-filter', get_template_directory_uri() . '/js/filter.js', array('jquery'), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -250,4 +250,37 @@ function custom_favorites_listing_html($html, $markup_template, $post_id, $list_
 
 <?php
 	return ob_get_clean();
-}*/
+}
+
+add_action('wp_ajax_myfilter', 'vitrines_filter_function');
+add_action('wp_ajax_nopriv_myfilter', 'vitrines_filter_function');
+
+function vitrines_filter_function() {
+	$args = array(
+		'order_by' => 'date',
+		'order' => $_POST['date']
+	);
+
+	if(isset($_POST['categoryfilter'])) {
+		$args['tax_query'] = array(
+			array(
+				'taxonomy' => 'category_produits',
+				'fields' => 'id',
+				'terms' => $_POST['categoryfilter']
+			)
+		);
+	}
+
+	$query = new WP_Query($args);
+
+	if($query->have_posts()) :
+		while($query->have_posts()) : $query->the_post();
+			echo '<h2>' . $query->post->post_title . '</h2>';
+		endwhile;
+		wp_reset_postdata();
+	else : 
+		echo 'No posts found';
+	endif;
+
+	die();
+}
