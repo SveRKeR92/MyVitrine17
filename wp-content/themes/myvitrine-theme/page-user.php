@@ -25,12 +25,14 @@ $infos = get_user_meta($user->ID);
 // }
 
 $post = get_post();
+$tax = get_taxonomy('category_produits');
 var_dump($post);
 echo "<br>";
+var_dump($tax);
 echo "<br>";
 echo "<br>";
 $produtcs = get_the_terms($post->ID, 'All produits');
-var_dump($produtcs);
+var_dump($infos);
 ?>
 
 <h1><?= $user->display_name ?></h1>

@@ -16,11 +16,11 @@ function update_user_infos()
     echo "<br>";
     foreach($_POST["inputs"] as $input){
         var_dump($input);
-        if($input["name"] == 'instagram'){
+        if($input["name"] == 'instagram' && $input["value"] != ""){
             $input["value"] = 'https://www.instagram.com/' . $input["value"];
             echo $input["value"];
         }
-        if(isset($infos[$input["name"]]) && $infos[$input["value"]] != ""){
+        if(isset($infos[$input["name"]]) && $input["value"] != ""){
             update_user_meta($user->ID, $input["name"], $input["value"]);
         }else{
             add_user_meta($user->ID, $input["name"], $input["value"]);
