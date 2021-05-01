@@ -2644,7 +2644,8 @@ footer #networksFoot img {
   font-size: 28px;
   font-weight: bold;
 }
-.page-id-62 .modal .close:hover, .page-id-62 .modal .close:focus {
+.page-id-62 .modal .close:hover,
+.page-id-62 .modal .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -2657,7 +2658,8 @@ footer #networksFoot img {
   display: flex;
   flex-direction: column;
 }
-.page-id-62 form input, .page-id-62 form textarea {
+.page-id-62 form input,
+.page-id-62 form textarea {
   box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   padding: 10px 25px;
@@ -2763,6 +2765,79 @@ footer #networksFoot img {
 .page-id-62 .contenu_profil .info_produit_profil {
   width: 50%;
 }
+.page-id-62 .products_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 100px auto;
+}
+.page-id-62 .products_container .product_vignet {
+  width: 330px;
+  height: 450px;
+  border-radius: 19px;
+  box-shadow: 0px 9px 18px rgba(132, 132, 132, 0.25);
+  padding-bottom: 15px;
+  display: grid;
+}
+.page-id-62 .products_container .product_vignet img {
+  width: 100%;
+  height: 140px;
+  border-radius: 19px 19px 0 0;
+  object-position: top;
+  object-fit: cover;
+}
+.page-id-62 .products_container .product_vignet h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.page-id-62 .products_container .product_vignet .marque {
+  text-align: center;
+  margin-top: 7px;
+  font-size: 18px;
+}
+.page-id-62 .products_container .product_vignet .product_description {
+  width: 80%;
+  margin: 27px auto;
+}
+.page-id-62 .products_container .product_vignet .category {
+  text-align: center;
+}
+.page-id-62 .products_container .product_vignet .category span {
+  padding: 5px 16px;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #A65A49;
+  border-radius: 5px;
+}
+.page-id-62 .products_container .add_product {
+  width: 330px;
+  height: 450px;
+  border-radius: 19px;
+  box-shadow: 0px 9px 18px rgba(132, 132, 132, 0.25);
+  background: linear-gradient(180deg, #F2D2BF 0%, #F2EADE 100%);
+  display: grid;
+  place-items: center;
+}
+.page-id-62 .products_container .add_product h2 {
+  color: #A65A49;
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+}
+.page-id-62 .products_container .add_product button {
+  display: block;
+  margin: 30px auto 0 auto;
+  border: none;
+  background-color: #A8BFB5;
+  color: white;
+}
+.page-id-62 .products_container .add_product:hover {
+  cursor: pointer;
+}
 
 @media (max-width: 900px) {
   .page-id-62 .contenu_profil {
@@ -2822,7 +2897,8 @@ footer #networksFoot img {
   .page-id-62 .modal-content h3 {
     font-size: 24px !important;
   }
-  .page-id-62 .modal #form input, .page-id-62 .modal #form textarea {
+  .page-id-62 .modal #form input,
+.page-id-62 .modal #form textarea {
     width: 90%;
   }
 }

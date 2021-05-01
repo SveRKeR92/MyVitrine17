@@ -30,6 +30,7 @@ var_dump($post);
 echo "<br>";
 echo "<br>";
 echo "<br>";
+var_dump($user->ID);
 
 ?>
 
@@ -98,16 +99,66 @@ if (!isset($infos["profile_created"])) {
       </div>
 </div>
 
-<form id="product_form">
-      <input type="text" placeholder="Marque du produit">
-      <input type="text" placeholder="Nom du produit">
-      <input type="text" placeholder="Image du produit (lien)">
-      <input type="text" placeholder="Catégorie du produit">
-      <textarea name="description" rows="5" placeholder="Description..."></textarea>
-      <button id="click_product">Soumettre</button>
-</form>
+<div id="modal2" class="modal">
+      <div class="modal-content">
+            <span class="close" id="close2">&times;</span>
+            <h3>Ajouter un produit</h3>
+            <form id="product_form">
+                  <input type="text" placeholder="Marque du produit" name="marque">
+                  <input type="text" placeholder="Nom du produit" name="title">
+                  <input type="text" placeholder="Image du produit (lien)" name="image_link">
+                  <input type="text" placeholder="Catégorie du produit" name="category">
+                  <textarea rows="5" placeholder="Description..." name="content"></textarea>
+                  <input type="number" name="user_id" value="<?= $user->ID ?>" style="display: none;">
+                  <button id="click_product">Ajouter</button>
+            </form>
+      </div>
+</div>
 
+<div class="products_container">
 
+      <?php
+
+      $args = array(
+            'post_type' => 'produits',
+      );
+
+      $the_query = new WP_Query($args);
+      if ($the_query->have_posts()) :
+            while ($the_query->have_posts()) :
+                  $the_query->the_post();
+                  $id_user = get_field('id_utilisateur');
+                  if ($id_user == $user->ID) :
+                        // var_dump($the_query);
+      ?>
+                        <div class="product_vignet">
+                              <div>
+                                    <img src="<?= the_field('lien_image') ?>" alt="Image produit">
+                              </div>
+
+                              <h3><?= the_title(); ?></h3>
+                              <p class="marque"><?= the_field('marque_du_produit'); ?></p>
+                              <p class="product_description"><?= the_field('description_du_produit'); ?></p>
+                              <div class="category">
+                                    <span><?= the_field('categorie_produit'); ?></span>
+                              </div>
+                        </div>
+      <?php
+                  endif;
+            endwhile;
+            wp_reset_postdata();
+      else :
+      endif;
+      ?>
+
+      <div class="add_product" id="step2">
+            <div>
+                  <h2>Ajouter un produit</h2>
+                  <button class="add" id="profile_add"><i class="fas fa-plus fa-2x"></i></button>
+            </div>
+      </div>
+
+</div>
 
 <script>
       jQuery('#click').click(function(e) {
@@ -141,28 +192,36 @@ if (!isset($infos["profile_created"])) {
             e.preventDefault();
             jQuery('#modal1').css('display', 'block');
       });
+
+      jQuery('#step2').click(function(e) {
+            e.preventDefault();
+            jQuery('#modal2').css('display', 'block');
+      });
+
+      jQuery('#close2').click(function() {
+            jQuery('#modal2').css('display', 'none');
+      });
+
+
+      jQuery('#click_product').click(function(e) {
+            e.preventDefault();
+            jQuery.ajax({
+                  url: the_ajax_script.ajaxurl,
+                  type: 'POST',
+                  data: {
+                        'action': 'add_product',
+                        'inputs': jQuery("#product_form").serializeArray()
+                  },
+                  success: function() {
+                        location.reload();
+                  },
+                  error: function() {
+                        alert("error");
+                  }
+            });
+      });
 </script>
 
+
 <?php
-
-$args = array(
-      'post_type'=> 'produits',
-);
-  
-$the_query = new WP_Query( $args );
-if($the_query->have_posts() ) : 
-      while ( $the_query->have_posts() ) : 
-            $the_query->the_post(); 
-            var_dump($the_query);
-            the_content();
-            the_ID();
-            echo "<br>";
-            echo "<br>";
-            echo "<br>";
-            echo "<br>";
-      endwhile; 
-      wp_reset_postdata(); 
-      else: 
-endif;
-
 get_footer();

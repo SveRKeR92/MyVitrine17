@@ -47,3 +47,47 @@ add_action("wp_enqueue_scripts", "js_enqueue_scripts");
 
 add_action( 'wp_ajax_add_product', 'add_product' );
 add_action('wp_ajax_nopriv_add_product', 'add_product');
+
+function add_product(){
+    var_dump($_POST["inputs"]);
+    $new_post = array(
+        'ID' => '',
+        'post_type' => 'produits',
+        'post_status' =>  'publish',
+        'post_title' => $_POST["inputs"][1]["value"],
+        'post_content' => $_POST["inputs"][4]["value"],
+    );
+
+    $post_id = wp_insert_post($new_post);
+    $post = get_post($post_id);
+
+    $field_marque = "marque_du_produit";
+    $value_marque = $_POST["inputs"][0]["value"];
+    update_field( $field_marque, $value_marque, $post_id );  
+
+    $field_nom = "nom_du_produit";
+    $value_nom = $_POST["inputs"][1]["value"];
+    update_field( $field_nom, $value_nom, $post_id );  
+
+    $field_image = "lien_image";
+    $value_image = $_POST["inputs"][2]["value"];
+    update_field( $field_image, $value_image, $post_id );  
+
+    $field_category = "categorie_produit";
+    $value_category = $_POST["inputs"][3]["value"];
+    update_field( $field_category, $value_category, $post_id );  
+
+    $field_description = "description_du_produit";
+    $value_description = $_POST["inputs"][4]["value"];
+    update_field( $field_description, $value_description, $post_id );  
+
+    $field_user = "id_utilisateur";
+    $value_user = $_POST["inputs"][5]["value"];
+    update_field( $field_user, $value_user, $post_id );  
+
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+
+    var_dump($new_post);
+}
