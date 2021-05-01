@@ -26,11 +26,6 @@ $infos = get_user_meta($user->ID);
 // }
 
 $post = get_post();
-var_dump($post);
-echo "<br>";
-echo "<br>";
-echo "<br>";
-var_dump($user->ID);
 
 ?>
 
