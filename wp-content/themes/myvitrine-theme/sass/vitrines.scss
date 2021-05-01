@@ -227,6 +227,10 @@
         }
     }
 }
+#filter{
+    display: flex;
+    flex-direction: column;
+}
 @media (max-width: 400px){
     .all-vitrines{
         .vitrines-posts{

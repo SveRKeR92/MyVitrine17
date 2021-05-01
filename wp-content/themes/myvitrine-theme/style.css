@@ -2465,6 +2465,11 @@ h1 {
     padding-left: 0;
   }
 }
+#filter {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 400px) {
   .all-vitrines .vitrines-posts .vit {
     width: 80%;
