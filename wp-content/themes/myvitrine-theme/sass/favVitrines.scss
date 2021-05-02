@@ -169,12 +169,21 @@
             min-height: 300px;
             align-content: center;
             margin-bottom: 100px;
-            img {
-                width: 155px;
-                height: 155px;
-                border-radius: 100%;
-                position: absolute;
-                top: -75px;
+            a {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-size: 24px;
+                color: black;
+                margin-top: 30px;
+                text-decoration: none;
+                img {
+                    width: 155px;
+                    height: 155px;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: -75px;
+                }
             }
             h2 {
                 text-align: center;
@@ -186,6 +195,7 @@
                 font-size: 14px;
                 width: 100%;
                 text-align: center;
+                margin-top: 15px;
             }
         }
     }
