@@ -1,4 +1,4 @@
-<form action="<?= admin_url(); ?>admin-ajax.php" method="POST" id="filter">
+<form action="#" method="POST" id="filter">
 
     <h2>Ambassadrice</h2>
 
@@ -31,4 +31,4 @@
 
 </form>
 
-<div id="response">Omega bruh</div>
+<div id="response"></div>
