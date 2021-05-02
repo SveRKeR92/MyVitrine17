@@ -113,7 +113,9 @@ h1 {
         }
     }
 }
-
+.product_vignet{
+    margin: 15px auto ;
+}
 .noProduct {
     min-height: 250px;
     background: linear-gradient(#F2D2BF, #F2EADE);
@@ -341,6 +343,8 @@ h1 {
     article {
         display: none;
     }
+
+   
     @media screen and (max-width: 1000px) {
         .profilAmbassadeur {
             width: 95%;

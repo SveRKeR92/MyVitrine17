@@ -1970,6 +1970,10 @@ h1 {
   border-radius: 4px;
 }
 
+.product_vignet {
+  margin: 15px auto;
+}
+
 .noProduct {
   min-height: 250px;
   background: linear-gradient(#F2D2BF, #F2EADE);
