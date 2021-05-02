@@ -1338,7 +1338,16 @@ h1 {
   align-content: center;
   margin-bottom: 100px;
 }
-.favoris .blocFavori img {
+.favoris .blocFavori a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: black;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.favoris .blocFavori a img {
   width: 155px;
   height: 155px;
   border-radius: 100%;
@@ -1355,6 +1364,7 @@ h1 {
   font-size: 14px;
   width: 100%;
   text-align: center;
+  margin-top: 15px;
 }
 
 body {
@@ -1742,7 +1752,7 @@ footer #networksFoot img {
   align-content: center;
 }
 .um-page-login .login-register-right {
-  background: linear-gradient(#F2D2BF, #F2EADE);
+  background: linear-gradient(#f2bfbf, #F2EADE);
 }
 .um-page-login .login-register-right h2 {
   color: black;
@@ -2142,6 +2152,7 @@ h1 {
   align-items: center;
   margin-bottom: 50px;
   margin-top: 50px;
+  padding: 10px;
 }
 .single-produits .profilAmbassadeur .profilAmbassadeur1 {
   display: flex;
@@ -2153,9 +2164,10 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 160px;
+  background: red;
 }
 .single-produits .profilAmbassadeur .profilAmbassadeur1-1 img {
-  max-width: 160px;
+  min-width: 160px;
   height: 160px;
   border-radius: 100%;
 }

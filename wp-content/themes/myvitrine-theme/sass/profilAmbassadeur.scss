@@ -288,6 +288,7 @@ h1 {
         align-items: center;
         margin-bottom: 50px;
         margin-top: 50px;
+        padding: 10px;
         .profilAmbassadeur1 {
             display: flex;
             width: 45%;
@@ -298,8 +299,9 @@ h1 {
             justify-content: center;
             align-items: center;
             height: 160px;
+            background: red;
             img {
-                max-width: 160px;
+                min-width: 160px;
                 height: 160px;
                 border-radius: 100%;
             }
